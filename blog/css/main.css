@@ -54,6 +54,9 @@ p + p,
 ul + p {
   margin-top: 1em;
 }
+ul {
+  margin-left: 20px;
+}
 a {
   color: #069;
   text-decoration: none;
