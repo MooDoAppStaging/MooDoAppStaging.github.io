@@ -13,12 +13,19 @@ body {
   height: 100%;
 }
 body {
-  font-family: "Merriweather", Helvetica, Arial, sans-serif;
+  font-family: 'Merriweather', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: small;
   line-height: 26px;
+  font-weight: 300;
   font-size: 15px;
   overflow-y: scroll;
   overflow-x: hidden;
+}
+iframe[seamless] {
+  background-color: transparent;
+  border: 0px none transparent;
+  padding: 0px;
+  overflow: hidden;
 }
 h1,
 h2,
@@ -29,11 +36,11 @@ h6 {
   font-size: 100%;
 }
 h1 {
-  margin-bottom: 0.2em;
+  margin-bottom: 0.6em;
   font-size: 150%;
 }
 h1:not(:first-child) {
-  margin-top: 1.5em;
+  margin-top: 2em;
 }
 h2 {
   margin-bottom: 0.2em;
@@ -54,8 +61,20 @@ p + p,
 ul + p {
   margin-top: 1em;
 }
-ul {
-  margin-left: 20px;
+.postContent ul {
+  list-style-type: none;
+  margin: 10px 0 0 15px;
+  border-left: 1px solid #e3e3e3;
+}
+.postContent li {
+  padding-left: 15px;
+  line-height: 1.5em;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+}
+.postContent li:before {
+  color: #e6e6e6;
+  padding-right: 10px;
 }
 a {
   color: #069;
@@ -134,7 +153,6 @@ a:hover {
 .headerContent {
   max-width: 800px;
   margin: 0 auto;
-  font-family: "Merriweather";
 }
 .headerContent span {
   vertical-align: middle;
@@ -240,6 +258,10 @@ a:hover {
 .social-links div {
   cursor: pointer;
 }
+.hb:hover,
+.social-links div:hover {
+  color: #0099dd;
+}
 .headerButtons {
   float: right;
 }
@@ -340,11 +362,11 @@ a:hover {
 }
 .postTitle {
   font-family: 'Roboto Slab', serif;
-  font-size: 160%;
-  font-weight: 100;
+  font-size: 180%;
+  font-weight: 400;
 }
 .postMetadata {
-  margin-top: 2px;
+  margin-top: 8px;
   font-size: 90%;
 }
 .postMetadata {
@@ -398,7 +420,6 @@ a:hover {
 .postContent,
 .postExcerpt {
   padding: 12px 0;
-  font-family: 'Merriweather', sans-serif;
 }
 #social {
   padding-top: 15px;
@@ -483,5 +504,41 @@ a:hover {
   font-weight: bold;
 }
 .iptitle {
+  font-weight: bold;
+}
+.tag {
+  color: #0099dd;
+  font-weight: bold;
+}
+.date {
+  color: #aa3300;
+  font-weight: bold;
+}
+.contact {
+  color: #22aa66;
+  font-weight: bold;
+}
+.demo {
+  border: 0;
+}
+.p0 {
+  color: #f30;
+}
+.p1 {
+  color: #fa0;
+}
+.p2 {
+  color: #fd3;
+}
+.pFlag {
+  background: #ffb;
+  padding: 5px;
+}
+.search {
+  padding: 3px 5px;
+  margin: 0 3px;
+  border: 1px solid #ddd;
+}
+.b {
   font-weight: bold;
 }
