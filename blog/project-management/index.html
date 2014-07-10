@@ -66,11 +66,13 @@ window.__demos =
         id: 'demoPanes1',
         src: '/#demo=true&touch=false&data=blog-proj-man.1&panes=1:1,' + encodeURIComponent('-// -#punt') + ',focusRoot&script=none&dmode=0x2bd',
         img: '/img/ss/blog/project-management/mobilePanes1.png',
+        forceDesktopIFrame: true
     },
     {
         id: 'demoPanes2',
         src: '/#demo=true&touch=false&data=blog-proj-man.1&panes=1,' + encodeURIComponent('-// -#punt #J') + ',focusRoot:1,' + encodeURIComponent('-// -#punt #J !!') + ',focusRoot&script=none&dmode=0x2bd',
         img: '/img/ss/blog/project-management/mobilePanes2.png',
+        forceDesktopIFrame: true
     },
     {
         id: 'demoDiscussion',
@@ -94,10 +96,10 @@ window.__demos =
         text-align: center;
         font-size: 85%;
     }
-    #demoOrganization {
+    #demoOrganization:not(.demoimg) {
         height: 490px;
     }
-    #demoAgenda {
+    #demoAgenda:not(.demoimg) {
         height: 330px;
     }
     @media screen and (max-width: 480px) {
@@ -109,28 +111,31 @@ window.__demos =
         }
     }
     @media screen and (min-width: 481px) {
-        #demoOrganization {
+        #demoOrganization:not(.demoimg) {
             width: 350px;
         }
-        #demoAgenda {
+        #demoAgenda:not(.demoimg) {
             width: 400px;
         }
     }
-    .mobile #demoOrganization,
-    .mobile #demoAgenda {
+    .demoimg {
         border-bottom: 1px solid #ccc;
     }
-    body:not(.mobile) #demoPanes1 {
+    body:not(.mobile) #demoPanes1:not(.demoimg) {
         width: 100%;
         height: 920px;
     }
-    body:not(.mobile) #demoPanes2 {
+    body:not(.mobile) #demoPanes2:not(.demoimg) {
         width: 100%;
         height: 420px;
     }
-    body:not(.mobile) #demoDiscussion {
+    body:not(.mobile) #demoDiscussion:not(.demoimg) {
         width: 100%;
         height: 330px;
+    }
+
+    body:not(.mobile) .demo {
+        text-align: center;
     }
 
     .mobile #demoPanes1 {
