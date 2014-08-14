@@ -65,6 +65,8 @@ body {
 #pageContainer {
   position: relative;
   min-height: 100%;
+  width: 100%;
+  overflow-x: hidden;
 }
 .link {
   display: inline-block;
@@ -111,7 +113,6 @@ body {
 }
 .subtext {
   text-align: left;
-  font-size: 18px;
   line-height: 1.5em;
   color: #555;
 }
@@ -149,27 +150,26 @@ body {
   position: relative;
   z-index: 2;
 }
-#topBar #logoLink {
+#topBar #logoWrapper {
   position: absolute;
   display: block;
   text-decoration: none;
   text-align: left;
   width: 280px;
-  left: calc(50% - 140px);
   white-space: nowrap;
-  -moz-transform-origin: 0 0;
-  -webkit-transform-origin: 0 0;
-  -o-transform-origin: 0 0;
-  transform-origin: 0 0;
   -webkit-transition: all 300ms;
   -moz-transition: all 300ms;
   -o-transition: all 300ms;
   transition: all 300ms;
+  -moz-transform-origin: 0 0;
+  -webkit-transform-origin: 0 0;
+  -o-transform-origin: 0 0;
+  transform-origin: 0 0;
 }
-#topBar #logoLink .logo {
+#topBar #logoWrapper .logo {
   height: 100px;
 }
-#topBar #logoLink #logoSubtitle {
+#topBar #logoWrapper #logoSubtitle {
   font-size: 24px;
   line-height: 1;
   margin: -18px 0 0 70px;
@@ -194,41 +194,52 @@ body {
 #topBar #topLinks:last-child {
   padding-right: 10px;
 }
-#topBar.pinned #topBarBG {
-  opacity: 0.97;
-}
-#topBar.pinned #logoSubtitle {
-  opacity: 0;
-}
 @media screen and (max-width: 800px) {
-  #topBar.pinned #logoLink {
-    left: 10px !important;
-    -moz-transform: translate(0, 0) scale(0.6, 0.6);
-    -webkit-transform: translate(0, 0) scale(0.6, 0.6);
-    -o-transform: translate(0, 0) scale(0.6, 0.6);
-    transform: translate(0, 0) scale(0.6, 0.6);
+  #topBarBG {
+    opacity: 0.95 !important;
+  }
+  #logoSubtitle {
+    display: none;
+  }
+  #logoWrapper {
+    left: 10px;
+    padding-top: 5px;
+    -moz-transform: translate(0, 0) scale(0.5, 0.5);
+    -webkit-transform: translate(0, 0) scale(0.5, 0.5);
+    -o-transform: translate(0, 0) scale(0.5, 0.5);
+    transform: translate(0, 0) scale(0.5, 0.5);
+  }
+  #mobileTitle {
+    font-size: 32px;
+    font-weight: 200;
+    line-height: 1;
+    margin-bottom: 40px;
+  }
+  #topBarSpacer {
+    height: 100px;
   }
 }
 @media screen and (min-width: 801px) {
-  #topBar.pinned #logoLink {
+  #topBarSpacer {
+    height: 180px;
+  }
+  #mobileTop {
+    display: none;
+  }
+  #logoWrapper {
+    left: calc(50% - 140px);
+  }
+  .pinned #logoWrapper {
     -moz-transform: translate(-260px, 0) scale(0.6, 0.6);
     -webkit-transform: translate(-260px, 0) scale(0.6, 0.6);
     -o-transform: translate(-260px, 0) scale(0.6, 0.6);
     transform: translate(-260px, 0) scale(0.6, 0.6);
   }
-}
-#topBarSpacer {
-  height: 180px;
-}
-@media screen and (max-width: 600px) {
-  #logoLink {
-    -moz-transform: translate(0, 50px);
-    -webkit-transform: translate(0, 50px);
-    -o-transform: translate(0, 50px);
-    transform: translate(0, 50px);
+  .pinned #topBarBG {
+    opacity: 0.95 !important;
   }
-  #topBarSpacer {
-    height: 230px;
+  .pinned #logoSubtitle {
+    opacity: 0;
   }
 }
 .footerSpacer {
@@ -279,6 +290,11 @@ a,
 a:hover,
 .smallLink:hover {
   color: #00b0ed;
+}
+@media screen and (max-width: 800px) {
+  body {
+    font-size: 16px;
+  }
 }
 /*****************************************************************************/
 /*
