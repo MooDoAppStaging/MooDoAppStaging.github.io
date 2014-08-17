@@ -11,6 +11,13 @@
   -ms-user-select: none !important;
   user-select: none !important;
 }
+.touchScrolling {
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  -ms-scroll-chaining: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+}
 .flexbox {
   display: -webkit-box;
   display: -moz-box;
@@ -37,7 +44,7 @@
   pointer-events: none;
 }
 .shadow {
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 3px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 1px 4px;
 }
 iframe[seamless] {
   background-color: transparent;
@@ -55,6 +62,22 @@ body {
   -webkit-transform-origin: 0 0;
   -o-transform-origin: 0 0;
   transform-origin: 0 0;
+}
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, Sans-serif;
+  line-height: 1.6em;
+  overflow-x: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -ms-user-select: none !important;
 }
 #video {
   position: absolute;
@@ -80,18 +103,26 @@ body {
   text-align: center;
   width: 100%;
   top: 50%;
-  margin-top: -42px;
+  margin-top: -130px;
   -webkit-transition: opacity 800ms;
   -moz-transition: opacity 800ms;
   -o-transition: opacity 800ms;
   transition: opacity 800ms;
 }
-#video #videoRestart {
-  width: 100px;
-  margin: 0 auto;
-  cursor: pointer;
-  font-size: 40px;
-  color: #aaa;
+#video #videoButtons #platforms {
+  display: inline-block;
+  font-size: 50px;
+  color: #444;
+  padding: 50px 0;
+}
+#video #videoButtons #platforms > * {
+  padding: 0 15px;
+}
+#video #videoButtons #platforms > .icon-desktop {
+  font-size: 70px;
+}
+#video #videoButtons #platforms > .icon-tablet {
+  font-size: 60px;
 }
 #video #whiteFrame {
   background: white;
@@ -136,7 +167,7 @@ body {
 }
 #tryItNow {
   margin-top: 0px;
-  font-size: 48px;
+  font-size: 54px;
   font-weight: 200;
   color: #444;
   line-height: 1;
@@ -146,8 +177,8 @@ body {
 #videoURL {
   display: block;
   font-size: 36px;
-  margin-top: 20px;
   color: #0099dd;
+  line-height: 1;
 }
 #tdBorderLeft,
 #tdBorderRight {
@@ -216,8 +247,8 @@ body {
   padding: 0;
 }
 .topDemoWrapper #demoTopMobile {
-  width: 172.4137931%;
-  height: 172.4137931%;
+  width: 172.41379310344828%;
+  height: 172.41379310344828%;
   -webkit-transform: scale(0.58, 0.58);
   -moz-transform: scale(0.58, 0.58);
   transform: scale(0.58, 0.58);
