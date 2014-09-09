@@ -81,16 +81,22 @@ window.__demos =
         position: relative;
         background: #f6f6f6;
         box-shadow: rgba(0,0,0,0.2) 1px 1px 6px;
-        padding: 10px !important;
         margin: 30px auto;
         max-width: 100%;
     }
     body:not(.mobile) .demobg {
         height: 350px;
+        padding: 10px;
+    }
+    .mobile .demobg {
+        padding: 5px;
     }
     body:not(.mobile) .threePanes:not(.demoimg) {
         margin: 30px 20px;
         height: 380px;
+    }
+    .mobile .unpadded {
+        margin: 0 !important;
     }
     .onePane:not(.demoimg) {
         width: 350px;
@@ -99,8 +105,8 @@ window.__demos =
         width: 720px;
     }
     .demoimg {
-        border-bottom: 1px solid #ccc;
         width: 100%;
+        display: block;
     }
     #postit-img {
         max-width: 100%;
