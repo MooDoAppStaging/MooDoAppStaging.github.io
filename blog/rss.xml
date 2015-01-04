@@ -8,35 +8,55 @@
     <title>Moo.do</title>
     <link>http://www.moo.do/blog</link>
     <description>Moo.do - Organize your way</description>
-    <pubDate>Sat, 13 Dec 2014 00:00:00 -0800</pubDate>
+    <pubDate>Sun, 04 Jan 2015 00:00:00 -0800</pubDate>
     <item>
-      <title>Development Update 12/13</title>
-      <link>http://www.moo.do/blog/update-12-13</link>
+      <title>Development Update 1/4</title>
+      <link>http://www.moo.do/blog/update-01-04</link>
       <description><![CDATA[Notable Updates
 
 
-Background updates on iOS
-Tag Autocomplete
-Keyboard shortcuts updated and listed through the Help menu
+iOS background fetch to keep your iPhone/iPad up to date
+Autocomplete for tags
+Keyboard shortcuts changed/updated and listed through the Help menu
 Significant performance and loading speed enhancements
 
 
+Bugs fixed
+
+
+Date parsing errors
+
+
 Upcoming Changes
+
+
+Design update for Web and Chrome apps
+
 ]]></description>
-      <pubDate>Sat, 13 Dec 2014 00:00:00 -0800</pubDate>
-      <guid>http://www.moo.do/blog/update-12-13</guid>
+      <pubDate>Sun, 04 Jan 2015 00:00:00 -0800</pubDate>
+      <guid>http://www.moo.do/blog/update-01-04</guid>
       <content:encoded><![CDATA[<h2>Notable Updates</h2>
 
 <ul>
-<li>Background updates on iOS</li>
-<li>Tag Autocomplete</li>
-<li>Keyboard shortcuts updated and listed through the Help menu</li>
+<li>iOS background fetch to keep your iPhone/iPad up to date</li>
+<li>Autocomplete for tags</li>
+<li>Keyboard shortcuts changed/updated and listed through the Help menu</li>
 <li>Significant performance and loading speed enhancements</li>
 </ul>
 
+<h2>Bugs fixed</h2>
+
+<ul>
+<li>Date parsing errors</li>
+</ul>
+
 <h2>Upcoming Changes</h2>
+
+<ul>
+<li>Design update for Web and Chrome apps</li>
+</ul>
 ]]></content:encoded>
-      <dc:date>2014-12-13T00:00:00-08:00</dc:date>
+      <dc:date>2015-01-04T00:00:00-08:00</dc:date>
     </item>
     <item>
       <title>Repeated Dates Update 11/21</title>
@@ -754,6 +774,6 @@ We hope that Moo.do will help you organize your life and keep you on track. If y
 ]]></content:encoded>
       <dc:date>2014-06-11T00:00:00-07:00</dc:date>
     </item>
-    <dc:date>2014-12-13T00:00:00-08:00</dc:date>
+    <dc:date>2015-01-04T00:00:00-08:00</dc:date>
   </channel>
 </rss>
