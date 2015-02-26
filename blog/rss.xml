@@ -11,7 +11,7 @@
     <pubDate>Wed, 25 Feb 2015 00:00:00 +0800</pubDate>
     <item>
       <title>Announcing Gmail and Drive Integration</title>
-      <link>http://www.moo.do/blog/update-02-25</link>
+      <link>http://www.moo.do/blog/announcing-email</link>
       <description><![CDATA[We are very happy to announce the next big step for Moo.do, and the reason we created Moo.do in the first place. You will soon be able to organize your email in Moo.do.
 
 Email
@@ -19,6 +19,10 @@ Email
 We are making Moo.do a full email application for Gmail and also integrating it into other email apps, starting with Mailbird, a fantastic email app for Windows.
 
 Emails work just like everything else in Moo.do: you can prioritize, schedule, tag, complete, and star your emails. Scheduled and prioritized emails show up in your agenda so you know what emails to deal with next. You can organize emails into your projects and put them right on your to-do lists. Search filters emails the same way as tasks, so it fits right into your workflow.
+
+
+    
+
 
 Google Drive
 
@@ -35,9 +39,44 @@ We are also announcing our business model. Everything that is already in Moo.do 
 Try it now
 
 We&#39;ve updated our http://www.moo.do/ with live demos of how email and file organization work, so please try it out and let us know what you think!
+
+
+window.__demos =
+[
+    {
+        id: 'demoInboxZero',
+        src: '/app/#demo=true&touch=false&data=intro.inbox.0&script=inboxZero&panes=PaneGmail:1&dmode=0x2b9',
+        img: '/img/ss/pressInboxZero.png'
+    }
+];
+
+
+
+#post_announceEmail .demo {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+#post_announceEmail .demobg {
+    position: relative;
+    margin: 30px auto;
+    max-width: 100%;
+}
+html:not(.mobile) #post_announceEmail .demobg {
+    height: 460px;
+}
+
+#post_announceEmail .demobg:not(.demoimg) {
+    width: 100%;
+}
+#post_announceEmail .demoimg {
+    width: 100%;
+    display: block;
+}
+
 ]]></description>
       <pubDate>Wed, 25 Feb 2015 00:00:00 +0800</pubDate>
-      <guid>http://www.moo.do/blog/update-02-25</guid>
+      <guid>http://www.moo.do/blog/announcing-email</guid>
       <content:encoded><![CDATA[<p>We are very happy to announce the next big step for Moo.do, and the reason we created Moo.do in the first place. You will soon be able to <strong>organize your email</strong> in Moo.do.</p>
 
 <h2>Email</h2>
@@ -45,6 +84,10 @@ We&#39;ve updated our http://www.moo.do/ with live demos of how email and file o
 <p>We are making Moo.do a full email application for Gmail and also integrating it into other email apps, starting with <a href="http://www.getmailbird.com">Mailbird</a>, a fantastic email app for Windows.</p>
 
 <p>Emails work just like everything else in Moo.do: you can prioritize, schedule, tag, complete, and star your emails. Scheduled and prioritized emails show up in your agenda so you know what emails to deal with next. You can organize emails into your projects and put them right on your to-do lists. Search filters emails the same way as tasks, so it fits right into your workflow.</p>
+
+<div class="twoPane demobg">
+    <div id="demoInboxZero"></div>
+</div>
 
 <h2>Google Drive</h2>
 
@@ -61,6 +104,41 @@ We&#39;ve updated our http://www.moo.do/ with live demos of how email and file o
 <h2>Try it now</h2>
 
 <p>We&#39;ve updated our <a href="landing%20page">http://www.moo.do/</a> with live demos of how email and file organization work, so please try it out and let us know what you think!</p>
+
+<script>
+window.__demos =
+[
+    {
+        id: 'demoInboxZero',
+        src: '/app/#demo=true&touch=false&data=intro.inbox.0&script=inboxZero&panes=PaneGmail:1&dmode=0x2b9',
+        img: '/img/ss/pressInboxZero.png'
+    }
+];
+</script>
+
+<style>
+#post_announceEmail .demo {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+#post_announceEmail .demobg {
+    position: relative;
+    margin: 30px auto;
+    max-width: 100%;
+}
+html:not(.mobile) #post_announceEmail .demobg {
+    height: 460px;
+}
+
+#post_announceEmail .demobg:not(.demoimg) {
+    width: 100%;
+}
+#post_announceEmail .demoimg {
+    width: 100%;
+    display: block;
+}
+</style>
 ]]></content:encoded>
       <dc:date>2015-02-25T00:00:00+08:00</dc:date>
     </item>
@@ -731,15 +809,11 @@ window.__demos =
         margin: 30px auto;
         max-width: 100%;
     }
-    body:not(.mobile) #post_scrum .demobg {
+    html:not(.mobile) #post_scrum .demobg {
         height: 380px;
-        padding: 10px;
     }
-    .mobile #post_scrum .demobg {
-        padding: 5px;
-    }
-    body:not(.mobile) #post_scrum .threePanes:not(.demoimg) {
-        margin: 30px 20px;
+    html:not(.mobile) #post_scrum .threePanes:not(.demoimg) {
+        margin: 30px 0;
         height: 460px;
     }
     .mobile #post_scrum .unpadded {
@@ -761,7 +835,7 @@ window.__demos =
         display: block;
         margin: 0 auto;
     }
-    body:not(.mobile) #post_scrum  .demo {
+    html:not(.mobile) #post_scrum  .demo {
         text-align: center;
     }
     #post_scrum .searchList {
@@ -934,14 +1008,14 @@ window.__demos =
         margin: 30px auto;
         max-width: 100%;
     }
-    body:not(.mobile) #post_proj-man .demobg {
+    html:not(.mobile) #post_proj-man .demobg {
         height: 350px;
         padding: 10px;
     }
     .mobile #post_proj-man .demobg {
         padding: 5px;
     }
-    body:not(.mobile) #post_proj-man .demobg {
+    html:not(.mobile) #post_proj-man .demobg {
         height: 350px;
     }
     #post_proj-man .threePanes:not(.demoimg) {
@@ -954,27 +1028,27 @@ window.__demos =
     #post_proj-man .twoPane:not(.demoimg) {
         width: 720px;
     }
-    body:not(.mobile) #post_proj-man #wrapOrg:not(.demoimg) {
+    html:not(.mobile) #post_proj-man #wrapOrg:not(.demoimg) {
         height: 570px;
     }
-    body:not(.mobile) #post_proj-man #wrapPanes1:not(.demoimg) {
+    html:not(.mobile) #post_proj-man #wrapPanes1:not(.demoimg) {
         height: 720px;
         padding: 10px 0;
     }
-    body:not(.mobile) #post_proj-man #wrapPanes2:not(.demoimg) {
+    html:not(.mobile) #post_proj-man #wrapPanes2:not(.demoimg) {
         height: 490px;
     }
-    body:not(.mobile) #post_proj-man #wrapAgenda:not(.demoimg) {
+    html:not(.mobile) #post_proj-man #wrapAgenda:not(.demoimg) {
         height: 360px;
     }
-    body:not(.mobile) #post_proj-man #wrapDiscussion:not(.demoimg) {
+    html:not(.mobile) #post_proj-man #wrapDiscussion:not(.demoimg) {
         width: 680px;
     }
     #post_proj-man .demoimg {
         width: 100%;
         display: block;
     }
-    body:not(.mobile) #post_proj-man .demo {
+    html:not(.mobile) #post_proj-man .demo {
         text-align: center;
     }
     #post_proj-man .tagsList td:first-child {
