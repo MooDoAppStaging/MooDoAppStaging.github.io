@@ -1,3 +1,68 @@
+#sectionTop {
+  margin-bottom: 60px;
+}
+.bioSection {
+  overflow: hidden;
+  flex-flow: row wrap;
+  padding-bottom: 40px;
+}
+.bioSection > div {
+  vertical-align: middle;
+}
+.bioSection .img {
+  height: 150px;
+  width: 150px;
+  background-size: 150px 150px;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.bioSection .flex1 {
+  text-align: center;
+  min-width: 40%;
+  max-width: 45%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+.bioSection .flex1 + .flex1 {
+  margin-left: 80px;
+}
+.bioSection .bioText {
+  text-align: left;
+}
+.bioHeader {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 15px;
+  text-align: center;
+}
+.bioHeader > a {
+  color: #22aa66 !important;
+}
+.bioText {
+  margin-top: 20px;
+  font-size: 15px;
+  line-height: 1.6em;
+}
+.bioTitle {
+  font-size: 15px;
+  font-weight: bold;
+}
+.bioLoc {
+  font-size: 15px;
+}
+@media screen and (max-width: 600px) {
+  .flexbox {
+    display: block;
+  }
+  .flex1 {
+    max-width: 100% !important;
+  }
+  .flex1 + .flex1 {
+    margin: 40px 0 40px 0 !important;
+  }
+}
 * {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -59,7 +124,8 @@ hr {
 .section {
   margin-top: 120px;
 }
-#topBar + .section {
+#topBar + .section,
+#topBar + .sectionBig {
   margin-top: 60px;
 }
 .title {
@@ -67,6 +133,9 @@ hr {
   margin-bottom: 24px;
   font-weight: bold;
   text-align: center;
+}
+html.mobile .title {
+  font-size: 30px;
 }
 .sectionText {
   margin-bottom: 30px;
@@ -725,6 +794,20 @@ a:hover,
 .date {
   color: #aa3300 !important;
 }
+.flexbox {
+  display: -moz-box;
+  display: -ms-box;
+  display: box;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.block {
+  display: block;
+}
 /*****************************************************************************/
 /*
 /* Common
@@ -733,7 +816,7 @@ a:hover,
 .mobile .noMobile {
   display: none !important;
 }
-body:not(.mobile) .mobileOnly {
+html:not(.mobile) .mobileOnly {
   display: none !important;
 }
 /* Global Reset */
