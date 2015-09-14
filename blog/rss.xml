@@ -39,6 +39,7 @@ Gmail integration
 .postImgPerf {
     width: 682px;
 }
+
 ]]></description>
       <pubDate>Mon, 14 Sep 2015 00:00:00 -0700</pubDate>
       <guid>http://www.moo.do/blog/performance</guid>
@@ -65,10 +66,11 @@ Gmail integration
 <li>Gmail integration</li>
 </ul>
 
-<p><style>
+<style>
 .postImgPerf {
     width: 682px;
-}</p>
+}
+</style>
 ]]></content:encoded>
       <dc:date>2015-09-14T00:00:00-07:00</dc:date>
     </item>
