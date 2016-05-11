@@ -430,7 +430,7 @@ function runAnimations()
     q(0, setText, 'i1Title', 'Organize however you want');
     d(100);
     q(1000, show, 'i1Title');
-    // q(0, sendMsg, 'demoIntroWider');
+    q(0, sendMsg, 'demoIntroWider');
     q(0, loadDemo, 'kanban');
     d(2500);
     q(0, setHTML, 'i1Title', 'Organize <span class="fadeOut500ms">however you want</span>');
