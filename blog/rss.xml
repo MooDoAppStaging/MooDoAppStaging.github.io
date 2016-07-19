@@ -20,19 +20,17 @@ Right now linked accounts only have access to Gmail. In the future we plan to ex
 
 
 
-We&#39;ve been focused on tracking down and fixing bugs especially on mobile. If you see anything that looks broken or doesn&#39;t work quite right, please send support@moo.do an email!
+This update also includes a lot of bug fixes, expecially for iOS and Android. If you see anything that looks broken or doesn&#39;t work quite right, please send us an email at support@moo.do!
 
 
 .postImgAccounts2 {
     width: 680px;
     margin: 40px auto;
-    box-shadow: none !important;
 }
 
 .postImgAccounts1 {
     width: 620px;
     margin: 40px auto;
-    box-shadow: none !important;
 }
 
 ]]></description>
@@ -46,19 +44,17 @@ We&#39;ve been focused on tracking down and fixing bugs especially on mobile. If
 
 <p><a href="/blog/img/update-accounts-1.png"><img class="postImg postImgAccounts1" src="/blog/img/update-accounts-1.png" /></a></p>
 
-<p>We&#39;ve been focused on tracking down and fixing bugs especially on mobile. If you see anything that looks broken or doesn&#39;t work quite right, please send support@moo.do an email!</p>
+<p>This update also includes a lot of bug fixes, expecially for iOS and Android. If you see anything that looks broken or doesn&#39;t work quite right, please send us an email at support@moo.do!</p>
 
 <style>
 .postImgAccounts2 {
     width: 680px;
     margin: 40px auto;
-    box-shadow: none !important;
 }
 
 .postImgAccounts1 {
     width: 620px;
     margin: 40px auto;
-    box-shadow: none !important;
 }
 </style>
 ]]></content:encoded>
