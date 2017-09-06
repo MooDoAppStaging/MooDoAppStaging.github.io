@@ -98,7 +98,7 @@ New advanced settings for header size, checkbox opacity, and background color
 <h3>Formatting</h3>
 
 <ul>
-<li><em>*italic*</em> or <strong>**bold**</strong> or <strong><em>***both***</em></strong></li>
+<li><i>*italic*</i> or <b>**bold**</b> or <b><i>***both***</i></b></li>
 <li><span class="updateMDHotkey">Ctrl</span> + B to bold and <span class="updateMDHotkey">Ctrl</span> + I to italic (as usual).</li>
 <li>[Title](address) or <span class="updateMDHotkey">Ctrl</span> + K to insert links with a title</li>
 <li>--- to create a horizontal line</li>
@@ -204,7 +204,7 @@ Tapping on the sides of items on mobile no long collapses or completes items. Sw
 <ul>
 <li>New &quot;<strong>Create Task</strong>&quot; for emails (pictured above): Add selected email(s) as child of the new task, set a note and priority, optionally add it to an existing item, and add it to the Outline.</li>
 <li>&quot;<strong>New item</strong>&quot; menu has options for adding as a child of an existing item, note and priority</li>
-<li><span class="updateAugustHotkey">Ctrl</span> + click on filters for the opposite filter, such as &quot;Show only completed&quot;</li>
+<li><strong><span class="updateAugustHotkey">Ctrl</span> + click</strong> on filters for the opposite filter, such as &quot;Show only completed&quot;</li>
 <li><strong>Fixed</strong>: Notifications firing for children of completed items</li>
 <li><strong>Fixed</strong>: Issues with @soon, @later, and @someday appearing in the incorrect Agenda block</li>
 <li><strong>Fixed</strong>: Flat search hiding children of completed items</li>
@@ -404,7 +404,7 @@ iOS custom keyboards are now supported (iOS app update is in App Store review)
 Android app properly notifies if authorization failed
 Improved load time for multi-line items
 Some load errors or what appeared to be lost data were caused by a Moo.do document being in the Trash in Google Drive, so Moo.do does a better job at detecting that and can automatically fix it
-Added numbered hotkeys to Workspaces menu
+Added numbered hotkeys to Boards menu (open menu with Ctrl + B first)
 
 
 Gmail
@@ -426,6 +426,11 @@ Dark theme
 Help us improve
 
 As always, please let us know if you find any issues or how we can make our apps better for you. Thanks!
+
+
+    var els = document.getElementsByClassName('updateAsianLanguage');
+    var isMac = navigator.userAgent.indexOf('Mac') >= 0;
+    for (var i = 0; i 
 ]]></description>
       <pubDate>Fri, 23 Jun 2017 00:00:00 +1200</pubDate>
       <guid>http://www.moo.do/blog/asian-languages-and-fixes</guid>
@@ -439,7 +444,7 @@ As always, please let us know if you find any issues or how we can make our apps
 <li>Android app properly notifies if authorization failed</li>
 <li>Improved load time for multi-line items</li>
 <li>Some load errors or what appeared to be lost data were caused by a Moo.do document being in the Trash in Google Drive, so Moo.do does a better job at detecting that and can automatically fix it</li>
-<li>Added numbered hotkeys to Workspaces menu</li>
+<li>Added numbered hotkeys to Boards menu (open menu with <strong><span class="updateAsianLanguage">Ctrl</span> + B</strong> first)</li>
 </ul>
 
 <h1>Gmail</h1>
@@ -461,6 +466,15 @@ As always, please let us know if you find any issues or how we can make our apps
 <h1>Help us improve</h1>
 
 <p>As always, please let us know if you find any issues or how we can make our apps better for you. Thanks!</p>
+
+<script>
+    var els = document.getElementsByClassName('updateAsianLanguage');
+    var isMac = navigator.userAgent.indexOf('Mac') >= 0;
+    for (var i = 0; i < els.length; i ++)
+    {
+        els[i].textContent = (isMac ? 'Ctrl' : 'Alt');
+    }
+</script>
 ]]></content:encoded>
       <dc:date>2017-06-23T00:00:00+12:00</dc:date>
     </item>
@@ -474,7 +488,7 @@ As always, please let us know if you find any issues or how we can make our apps
 
 Top buttons moved into a sidebar. This makes it clearer what the buttons do and we think it’s prettier :). Toggle the sidebar with Cmd + Option + S on Mac and Ctrl + Shift + I on Windows or Linux, and you can still access the buttons by hotkey.
 Rearranged pane header. The titles are on the first row and search is on the second row, with the search box and filters split to make them more distinct.
-Improved workspace switching. Open the workspaces menu with Ctrl + W and use the arrow keys to switch between them.
+Improved workspace switching. Open the boards menu with Ctrl + B and use the arrow keys to switch between them.
 Many icon changes. We switched many old icons for newer, prettier icons from the Material Design icon set.
 
 
@@ -483,6 +497,11 @@ Many icon changes. We switched many old icons for newer, prettier icons from the
 Help us improve
 
 As always, please let us know if you find any issues or how we can make our apps better for you. Thanks!
+
+
+    var els = document.getElementsByClassName('updateDesignHotkey');
+    var isMac = navigator.userAgent.indexOf('Mac') >= 0;
+    for (var i = 0; i 
 
 
 .postImgUpdateDesign {
@@ -500,7 +519,7 @@ As always, please let us know if you find any issues or how we can make our apps
 <ul>
 <li><strong>Top buttons moved into a sidebar.</strong> This makes it clearer what the buttons do and we think it’s prettier :). Toggle the sidebar with <strong>Cmd + Option + S</strong> on Mac and <strong>Ctrl + Shift + I</strong> on Windows or Linux, and you can still access the buttons by hotkey.</li>
 <li><strong>Rearranged pane header.</strong> The titles are on the first row and search is on the second row, with the search box and filters split to make them more distinct.</li>
-<li><strong>Improved workspace switching.</strong> Open the workspaces menu with Ctrl + W and use the arrow keys to switch between them.</li>
+<li><strong>Improved workspace switching.</strong> Open the boards menu with <strong><span class="updateDesignHotkey">Ctrl</span> + B</strong> and use the arrow keys to switch between them.</li>
 <li><strong>Many icon changes.</strong> We switched many old icons for newer, prettier icons from the Material Design icon set.</li>
 </ul>
 
@@ -509,6 +528,15 @@ As always, please let us know if you find any issues or how we can make our apps
 <h1>Help us improve</h1>
 
 <p>As always, please let us know if you find any issues or how we can make our apps better for you. Thanks!</p>
+
+<script>
+    var els = document.getElementsByClassName('updateDesignHotkey');
+    var isMac = navigator.userAgent.indexOf('Mac') >= 0;
+    for (var i = 0; i < els.length; i ++)
+    {
+        els[i].textContent = (isMac ? 'Ctrl' : 'Alt');
+    }
+</script>
 
 <style>
 .postImgUpdateDesign {
