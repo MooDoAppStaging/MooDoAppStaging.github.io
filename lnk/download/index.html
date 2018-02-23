@@ -49,12 +49,15 @@
     <script>
         (function run()
         {
-            var url = 'https://github.com/MooDoApp/MooDoApp.github.io/releases/download/1.0.9/Moo.do-1.0.9-mac.zip',
-                userAgent = navigator.userAgent;
+            var userAgent = navigator.userAgent;
 
             if (userAgent.indexOf('Mac') !== -1)
             {
-                window.location = url;
+                window.location = 'https://github.com/MooDoApp/MooDoApp.github.io/releases/download/1.0.9/Moo.do-1.0.9-mac.zip';
+            }
+            else if (userAgent.indexOf('Windows') !== -1)
+            {
+                window.location = 'https://github.com/MooDoApp/MooDoApp.github.io/releases/download/1.0.9/Moo.do.Setup.1.0.9.exe';
             }
             else
             {
