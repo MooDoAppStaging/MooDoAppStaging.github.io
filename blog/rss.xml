@@ -45,10 +45,6 @@ And it just looks nicer.
 
 Additionally, each pane&#39;s view mode can be changed on the fly, to make it easy to view the project and search you&#39;re looking at in a different way.
 
-Single views
-
-At the top of the sidebar you&#39;ll see Today, Tasks, Calendar, and Email. These are special single views which for new users will be a more obvious way to navigate Moo.do&#39;s features. And for advanced users, it&#39;s a great way to quickly search for something without making unwanted changes to the current board.
-
 Hide when completed
 
 
@@ -69,11 +65,7 @@ Search is now a simple box that opens a popup with all the options, and helpful 
 
 Sidebar and top bar
 
-
-The sidebar is now resizeable and can be fully hidden.
-The action buttons (add pane, new item, compose email) have been moved into a new bar at the top
-The top bar has a button to change the current board and displays sync state when the sidebar is closed
-
+The sidebar is now resizeable and can be fully hidden. When the sidebar is hidden, the boards and buttons are moved into a new bar at the top.
 
 Board management
 
@@ -152,7 +144,7 @@ Please let us know if you find any issues or have any suggestions. The best way 
 <h2>Tag view</h2>
 
 <p>For those people who like to organize with Tags (as context for GTD or to separate phases of a projet), the Tag view makes it easy to view projects laid out by task and drag items between tag blocks.
-<img class="postImg postImgBetaSmall" src="/blog/img/update-desktop-beta3.png" style="height: 500px;" /></p>
+<img class="postImg postImgBeta" src="/blog/img/update-desktop-beta3.png" /></p>
 
 <h2>Agenda view</h2>
 
@@ -163,10 +155,6 @@ Please let us know if you find any issues or have any suggestions. The best way 
 </ul>
 
 <p>Additionally, each pane&#39;s view mode can be changed on the fly, to make it easy to view the project and search you&#39;re looking at in a different way.</p>
-
-<h1>Single views</h1>
-
-<p>At the top of the sidebar you&#39;ll see <b>Today</b>, <b>Tasks</b>, <b>Calendar</b>, and <b>Email</b>. These are special single views which for new users will be a more obvious way to navigate Moo.do&#39;s features. And for advanced users, it&#39;s a great way to quickly search for something without making unwanted changes to the current board.</p>
 
 <h1>Hide when completed</h1>
 
@@ -188,11 +176,7 @@ Please let us know if you find any issues or have any suggestions. The best way 
 
 <h1>Sidebar and top bar</h1>
 
-<ul>
-<li>The sidebar is now resizeable and can be fully hidden.</li>
-<li>The action buttons (add pane, new item, compose email) have been moved into a new bar at the top</li>
-<li>The top bar has a button to change the current board and displays sync state when the sidebar is closed</li>
-</ul>
+<p>The sidebar is now resizeable and can be fully hidden. When the sidebar is hidden, the boards and buttons are moved into a new bar at the top.</p>
 
 <h1>Board management</h1>
 
