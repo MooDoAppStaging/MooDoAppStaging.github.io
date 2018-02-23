@@ -30,9 +30,9 @@ While we love the Outline for quickly laying out projects and tasks, it&#39;s no
 Moo.do&#39;s new Project View retains all the power of the Outline with collapsible nodes, but is laid out in a more familiar view grouped by project.
 
 
-Tag view
+Tag, Contacts, Priority views
 
-For those people who like to organize with Tags (as context for GTD or to separate phases of a projet), the Tag view makes it easy to view projects laid out by task and drag items between tag blocks.
+For those people who like to organize with Tags (as context for GTD or to separate phases of a project), the Tag view makes it easy to view projects laid out by task and drag items between tag blocks. It&#39;s similarly easy to manage and reorganize tasks by contact or priority.
 
 
 Agenda view
@@ -141,9 +141,9 @@ Please let us know if you find any issues or have any suggestions. The best way 
 <p>Moo.do&#39;s new Project View retains all the power of the Outline with collapsible nodes, but is laid out in a more familiar view grouped by project.
 <img class="postImg postImgBeta" src="/blog/img/update-desktop-beta2.png" /></p>
 
-<h2>Tag view</h2>
+<h2>Tag, Contacts, Priority views</h2>
 
-<p>For those people who like to organize with Tags (as context for GTD or to separate phases of a projet), the Tag view makes it easy to view projects laid out by task and drag items between tag blocks.
+<p>For those people who like to organize with Tags (as context for GTD or to separate phases of a project), the Tag view makes it easy to view projects laid out by task and drag items between tag blocks. It&#39;s similarly easy to manage and reorganize tasks by contact or priority.
 <img class="postImg postImgBeta" src="/blog/img/update-desktop-beta3.png" /></p>
 
 <h2>Agenda view</h2>
