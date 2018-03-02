@@ -1,4 +1,4 @@
-var CacheName = 'moodo-cache-1519981779259';
+var CacheName = 'moodo-cache-1519984132852';
 
 self.addEventListener('install', function (e)
 {
@@ -8,13 +8,14 @@ self.addEventListener('install', function (e)
         {
             return cache.addAll([
                 '/app/',
+                '/app/index-1519984132852.html',
                 '/favicon.ico',
-                '/js/main-min-1519981779259.js',
-                '/js/preload-min-1519981779259.js',
+                '/js/main-min-1519984132852.js',
+                '/js/preload-min-1519984132852.js',
                 '/js/rollbar-min.js',
-                '/css/app-min-1519981779259.css',
-                '/css/fonts/fonticons-1519981779259.woff',
-                '/css/fonts/fonticons-1519981779259.ttf',
+                '/css/app-min-1519984132852.css',
+                '/css/fonts/fonticons-1519984132852.woff',
+                '/css/fonts/fonticons-1519984132852.ttf',
                 '/img/stripe.png',
                 '/img/apple-touch-icon.png',
                 '/img/logoForWhite600.png',
@@ -47,10 +48,22 @@ self.addEventListener('install', function (e)
     );
 });
 
+function endsWith(str, val)
+{
+    return str.indexOf(val, str.length - val.length) !== -1;
+}
+
 self.addEventListener('fetch', function (event)
 {
+    var url = event.request.url;
+
+    if (url.endsWith('/app/') || url.indexOf('/app/#') > 0)
+    {
+        url = url.replace('/app/', '/app/index-BUILD_TIME.html');
+    }
+
     event.respondWith(
-        caches.match(event.request)
+        caches.match(url)
             .then(function (response)
             {
                 // Cache hit - return response
