@@ -1,18 +1,20 @@
+var CacheName = 'moodo-cache-1519980604348';
+
 self.addEventListener('install', function (e)
 {
     self.skipWaiting();
     e.waitUntil(
-        caches.open('moodo-v1').then(function (cache)
+        caches.open(CacheName).then(function (cache)
         {
             return cache.addAll([
                 '/app/',
                 '/favicon.ico',
-                '/js/main-min-1519979109447.js',
-                '/js/preload-min-1519979109447.js',
+                '/js/main-min-1519980604348.js',
+                '/js/preload-min-1519980604348.js',
                 '/js/rollbar-min.js',
-                '/css/app-min-1519979109447.css',
-                '/css/fonts/fonticons-1519979109447.woff',
-                '/css/fonts/fonticons-1519979109447.ttf',
+                '/css/app-min-1519980604348.css',
+                '/css/fonts/fonticons-1519980604348.woff',
+                '/css/fonts/fonticons-1519980604348.ttf',
                 '/img/stripe.png',
                 '/img/apple-touch-icon.png',
                 '/img/logoForWhite600.png',
@@ -59,5 +61,27 @@ self.addEventListener('fetch', function (event)
                 return fetch(event.request);
             }
             )
+    );
+});
+
+self.addEventListener('activate', function (event)
+{
+    event.waitUntil(
+        caches.keys().then(function (cacheNames)
+        {
+            return Promise.all(
+                cacheNames.filter(function (cacheName)
+                {
+                    console.log('delete', cacheName, cacheName !== CacheName);
+                    return cacheName !== CacheName;
+                    // Return true if you want to remove this cache,
+                    // but remember that caches are shared across
+                    // the whole origin
+                }).map(function (cacheName)
+                {
+                    return caches.delete(cacheName);
+                })
+            );
+        })
     );
 });
