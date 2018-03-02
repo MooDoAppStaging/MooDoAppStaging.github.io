@@ -1,4 +1,4 @@
-var CacheName = 'moodo-cache-1519980604348';
+var CacheName = 'moodo-cache-1519980907352';
 
 self.addEventListener('install', function (e)
 {
@@ -9,12 +9,12 @@ self.addEventListener('install', function (e)
             return cache.addAll([
                 '/app/',
                 '/favicon.ico',
-                '/js/main-min-1519980604348.js',
-                '/js/preload-min-1519980604348.js',
+                '/js/main-min-1519980907352.js',
+                '/js/preload-min-1519980907352.js',
                 '/js/rollbar-min.js',
-                '/css/app-min-1519980604348.css',
-                '/css/fonts/fonticons-1519980604348.woff',
-                '/css/fonts/fonticons-1519980604348.ttf',
+                '/css/app-min-1519980907352.css',
+                '/css/fonts/fonticons-1519980907352.woff',
+                '/css/fonts/fonticons-1519980907352.ttf',
                 '/img/stripe.png',
                 '/img/apple-touch-icon.png',
                 '/img/logoForWhite600.png',
