@@ -1,7 +1,5 @@
-var CacheName = 'moodo-cache-1520053042325',
+var CacheName = 'moodo-cache-1520053763999',
     CacheNameCommon = 'moodo-cache-common';
-
-
 
 self.addEventListener('install', function (e)
 {
@@ -12,48 +10,50 @@ self.addEventListener('install', function (e)
         {
             return cache.addAll([
                 '/app/',
-                '/app/index-1520053042325.html',
-                '/js/main-min-1520053042325.js',
-                '/js/preload-min-1520053042325.js',
-                '/css/app-min-1520053042325.css',
-                '/css/fonts/fonticons-1520053042325.woff',
-                '/css/fonts/fonticons-1520053042325.ttf'
+                '/app/index-1520053763999.html',
+                '/js/main-min-1520053763999.js',
+                '/js/preload-min-1520053763999.js',
+                '/css/app-min-1520053763999.css',
+                '/css/fonts/fonticons-1520053763999.woff',
+                '/css/fonts/fonticons-1520053763999.ttf'
             ]);
         }).then(caches.open(CacheNameCommon).then(function (cache)
-            {
-                return cache.addAll([
-                    '/favicon.ico',
-                    '/js/rollbar-min.js',
-                    '/img/stripe.png',
-                    '/img/apple-touch-icon.png',
-                    '/img/logoForWhite600.png',
-                    '/img/btn_google_signin_dark_normal_web@2x.png',
-                    '/img/btn_google_signin_dark_focus_web@2x.png',
-                    '/img/btn_google_signin_dark_pressed_web@2x.png',
-                    '/img/plugin-gdocs.png',
-                    '/img/plugin-gsheets.png',
-                    '/img/plugin-gslides.png',
-                    '/img/plugin-image.png',
-                    '/img/plugin-gcal.png',
-                    '/img/plugin-mailbird.png',
-                    '/img/plugin-gdrive.png',
-                    '/img/plugin-gmail.png',
-                    '/img/plugin-bear.png',
-                    '/data/about.json',
-                    '/data/beta-example.json',
-                    '/data/blog-drive.json',
-                    '/data/blog-proj-man.json',
-                    '/data/blog-scrum.json',
-                    '/data/blog-travel.json',
-                    '/data/demo.json',
-                    '/data/landing-email.json',
-                    '/data/landing-old-intro.json',
-                    '/data/landing-style.json',
-                    '/data/landing-top.json',
-                    '/data/press.json'
-                ]);
-            })
-        )
+        {
+            return cache.addAll([
+                '/favicon.ico',
+                '/js/rollbar-min.js',
+                '/img/stripe.png',
+                '/img/apple-touch-icon.png',
+                '/img/logoForWhite600.png',
+                '/img/btn_google_signin_dark_normal_web@2x.png',
+                '/img/btn_google_signin_dark_focus_web@2x.png',
+                '/img/btn_google_signin_dark_pressed_web@2x.png',
+                '/img/plugin-gdocs.png',
+                '/img/plugin-gsheets.png',
+                '/img/plugin-gslides.png',
+                '/img/plugin-image.png',
+                '/img/plugin-gcal.png',
+                '/img/plugin-mailbird.png',
+                '/img/plugin-gdrive.png',
+                '/img/plugin-gmail.png',
+                '/img/plugin-bear.png',
+                '/data/about.json',
+                '/data/beta-example.json',
+                '/data/blog-drive.json',
+                '/data/blog-proj-man.json',
+                '/data/blog-scrum.json',
+                '/data/blog-travel.json',
+                '/data/demo.json',
+                '/data/landing-email.json',
+                '/data/landing-old-intro.json',
+                '/data/landing-style.json',
+                '/data/landing-top.json',
+                '/data/press.json'
+            ]);
+        })).then(function ()
+        {
+            return self.skipWaiting();
+        })
     );
 });
 
@@ -66,7 +66,7 @@ self.addEventListener('fetch', function (event)
 
     if (urlObj.origin === location.origin && urlObj.pathname === pathname)
     {
-        url = url.replace(pathname, pathname + 'index-1520053042325.html');
+        url = url.replace(pathname, pathname + 'index-1520053763999.html');
     }
 
     event.respondWith(
