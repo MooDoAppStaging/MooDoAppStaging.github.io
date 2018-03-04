@@ -1,4 +1,4 @@
-var CacheName = 'moodo-cache-1520167354093',
+var CacheName = 'moodo-cache-1520168052859',
     CacheNameCommon = 'moodo-cache-common';
 
 function notifyClient(text)
@@ -14,18 +14,20 @@ function notifyClient(text)
 
 self.addEventListener('install', function (e)
 {
+    console.log('Installing new Service Worker');
+
     self.skipWaiting();
     e.waitUntil(
         caches.open(CacheName).then(function (cache)
         {
             return cache.addAll([
                 '/app/',
-                '/app/index-1520167354093.html',
-                '/js/main-min-1520167354093.js',
-                '/js/preload-min-1520167354093.js',
-                '/css/app-min-1520167354093.css',
-                '/css/fonts/fonticons-1520167354093.woff',
-                '/css/fonts/fonticons-1520167354093.ttf'
+                '/app/index-1520168052859.html',
+                '/js/main-min-1520168052859.js',
+                '/js/preload-min-1520168052859.js',
+                '/css/app-min-1520168052859.css',
+                '/css/fonts/fonticons-1520168052859.woff',
+                '/css/fonts/fonticons-1520168052859.ttf'
             ]);
         }).then(caches.open(CacheNameCommon).then(function (cache)
         {
@@ -78,7 +80,7 @@ self.addEventListener('fetch', function (event)
 
     if (urlObj.origin === location.origin && urlObj.pathname === pathname)
     {
-        url = url.replace(pathname, pathname + 'index-1520167354093.html');
+        url = url.replace(pathname, pathname + 'index-1520168052859.html');
     }
 
     event.respondWith(
@@ -98,7 +100,7 @@ self.addEventListener('fetch', function (event)
 
 self.addEventListener('activate', function (event)
 {
-    console.log('activate');
+    console.log('Activating new Service Worker');
 
     event.waitUntil(
         caches.keys().then(function (cacheNames)
@@ -106,7 +108,7 @@ self.addEventListener('activate', function (event)
             return Promise.all(
                 cacheNames.filter(function (cacheName)
                 {
-                    console.log('delete', cacheName, cacheName !== CacheName && cacheName !== CacheNameCommon);
+                    // console.log('delete', cacheName, cacheName !== CacheName && cacheName !== CacheNameCommon);
                     return cacheName !== CacheName && cacheName !== CacheNameCommon;
                 }).map(function (cacheName)
                 {
