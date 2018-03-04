@@ -1,21 +1,31 @@
-var CacheName = 'moodo-cache-1520055019622',
+var CacheName = 'moodo-cache-1520142706727',
     CacheNameCommon = 'moodo-cache-common';
+
+function notifyClient(text)
+{
+    self.clients.matchAll({ includeUncontrolled: true }).then(function (all)
+    {
+        all.map(function (client)
+        {
+            client.postMessage('ServiceWorker_' + text);
+        });
+    });
+}
 
 self.addEventListener('install', function (e)
 {
-    console.log('install');
     self.skipWaiting();
     e.waitUntil(
         caches.open(CacheName).then(function (cache)
         {
             return cache.addAll([
                 '/app/',
-                '/app/index-1520055019622.html',
-                '/js/main-min-1520055019622.js',
-                '/js/preload-min-1520055019622.js',
-                '/css/app-min-1520055019622.css',
-                '/css/fonts/fonticons-1520055019622.woff',
-                '/css/fonts/fonticons-1520055019622.ttf'
+                '/app/index-1520142706727.html',
+                '/js/main-min-1520142706727.js',
+                '/js/preload-min-1520142706727.js',
+                '/css/app-min-1520142706727.css',
+                '/css/fonts/fonticons-1520142706727.woff',
+                '/css/fonts/fonticons-1520142706727.ttf'
             ]);
         }).then(caches.open(CacheNameCommon).then(function (cache)
         {
@@ -52,6 +62,8 @@ self.addEventListener('install', function (e)
             ]);
         })).then(function ()
         {
+            notifyClient('Installed');
+
             return self.skipWaiting();
         })
     );
@@ -66,7 +78,7 @@ self.addEventListener('fetch', function (event)
 
     if (urlObj.origin === location.origin && urlObj.pathname === pathname)
     {
-        url = url.replace(pathname, pathname + 'index-1520055019622.html');
+        url = url.replace(pathname, pathname + 'index-1520142706727.html');
     }
 
     event.respondWith(
@@ -104,11 +116,5 @@ self.addEventListener('activate', function (event)
         })
     );
 
-    self.clients.matchAll({ includeUncontrolled: true }).then(function (all)
-    {
-        all.map(function (client)
-        {
-            client.postMessage('ServiceWorker_Activated');
-        });
-    });
+    notifyClient('Activated');
 });
