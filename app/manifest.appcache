@@ -1,14 +1,14 @@
 CACHE MANIFEST
-# ##1520225846801##
+# 1520229983365
 
 CACHE:
-/js/main-min-1520225846801.js
-/js/preload-min-1520225846801.js
+/js/main-min.js
+/js/preload-min.js
 /js/rollbar-min.js
 
-/css/app-min-1520225846801.css
-/css/fonts/fonticons-1520225846801.woff
-/css/fonts/fonticons-1520225846801.ttf
+/css/app-min.css
+/css/fonts/fonticons.ttf
+/css/fonts/fonticons.woff
 
 /img/stripe.png
 
