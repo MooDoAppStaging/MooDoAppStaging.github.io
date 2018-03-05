@@ -1,4 +1,4 @@
-var CacheName = 'moodo-cache-1520177478073',
+var CacheName = 'moodo-cache-1520225210943',
     CacheNameCommon = 'moodo-cache-common';
 
 function notifyClient(text)
@@ -22,12 +22,12 @@ self.addEventListener('install', function (e)
         {
             return cache.addAll([
                 '/app/',
-                '/app/index-1520177478073.html',
-                '/js/main-min-1520177478073.js',
-                '/js/preload-min-1520177478073.js',
-                '/css/app-min-1520177478073.css',
-                '/css/fonts/fonticons-1520177478073.woff',
-                '/css/fonts/fonticons-1520177478073.ttf'
+                '/app/index-1520225210943.html',
+                '/js/main-min-1520225210943.js',
+                '/js/preload-min-1520225210943.js',
+                '/css/app-min-1520225210943.css',
+                '/css/fonts/fonticons-1520225210943.woff',
+                '/css/fonts/fonticons-1520225210943.ttf'
             ]);
         }).then(caches.open(CacheNameCommon).then(function (cache)
         {
@@ -80,22 +80,25 @@ self.addEventListener('fetch', function (event)
 
     if (urlObj.origin === location.origin && urlObj.pathname === pathname)
     {
-        url = url.replace(pathname, pathname + 'index-1520177478073.html');
+        url = url.replace(pathname, pathname + 'index-1520225210943.html');
     }
 
-    event.respondWith(
-        caches.match(url)
-            .then(function (response)
-            {
-                // Cache hit - return response
-                if (response)
+    if (urlObj.origin === location.origin)
+    {
+        event.respondWith(
+            caches.match(url)
+                .then(function (response)
                 {
-                    return response;
+                    // Cache hit - return response
+                    if (response)
+                    {
+                        return response;
+                    }
+                    return fetch(event.request);
                 }
-                return fetch(event.request);
-            }
-            ).catch(function () { })
-    );
+                ).catch(function () { })
+        );
+    }
 });
 
 self.addEventListener('activate', function (event)
