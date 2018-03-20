@@ -1,4 +1,4 @@
-var CacheName = 'moodo-cache-1521441140043',
+var CacheName = 'moodo-cache-1521538294945',
     CacheNameCommon = 'moodo-cache-common';
 
 function notifyClient(text)
@@ -22,12 +22,13 @@ self.addEventListener('install', function (e)
         {
             return cache.addAll([
                 '/app/',
-                '/app/index-1521441140043.html',
-                '/js/main-min-1521441140043.js',
-                '/js/preload-min-1521441140043.js',
-                '/css/app-min-1521441140043.css',
-                '/css/fonts/fonticons-1521441140043.woff',
-                '/css/fonts/fonticons-1521441140043.ttf'
+                '/app/index-1521538294945.html',
+                '/js/vendor-1521538294945.js',
+                '/js/main-min-1521538294945.js',
+                '/js/preload-min-1521538294945.js',
+                '/css/app-min-1521538294945.css',
+                '/css/fonts/fonticons-1521538294945.woff',
+                '/css/fonts/fonticons-1521538294945.ttf'
             ]);
         }).then(caches.open(CacheNameCommon).then(function (cache)
         {
@@ -48,19 +49,7 @@ self.addEventListener('install', function (e)
                 '/img/plugin-mailbird.png',
                 '/img/plugin-gdrive.png',
                 '/img/plugin-gmail.png',
-                '/img/plugin-bear.png',
-                '/data/about.json',
-                '/data/beta-example.json',
-                '/data/blog-drive.json',
-                '/data/blog-proj-man.json',
-                '/data/blog-scrum.json',
-                '/data/blog-travel.json',
-                '/data/demo.json',
-                '/data/landing-email.json',
-                '/data/landing-old-intro.json',
-                '/data/landing-style.json',
-                '/data/landing-top.json',
-                '/data/press.json'
+                '/img/plugin-bear.png'
             ]);
         })).then(function ()
         {
@@ -82,7 +71,7 @@ self.addEventListener('fetch', function (event)
     {
         if (urlObj.pathname === pathname)
         {
-            url = url.replace(pathname, pathname + 'index-1521441140043.html');
+            url = url.replace(pathname, pathname + 'index-1521538294945.html');
         }
 
         event.respondWith(
