@@ -1,4 +1,4 @@
-var CacheName = 'moodo-cache-1521538294945',
+var CacheName = 'moodo-cache-1521699980649',
     CacheNameCommon = 'moodo-cache-common';
 
 function notifyClient(text)
@@ -22,13 +22,15 @@ self.addEventListener('install', function (e)
         {
             return cache.addAll([
                 '/app/',
-                '/app/index-1521538294945.html',
-                '/js/vendor-1521538294945.js',
-                '/js/main-min-1521538294945.js',
-                '/js/preload-min-1521538294945.js',
-                '/css/app-min-1521538294945.css',
-                '/css/fonts/fonticons-1521538294945.woff',
-                '/css/fonts/fonticons-1521538294945.ttf'
+                '/app/index-1521699980649.html',
+                '/js/vendor-1521699980649.js',
+                '/js/delayedUI-1521699980649.js',
+                '/js/dimport-1521699980649.js',
+                '/js/main-min-1521699980649.js',
+                '/js/preload-min-1521699980649.js',
+                '/css/app-min-1521699980649.css',
+                '/css/fonts/fonticons-1521699980649.woff',
+                '/css/fonts/fonticons-1521699980649.ttf'
             ]);
         }).then(caches.open(CacheNameCommon).then(function (cache)
         {
@@ -71,21 +73,22 @@ self.addEventListener('fetch', function (event)
     {
         if (urlObj.pathname === pathname)
         {
-            url = url.replace(pathname, pathname + 'index-1521538294945.html');
+            url = url.replace(pathname, pathname + 'index-1521699980649.html');
         }
 
         event.respondWith(
-            caches.match(url)
-                .then(function (response)
+            caches.match(url).then(function (response)
+            {
+                return response || fetch(event.request).then(function (response2)
                 {
-                    // Cache hit - return response
-                    if (response)
+                    var response3 = response2.clone();
+                    caches.open(CacheNameCommon).then(function (cache)
                     {
-                        return response;
-                    }
-                    return fetch(event.request);
-                }
-                ).catch(function () { })
+                        cache.put(event.request, response3.clone());
+                    })
+                    return response2;
+                });
+            })
         );
     }
 
@@ -101,7 +104,6 @@ self.addEventListener('activate', function (event)
             return Promise.all(
                 cacheNames.filter(function (cacheName)
                 {
-                    // console.log('delete', cacheName, cacheName !== CacheName && cacheName !== CacheNameCommon);
                     return cacheName !== CacheName && cacheName !== CacheNameCommon;
                 }).map(function (cacheName)
                 {
