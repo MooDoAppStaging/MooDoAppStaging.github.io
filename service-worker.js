@@ -1,4 +1,4 @@
-var CacheName = 'moodo-cache-1523861539044',
+var CacheName = 'moodo-cache-1523941654030',
     CacheNameCommon = 'moodo-cache-common';
 
 function notifyClient(text)
@@ -22,15 +22,15 @@ self.addEventListener('install', function (e)
         {
             return cache.addAll([
                 '/app/',
-                '/app/index-1523861539044.html',
-                '/js/vendor-1523861539044.js',
-                '/js/delayedUI-1523861539044.js',
-                '/js/dimport-1523861539044.js',
-                '/js/main-min-1523861539044.js',
-                '/js/preload-min-1523861539044.js',
-                '/css/app-min-1523861539044.css',
-                '/css/fonts/fonticons-1523861539044.woff',
-                '/css/fonts/fonticons-1523861539044.ttf'
+                '/app/index-1523941654030.html',
+                '/js/vendor-1523941654030.js',
+                '/js/delayedUI-1523941654030.js',
+                '/js/dimport-1523941654030.js',
+                '/js/main-min-1523941654030.js',
+                '/js/preload-min-1523941654030.js',
+                '/css/app-min-1523941654030.css',
+                '/css/fonts/fonticons-1523941654030.woff',
+                '/css/fonts/fonticons-1523941654030.ttf'
             ]);
         }).then(caches.open(CacheNameCommon).then(function (cache)
         {
@@ -51,7 +51,13 @@ self.addEventListener('install', function (e)
                 '/img/plugin-mailbird.png',
                 '/img/plugin-gdrive.png',
                 '/img/plugin-gmail.png',
-                '/img/plugin-bear.png'
+                '/img/plugin-bear.png',
+                '/js/lib/simplemde/font-awesome.min.css',
+                '/js/lib/simplemde/fontawesome-webfont.woff',
+                '/js/lib/simplemde/fontawesome-webfont.woff2',
+                '/js/lib/simplemde/simplemde.min.css',
+                '/js/lib/simplemde/simplemde.min.js'
+
             ]);
         })).then(function ()
         {
@@ -69,11 +75,11 @@ self.addEventListener('fetch', function (event)
     const urlObj = new URL(event.request.url);
     var url = event.request.url;
 
-    if (urlObj.origin === location.origin)
+    if (urlObj.origin === location.origin || urlObj.indexOf('https://cdn.jsdelivr.net/codemirror.spell-checker') === 0)
     {
         if (urlObj.pathname === pathname)
         {
-            url = url.replace(pathname, pathname + 'index-1523861539044.html');
+            url = url.replace(pathname, pathname + 'index-1523941654030.html');
         }
 
         event.respondWith(
