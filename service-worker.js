@@ -1,4 +1,4 @@
-var CacheName = 'moodo-cache-1523941654030',
+var CacheName = 'moodo-cache-1523954329495',
     CacheNameCommon = 'moodo-cache-common';
 
 function notifyClient(text)
@@ -22,19 +22,19 @@ self.addEventListener('install', function (e)
         {
             return cache.addAll([
                 '/app/',
-                '/app/index-1523941654030.html',
-                '/js/vendor-1523941654030.js',
-                '/js/delayedUI-1523941654030.js',
-                '/js/dimport-1523941654030.js',
-                '/js/main-min-1523941654030.js',
-                '/js/preload-min-1523941654030.js',
-                '/css/app-min-1523941654030.css',
-                '/css/fonts/fonticons-1523941654030.woff',
-                '/css/fonts/fonticons-1523941654030.ttf'
+                '/app/index-1523954329495.html',
+                '/js/vendor-1523954329495.js',
+                '/js/delayedUI-1523954329495.js',
+                '/js/dimport-1523954329495.js',
+                '/js/main-min-1523954329495.js',
+                '/js/preload-min-1523954329495.js',
+                '/css/app-min-1523954329495.css',
+                '/css/fonts/fonticons-1523954329495.woff',
+                '/css/fonts/fonticons-1523954329495.ttf'
             ]);
-        }).then(caches.open(CacheNameCommon).then(function (cache)
+        }).then(caches.open(CacheNameCommon).then(function (cacheCommon)
         {
-            return cache.addAll([
+            return cacheCommon.addAll([
                 '/favicon.ico',
                 '/js/rollbar-min.js',
                 '/img/stripe.png',
@@ -75,11 +75,11 @@ self.addEventListener('fetch', function (event)
     const urlObj = new URL(event.request.url);
     var url = event.request.url;
 
-    if (urlObj.origin === location.origin || urlObj.indexOf('https://cdn.jsdelivr.net/codemirror.spell-checker') === 0)
+    if (urlObj.origin === location.origin || urlObj.href.indexOf('https://cdn.jsdelivr.net/codemirror.spell-checker') === 0)
     {
         if (urlObj.pathname === pathname)
         {
-            url = url.replace(pathname, pathname + 'index-1523941654030.html');
+            url = url.replace(pathname, pathname + 'index-1523954329495.html');
         }
 
         event.respondWith(
