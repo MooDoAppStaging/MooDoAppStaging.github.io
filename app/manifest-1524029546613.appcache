@@ -1,17 +1,17 @@
 CACHE MANIFEST
-# ##1523979628823##
+# ##1524029546613##
 
 CACHE:
-/js/main-min-1523979628823.js
-/js/vendor-1523979628823.js
-/js/delayedUI-1523979628823.js
-/js/dimport-1523979628823.js
-/js/preload-min-1523979628823.js
+/js/main-min-1524029546613.js
+/js/vendor-1524029546613.js
+/js/delayedUI-1524029546613.js
+/js/dimport-1524029546613.js
+/js/preload-min-1524029546613.js
 /js/rollbar-min.js
 
-/css/app-min-1523979628823.css
-/css/fonts/fonticons-1523979628823.woff
-/css/fonts/fonticons-1523979628823.ttf
+/css/app-min-1524029546613.css
+/css/fonts/fonticons-1524029546613.woff
+/css/fonts/fonticons-1524029546613.ttf
 
 /img/stripe.png
 
@@ -31,11 +31,6 @@ CACHE:
 /img/plugin-gdrive.png
 /img/plugin-gmail.png
 /img/plugin-bear.png
-
-/js/lib/simplemde/font-awesome.min.css
-/js/lib/simplemde/fontawesome-webfont.woff
-/js/lib/simplemde/simplemde.min.css
-/js/lib/simplemde/simplemde.min.js
 
 NETWORK:
 *
