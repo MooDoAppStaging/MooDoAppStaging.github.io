@@ -14,7 +14,7 @@
       <link>http://www.moo.do/blog/desktop-beta</link>
       <description><![CDATA[Thanks for checking out the beta! The main goals of these changes are to make Moo.do more intuitive for new users and to focus on being a killer task management app.
 
-You can use the beta version of the web app at https://beta.moo.do/app/ or download the beta version of the MacWindows app at https://beta.moo.do/download/. In the app you will see a &quot;Use beta version&quot; checkbox in the Moo.doFile menu to toggle between the beta version and the normal version.
+You can use the beta version of the web app at https://beta.moo.do/web/ or download the beta version of the MacWindows app at https://beta.moo.do/download/. In the app you will see a &quot;Use beta version&quot; checkbox in the Moo.doFile menu to toggle between the beta version and the normal version. You may need to press Alt to open the File menu.
 
 New design
 
@@ -125,7 +125,7 @@ Please let us know if you find any issues or have any suggestions. The best way 
       <guid>http://www.moo.do/blog/desktop-beta</guid>
       <content:encoded><![CDATA[<p>Thanks for checking out the beta! The main goals of these changes are to make Moo.do more intuitive for new users and to focus on being a killer task management app.</p>
 
-<p>You can use the beta version of the web app at <a href="https://beta.moo.do/app/">https://beta.moo.do/app/</a><span class="onlyMac"> or download the beta version of the <span class="onlyMac">Mac</span><span class="onlyWin">Windows</span> app at <a href="https://beta.moo.do/download/">https://beta.moo.do/download/</a>. In the app you will see a &quot;Use beta version&quot; checkbox in the <span class="onlyMac">Moo.do</span><span class="onlyWin">File</span> menu to toggle between the beta version and the normal version</span>.</p>
+<p>You can use the beta version of the web app at <a href="https://beta.moo.do/web/">https://beta.moo.do/web/</a> or download the beta version of the <span class="onlyMac">Mac</span><span class="onlyWin">Windows</span> app at <a href="https://beta.moo.do/download/">https://beta.moo.do/download/</a>. In the app you will see a &quot;Use beta version&quot; checkbox in the <span class="onlyMac">Moo.do</span><span class="onlyWin">File</span> menu to toggle between the beta version and the normal version.<span class="onlyWin"> You may need to press Alt to open the File menu.</span></p>
 
 <h1>New design</h1>
 
@@ -1170,27 +1170,27 @@ window.__addDemos(
 [
     {
         id: 'demoOrganization',
-        src: '/app/#demo=true&touch=false&data=blog-scrum.0&script=none&dmode=0x2b9&panes=1',
+        src: '/web/#demo=true&touch=false&data=blog-scrum.0&script=none&dmode=0x2b9&panes=1',
         imgs: [{ src: '/img/ss/blog/scrum/demoOrganization.png' }]
     },
     {
         id: 'demoThreePanes',
-        src: '/app/#demo=true&touch=false&data=blog-scrum.1&panes=1,,todo:1,,progress:1,,testing&script=none&dmode=0xAb9',
+        src: '/web/#demo=true&touch=false&data=blog-scrum.1&panes=1,,todo:1,,progress:1,,testing&script=none&dmode=0xAb9',
         imgs: [{ src: '/img/ss/blog/scrum/demoThreePanes.png' }]
     },
     {
         id: 'demoAssign',
-        src: '/app/#demo=true&touch=false&data=blog-scrum.1&panes=1,,progress:1,' + encodeURIComponent('#J') + ',progress&script=none&dmode=0x2b9',
+        src: '/web/#demo=true&touch=false&data=blog-scrum.1&panes=1,,progress:1,' + encodeURIComponent('#J') + ',progress&script=none&dmode=0x2b9',
         imgs: [{ src: '/img/ss/blog/scrum/demoAssign.png' }]
     },
     {
         id: 'demoAgenda',
-        src: '/app/#demo=true&touch=false&data=blog-scrum.1&panes=2:2,#J&script=none&dmode=0x2b9',
+        src: '/web/#demo=true&touch=false&data=blog-scrum.1&panes=2:2,#J&script=none&dmode=0x2b9',
         imgs: [{ src: '/img/ss/blog/scrum/demoAgenda.png' }]
     },
     {
         id: 'demoPersonal',
-        src: '/app/#demo=true&touch=false&data=blog-scrum.1&panes=1,' + encodeURIComponent('#Android') + ':1,' + encodeURIComponent('#J ! -//') + '&script=none&dmode=0x2b9',
+        src: '/web/#demo=true&touch=false&data=blog-scrum.1&panes=1,' + encodeURIComponent('#Android') + ':1,' + encodeURIComponent('#J ! -//') + '&script=none&dmode=0x2b9',
         imgs: [{ src: '/img/ss/blog/scrum/demoPersonal.png' }]
     }
 ]);
@@ -1367,22 +1367,22 @@ window.__addDemos(
 [
     {
         id: 'demoOrganization',
-        src: '/app/#demo=true&touch=false&data=blog-proj-man.0&script=none&dmode=0x2b9&panes=1',
+        src: '/web/#demo=true&touch=false&data=blog-proj-man.0&script=none&dmode=0x2b9&panes=1',
         imgs: [{ src: '/img/ss/blog/project-management/demoOrganization.png' }]
     },
     {
         id: 'demoPanes1',
-        src: '/app/#demo=true&touch=false&data=blog-proj-man.1&panes=1:1,' + encodeURIComponent('-// -#punt') + ',focusRoot&script=none&dmode=0x2b9',
+        src: '/web/#demo=true&touch=false&data=blog-proj-man.1&panes=1:1,' + encodeURIComponent('-// -#punt') + ',focusRoot&script=none&dmode=0x2b9',
         imgs: [{ src: '/img/ss/blog/project-management/demoPanes1.png' }]
     },
     {
         id: 'demoPanes2',
-        src: '/app/#demo=true&touch=false&data=blog-proj-man.1&panes=1,' + encodeURIComponent('-// -#punt #J') + ',focusRoot:1,' + encodeURIComponent('-// -#punt #J !!') + ',focusRoot&script=none&dmode=0x2b9',
+        src: '/web/#demo=true&touch=false&data=blog-proj-man.1&panes=1,' + encodeURIComponent('-// -#punt #J') + ',focusRoot:1,' + encodeURIComponent('-// -#punt #J !!') + ',focusRoot&script=none&dmode=0x2b9',
         imgs: [{ src: '/img/ss/blog/project-management/demoPanes2.png' }]
     },
     {
         id: 'demoDiscussion',
-        src: '/app/#demo=true&touch=false&data=blog-proj-man.2&script=none&dmode=0x2b9&panes=1',
+        src: '/web/#demo=true&touch=false&data=blog-proj-man.2&script=none&dmode=0x2b9&panes=1',
         imgs: [{ src: '/img/ss/blog/project-management/demoDiscussion.png' }]
     }
 ]);
@@ -3011,7 +3011,7 @@ We really appreciate your support in becoming a Premium user and inviting your f
 window.__addDemo(
 {
     id: 'demoPremium',
-    src: '/app/#demo=true&touch=false&data=blog-drive.0&panes=1:PaneDrive&dmode=0xB1',
+    src: '/web/#demo=true&touch=false&data=blog-drive.0&panes=1:PaneDrive&dmode=0xB1',
     img: '/img/ss/blog/premium/demoPremium.png'
 }
 );
@@ -3072,7 +3072,7 @@ html:not(.mobile) #post_launchPremium .demobg {
 window.__addDemo(
 {
     id: 'demoPremium',
-    src: '/app/#demo=true&touch=false&data=blog-drive.0&panes=1:PaneDrive&dmode=0xB1',
+    src: '/web/#demo=true&touch=false&data=blog-drive.0&panes=1:PaneDrive&dmode=0xB1',
     img: '/img/ss/blog/premium/demoPremium.png'
 }
 );
@@ -3230,7 +3230,7 @@ We&#39;ve updated our landing page with live demos of how email and file organiz
 window.__addDemo(
 {
     id: 'demoInboxZero',
-    src: '/app/#demo=true&touch=false&data=intro.inbox.0&script=inboxZero&panes=PaneGmail:1&dmode=0xb9',
+    src: '/web/#demo=true&touch=false&data=intro.inbox.0&script=inboxZero&panes=PaneGmail:1&dmode=0xb9',
     img: '/img/ss/pressInboxZero.png'
 }
 );
@@ -3299,7 +3299,7 @@ html:not(.mobile) #post_announceEmail .demobg {
 window.__addDemo(
 {
     id: 'demoInboxZero',
-    src: '/app/#demo=true&touch=false&data=intro.inbox.0&script=inboxZero&panes=PaneGmail:1&dmode=0xb9',
+    src: '/web/#demo=true&touch=false&data=intro.inbox.0&script=inboxZero&panes=PaneGmail:1&dmode=0xb9',
     img: '/img/ss/pressInboxZero.png'
 }
 );
@@ -3863,7 +3863,7 @@ contact@moo.do
 ]]></description>
       <pubDate>Wed, 10 Sep 2014 00:00:00 +0700</pubDate>
       <guid>http://www.moo.do/blog/launch</guid>
-      <content:encoded><![CDATA[<p>We are proud to officially announce the launch of <strong>Moo.do</strong> at <a href="https://www.moo.do/">https://moo.do</a> and on the <a href="https://itunes.apple.com/us/app/moo.do-organize-your-way/id889830074?ls=1&amp;mt=8">iOS</a>, <a href="https://play.google.com/store/apps/details?id=moo.do">Android</a>, and <a href="https://chrome.google.com/webstore/detail/moodo/iffimmolghilclfndeiebgppddmagofk">Chrome</a> App Stores. <strong>Moo.do</strong> is designed to be the best and easiest way to organize everything in your life: projects, to-do lists, appointments, contacts, reminders, events, and anything else you can write down. As all modern apps should be, <strong>Moo.do</strong> is available on any computer, tablet, or phone and synchronizes all devices and users in realtime.</p>
+      <content:encoded><![CDATA[<p>We are proud to officially announce the launch of <strong>Moo.do</strong> at <a href="https://www.moo.do/">https://moo.do</a> and on the <a href="https://itunes.apple.com/us/web/moo.do-organize-your-way/id889830074?ls=1&amp;mt=8">iOS</a>, <a href="https://play.google.com/store/apps/details?id=moo.do">Android</a>, and <a href="https://chrome.google.com/webstore/detail/moodo/iffimmolghilclfndeiebgppddmagofk">Chrome</a> App Stores. <strong>Moo.do</strong> is designed to be the best and easiest way to organize everything in your life: projects, to-do lists, appointments, contacts, reminders, events, and anything else you can write down. As all modern apps should be, <strong>Moo.do</strong> is available on any computer, tablet, or phone and synchronizes all devices and users in realtime.</p>
 
 <p>Throughout the development process we have been using <strong>Moo.do</strong> as our only tool for <a href="/blog/public-beta">planning, bug tracking, scheduling, and release tracking</a>. At the same time we have been using it to manage other projects, travel plans, and our day-to-day lives. Many of our beta testers have switched to using <strong>Moo.do</strong> as their primary organization system. Today we are happy to bring the power and simplicity of <strong>Moo.do</strong> to everyone.</p>
 
