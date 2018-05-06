@@ -8,25 +8,235 @@
     <title>Moo.do</title>
     <link>http://www.moo.do/blog</link>
     <description>Moo.do - Organize your way</description>
-    <pubDate>Thu, 22 Feb 2018 00:00:00 +0700</pubDate>
+    <pubDate>Mon, 12 Feb 2018 00:00:00 +0700</pubDate>
     <item>
-      <title>Big Changes Coming</title>
-      <link>http://www.moo.do/blog/big-changes-coming</link>
-      <description><![CDATA[This blog has been quiet recently not because nothing is happening, but the opposite! We&#39;ve been quietly working on some big changes which we are now beta testing with a small group of users. We will have more to announce soon...
+      <title>Desktop Beta</title>
+      <link>http://www.moo.do/blog/desktop-beta</link>
+      <description><![CDATA[Thanks for checking out the beta! The main goals of these changes are to make Moo.do more intuitive for new users and to focus on being a killer task management app.
 
-If you&#39;re interested in helping with beta testing, and want to give lots of feedback to help shape a beta version that changes multiple times per day, send us an email to contact@moo.do.
+You can use the beta version of the web app at https://beta.moo.do/web/ or download the beta version of the MacWindows app at https://beta.moo.do/download/. In the app you will see a &quot;Use beta version&quot; checkbox in the Moo.doFile menu to toggle between the beta version and the normal version. You may need to press Alt to open the File menu.
 
-We&#39;re looking forward to sharing with we&#39;ve been working on as soon as possible!
+New design
+
+We&#39;ve updated the design of the app to look more modern and emphasize important parts of the UI while deemphasizing less used features.
+
+
+New views
+
+Project View
+
+While we love the Outline for quickly laying out projects and tasks, it&#39;s not always the best way to visualize projects to be done, and we found it&#39;s not intuitive for users coming from other task management apps.
+
+Moo.do&#39;s new Project View retains all the power of the Outline with collapsible nodes, but is laid out in a more familiar view grouped by project.
+
+
+Tag, Contact, Priority views
+
+For those people who like to organize with Tags (as context for GTD or to separate phases of a project), the Tag view makes it easy to view projects laid out by task and drag items between tag blocks. It&#39;s similarly easy to manage and reorganize tasks by contact or priority.
+
+
+Agenda view
+
+
+The Agenda has three view options to focus on what&#39;s due now or what&#39;s next: Today, Week, and All.
+It shows the full context of each item for clarity in case of multiple similarly named tasks.
+And it just looks nicer.
+
+
+Additionally, each pane&#39;s view mode can be changed on the fly, to make it easy to view the project and search you&#39;re looking at in a different way.
+
+Hide when completed
+
+
+The completed items search filters now hides by default
+Completing items fade away and hide after a second, so they don&#39;t clutter up your view
+The completed items filter can show completed items or show only completed items
+This actually applies to all search. If an item&#39;s text is changed so that it no longer matches search, it will hide from view.
+Because completed item management works better now, archiving completed items is less relevant so the button is moved to the pane options menu.
+
+
+Search
+
+
+You can now use or in search (or || if you&#39;re a programmer) to show results from multiple searches
+Search is now a simple box that opens a popup with all the options, and helpful hints for how to use search
+
+
+
+Sidebar and top bar
+
+The sidebar is now resizeable and can be fully hidden. When the sidebar is hidden, the boards and buttons are moved into a new bar at the top.
+
+Board management
+
+
+The options menu of each pane now has an &quot;Open pane in new board&quot; option.
+The boards in the sidebar have a new option to create a copy of the board
+
+
+Focus on task management
+
+
+Items will have a task prefix by default, which can be changed in the settings
+Removed the hover checkbox to make the checkbox on the left the way to complete tasks
+Hotkeys to change prefix (not in this release yet)
+
+
+Overview
+
+
+Button at the top of the overview to show all projects
+&quot;Add project&quot; buttons at the top and bottom to quickly add projects from the overview
+
+
+Calendar pane is now free
+
+We feel the calendar is a core feature of Moo.do, so we&#39;re making it free. The Google Calendar sync remains premium.
+
+Miscellenous
+
+
+A move icon on left to show that items are draggable, and clicking it shows a menu
+Collapsing is faster
+
+
+Help us improve
+
+Please let us know if you find any issues or have any suggestions. The best way to do that for the beta is post in the Moo.do Slack. If you&#39;re not on the Slack and would like to join, send us an email to contact@moo.do.
+
+
+    var isMac = navigator.userAgent.indexOf('Mac') >= 0,
+        arrHide = document.getElementsByClassName('only' + (isMac ? 'Win' : 'Mac'));
+
+    for (var i = 0; i 
+
+
+.postImgBeta {
+    margin: 24px auto;
+    width: 100%;
+}
+.postImgBetaSmall {
+    margin: 24px auto;
+    width: auto;
+}
+
 ]]></description>
-      <pubDate>Thu, 22 Feb 2018 00:00:00 +0700</pubDate>
-      <guid>http://www.moo.do/blog/big-changes-coming</guid>
-      <content:encoded><![CDATA[<p>This blog has been quiet recently not because nothing is happening, but the opposite! We&#39;ve been quietly working on some big changes which we are now beta testing with a small group of users. We will have more to announce soon...</p>
+      <pubDate>Mon, 12 Feb 2018 00:00:00 +0700</pubDate>
+      <guid>http://www.moo.do/blog/desktop-beta</guid>
+      <content:encoded><![CDATA[<p>Thanks for checking out the beta! The main goals of these changes are to make Moo.do more intuitive for new users and to focus on being a killer task management app.</p>
 
-<p>If you&#39;re interested in helping with beta testing, and want to give lots of feedback to help shape a beta version that changes multiple times per day, send us an email to <a href="mailto:contact@moo.do">contact@moo.do</a>.</p>
+<p>You can use the beta version of the web app at <a href="https://beta.moo.do/web/">https://beta.moo.do/web/</a> or download the beta version of the <span class="onlyMac">Mac</span><span class="onlyWin">Windows</span> app at <a href="https://beta.moo.do/download/">https://beta.moo.do/download/</a>. In the app you will see a &quot;Use beta version&quot; checkbox in the <span class="onlyMac">Moo.do</span><span class="onlyWin">File</span> menu to toggle between the beta version and the normal version.<span class="onlyWin"> You may need to press Alt to open the File menu.</span></p>
 
-<p>We&#39;re looking forward to sharing with we&#39;ve been working on as soon as possible!</p>
+<h1>New design</h1>
+
+<p>We&#39;ve updated the design of the app to look more modern and emphasize important parts of the UI while deemphasizing less used features.
+<img class="postImg postImgBeta" src="/blog/img/update-desktop-beta1.png" /></p>
+
+<h1>New views</h1>
+
+<h2>Project View</h2>
+
+<p>While we love the Outline for quickly laying out projects and tasks, it&#39;s not always the best way to visualize projects to be done, and we found it&#39;s not intuitive for users coming from other task management apps.</p>
+
+<p>Moo.do&#39;s new Project View retains all the power of the Outline with collapsible nodes, but is laid out in a more familiar view grouped by project.
+<img class="postImg postImgBeta" src="/blog/img/update-desktop-beta2.png" /></p>
+
+<h2>Tag, Contact, Priority views</h2>
+
+<p>For those people who like to organize with Tags (as context for GTD or to separate phases of a project), the Tag view makes it easy to view projects laid out by task and drag items between tag blocks. It&#39;s similarly easy to manage and reorganize tasks by contact or priority.
+<img class="postImg postImgBeta" src="/blog/img/update-desktop-beta3.png" /></p>
+
+<h2>Agenda view</h2>
+
+<ul>
+<li>The Agenda has three view options to focus on what&#39;s due now or what&#39;s next: <b>Today</b>, <b>Week</b>, and <b>All</b>.</li>
+<li>It shows the full context of each item for clarity in case of multiple similarly named tasks.</li>
+<li>And it just looks nicer.</li>
+</ul>
+
+<p>Additionally, each pane&#39;s view mode can be changed on the fly, to make it easy to view the project and search you&#39;re looking at in a different way.</p>
+
+<h1>Hide when completed</h1>
+
+<ul>
+<li>The completed items search filters now hides by default</li>
+<li>Completing items fade away and hide after a second, so they don&#39;t clutter up your view</li>
+<li>The completed items filter can show completed items or show only completed items</li>
+<li>This actually applies to all search. If an item&#39;s text is changed so that it no longer matches search, it will hide from view.</li>
+<li>Because completed item management works better now, archiving completed items is less relevant so the button is moved to the pane options menu.</li>
+</ul>
+
+<h1>Search</h1>
+
+<ul>
+<li>You can now use or in search (or || if you&#39;re a programmer) to show results from multiple searches</li>
+<li>Search is now a simple box that opens a popup with all the options, and helpful hints for how to use search
+<img class="postImg postImgBetaSmall" src="/blog/img/update-desktop-beta4.png" style="height: 300px;" /></li>
+</ul>
+
+<h1>Sidebar and top bar</h1>
+
+<p>The sidebar is now resizeable and can be fully hidden. When the sidebar is hidden, the boards and buttons are moved into a new bar at the top.</p>
+
+<h1>Board management</h1>
+
+<ul>
+<li>The options menu of each pane now has an &quot;Open pane in new board&quot; option.</li>
+<li>The boards in the sidebar have a new option to create a copy of the board</li>
+</ul>
+
+<h1>Focus on task management</h1>
+
+<ul>
+<li>Items will have a task prefix by default, which can be changed in the settings</li>
+<li>Removed the hover checkbox to make the checkbox on the left the way to complete tasks</li>
+<li>Hotkeys to change prefix (not in this release yet)</li>
+</ul>
+
+<h1>Overview</h1>
+
+<ul>
+<li>Button at the top of the overview to show all projects</li>
+<li>&quot;Add project&quot; buttons at the top and bottom to quickly add projects from the overview</li>
+</ul>
+
+<h1>Calendar pane is now free</h1>
+
+<p>We feel the calendar is a core feature of Moo.do, so we&#39;re making it free. The Google Calendar sync remains premium.</p>
+
+<h1>Miscellenous</h1>
+
+<ul>
+<li>A move icon on left to show that items are draggable, and clicking it shows a menu</li>
+<li>Collapsing is faster</li>
+</ul>
+
+<h1>Help us improve</h1>
+
+<p>Please let us know if you find any issues or have any suggestions. The best way to do that for the beta is post in the Moo.do Slack. If you&#39;re not on the Slack and would like to join, send us an email to <a href="mailto:contact@moo.do">contact@moo.do</a>.</p>
+
+<script>
+    var isMac = navigator.userAgent.indexOf('Mac') >= 0,
+        arrHide = document.getElementsByClassName('only' + (isMac ? 'Win' : 'Mac'));
+
+    for (var i = 0; i < arrHide.length; i ++)
+    {
+        arrHide[i].style.display = 'none';
+    }
+</script>
+
+<style>
+.postImgBeta {
+    margin: 24px auto;
+    width: 100%;
+}
+.postImgBetaSmall {
+    margin: 24px auto;
+    width: auto;
+}
+</style>
 ]]></content:encoded>
-      <dc:date>2018-02-22T00:00:00+07:00</dc:date>
+      <dc:date>2018-02-12T00:00:00+07:00</dc:date>
     </item>
     <item>
       <title>November Update</title>
@@ -960,27 +1170,27 @@ window.__addDemos(
 [
     {
         id: 'demoOrganization',
-        src: '/app/#demo=true&touch=false&data=blog-scrum.0&script=none&dmode=0x2b9&panes=1',
+        src: '/web/#demo=true&touch=false&data=blog-scrum.0&script=none&dmode=0x2b9&panes=1',
         imgs: [{ src: '/img/ss/blog/scrum/demoOrganization.png' }]
     },
     {
         id: 'demoThreePanes',
-        src: '/app/#demo=true&touch=false&data=blog-scrum.1&panes=1,,todo:1,,progress:1,,testing&script=none&dmode=0xAb9',
+        src: '/web/#demo=true&touch=false&data=blog-scrum.1&panes=1,,todo:1,,progress:1,,testing&script=none&dmode=0xAb9',
         imgs: [{ src: '/img/ss/blog/scrum/demoThreePanes.png' }]
     },
     {
         id: 'demoAssign',
-        src: '/app/#demo=true&touch=false&data=blog-scrum.1&panes=1,,progress:1,' + encodeURIComponent('#J') + ',progress&script=none&dmode=0x2b9',
+        src: '/web/#demo=true&touch=false&data=blog-scrum.1&panes=1,,progress:1,' + encodeURIComponent('#J') + ',progress&script=none&dmode=0x2b9',
         imgs: [{ src: '/img/ss/blog/scrum/demoAssign.png' }]
     },
     {
         id: 'demoAgenda',
-        src: '/app/#demo=true&touch=false&data=blog-scrum.1&panes=2:2,#J&script=none&dmode=0x2b9',
+        src: '/web/#demo=true&touch=false&data=blog-scrum.1&panes=2:2,#J&script=none&dmode=0x2b9',
         imgs: [{ src: '/img/ss/blog/scrum/demoAgenda.png' }]
     },
     {
         id: 'demoPersonal',
-        src: '/app/#demo=true&touch=false&data=blog-scrum.1&panes=1,' + encodeURIComponent('#Android') + ':1,' + encodeURIComponent('#J ! -//') + '&script=none&dmode=0x2b9',
+        src: '/web/#demo=true&touch=false&data=blog-scrum.1&panes=1,' + encodeURIComponent('#Android') + ':1,' + encodeURIComponent('#J ! -//') + '&script=none&dmode=0x2b9',
         imgs: [{ src: '/img/ss/blog/scrum/demoPersonal.png' }]
     }
 ]);
@@ -1157,22 +1367,22 @@ window.__addDemos(
 [
     {
         id: 'demoOrganization',
-        src: '/app/#demo=true&touch=false&data=blog-proj-man.0&script=none&dmode=0x2b9&panes=1',
+        src: '/web/#demo=true&touch=false&data=blog-proj-man.0&script=none&dmode=0x2b9&panes=1',
         imgs: [{ src: '/img/ss/blog/project-management/demoOrganization.png' }]
     },
     {
         id: 'demoPanes1',
-        src: '/app/#demo=true&touch=false&data=blog-proj-man.1&panes=1:1,' + encodeURIComponent('-// -#punt') + ',focusRoot&script=none&dmode=0x2b9',
+        src: '/web/#demo=true&touch=false&data=blog-proj-man.1&panes=1:1,' + encodeURIComponent('-// -#punt') + ',focusRoot&script=none&dmode=0x2b9',
         imgs: [{ src: '/img/ss/blog/project-management/demoPanes1.png' }]
     },
     {
         id: 'demoPanes2',
-        src: '/app/#demo=true&touch=false&data=blog-proj-man.1&panes=1,' + encodeURIComponent('-// -#punt #J') + ',focusRoot:1,' + encodeURIComponent('-// -#punt #J !!') + ',focusRoot&script=none&dmode=0x2b9',
+        src: '/web/#demo=true&touch=false&data=blog-proj-man.1&panes=1,' + encodeURIComponent('-// -#punt #J') + ',focusRoot:1,' + encodeURIComponent('-// -#punt #J !!') + ',focusRoot&script=none&dmode=0x2b9',
         imgs: [{ src: '/img/ss/blog/project-management/demoPanes2.png' }]
     },
     {
         id: 'demoDiscussion',
-        src: '/app/#demo=true&touch=false&data=blog-proj-man.2&script=none&dmode=0x2b9&panes=1',
+        src: '/web/#demo=true&touch=false&data=blog-proj-man.2&script=none&dmode=0x2b9&panes=1',
         imgs: [{ src: '/img/ss/blog/project-management/demoDiscussion.png' }]
     }
 ]);
@@ -2801,7 +3011,7 @@ We really appreciate your support in becoming a Premium user and inviting your f
 window.__addDemo(
 {
     id: 'demoPremium',
-    src: '/app/#demo=true&touch=false&data=blog-drive.0&panes=1:PaneDrive&dmode=0xB1',
+    src: '/web/#demo=true&touch=false&data=blog-drive.0&panes=1:PaneDrive&dmode=0xB1',
     img: '/img/ss/blog/premium/demoPremium.png'
 }
 );
@@ -2862,7 +3072,7 @@ html:not(.mobile) #post_launchPremium .demobg {
 window.__addDemo(
 {
     id: 'demoPremium',
-    src: '/app/#demo=true&touch=false&data=blog-drive.0&panes=1:PaneDrive&dmode=0xB1',
+    src: '/web/#demo=true&touch=false&data=blog-drive.0&panes=1:PaneDrive&dmode=0xB1',
     img: '/img/ss/blog/premium/demoPremium.png'
 }
 );
@@ -3020,7 +3230,7 @@ We&#39;ve updated our landing page with live demos of how email and file organiz
 window.__addDemo(
 {
     id: 'demoInboxZero',
-    src: '/app/#demo=true&touch=false&data=intro.inbox.0&script=inboxZero&panes=PaneGmail:1&dmode=0xb9',
+    src: '/web/#demo=true&touch=false&data=intro.inbox.0&script=inboxZero&panes=PaneGmail:1&dmode=0xb9',
     img: '/img/ss/pressInboxZero.png'
 }
 );
@@ -3089,7 +3299,7 @@ html:not(.mobile) #post_announceEmail .demobg {
 window.__addDemo(
 {
     id: 'demoInboxZero',
-    src: '/app/#demo=true&touch=false&data=intro.inbox.0&script=inboxZero&panes=PaneGmail:1&dmode=0xb9',
+    src: '/web/#demo=true&touch=false&data=intro.inbox.0&script=inboxZero&panes=PaneGmail:1&dmode=0xb9',
     img: '/img/ss/pressInboxZero.png'
 }
 );
@@ -3653,7 +3863,7 @@ contact@moo.do
 ]]></description>
       <pubDate>Wed, 10 Sep 2014 00:00:00 +0700</pubDate>
       <guid>http://www.moo.do/blog/launch</guid>
-      <content:encoded><![CDATA[<p>We are proud to officially announce the launch of <strong>Moo.do</strong> at <a href="https://www.moo.do/">https://moo.do</a> and on the <a href="https://itunes.apple.com/us/app/moo.do-organize-your-way/id889830074?ls=1&amp;mt=8">iOS</a>, <a href="https://play.google.com/store/apps/details?id=moo.do">Android</a>, and <a href="https://chrome.google.com/webstore/detail/moodo/iffimmolghilclfndeiebgppddmagofk">Chrome</a> App Stores. <strong>Moo.do</strong> is designed to be the best and easiest way to organize everything in your life: projects, to-do lists, appointments, contacts, reminders, events, and anything else you can write down. As all modern apps should be, <strong>Moo.do</strong> is available on any computer, tablet, or phone and synchronizes all devices and users in realtime.</p>
+      <content:encoded><![CDATA[<p>We are proud to officially announce the launch of <strong>Moo.do</strong> at <a href="https://www.moo.do/">https://moo.do</a> and on the <a href="https://itunes.apple.com/us/web/moo.do-organize-your-way/id889830074?ls=1&amp;mt=8">iOS</a>, <a href="https://play.google.com/store/apps/details?id=moo.do">Android</a>, and <a href="https://chrome.google.com/webstore/detail/moodo/iffimmolghilclfndeiebgppddmagofk">Chrome</a> App Stores. <strong>Moo.do</strong> is designed to be the best and easiest way to organize everything in your life: projects, to-do lists, appointments, contacts, reminders, events, and anything else you can write down. As all modern apps should be, <strong>Moo.do</strong> is available on any computer, tablet, or phone and synchronizes all devices and users in realtime.</p>
 
 <p>Throughout the development process we have been using <strong>Moo.do</strong> as our only tool for <a href="/blog/public-beta">planning, bug tracking, scheduling, and release tracking</a>. At the same time we have been using it to manage other projects, travel plans, and our day-to-day lives. Many of our beta testers have switched to using <strong>Moo.do</strong> as their primary organization system. Today we are happy to bring the power and simplicity of <strong>Moo.do</strong> to everyone.</p>
 
@@ -3701,6 +3911,6 @@ contact@moo.do
 ]]></content:encoded>
       <dc:date>2014-06-11T00:00:00+07:00</dc:date>
     </item>
-    <dc:date>2018-02-22T00:00:00+07:00</dc:date>
+    <dc:date>2018-02-12T00:00:00+07:00</dc:date>
   </channel>
 </rss>
