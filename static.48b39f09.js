@@ -946,6 +946,18 @@ self.sendToSocialMedia = function (social, location) {
     self.setSegment(self.Segment.SocialClicked);
 };
 
+self.removeExistingScript = function (script) {
+    if (false) {
+        console.log('script missing id');
+    }
+
+    var existing = document.getElementById(script.id);
+    if (existing) {
+        existing.parentNode.removeChild(existing);
+        console.log('removed', existing.id);
+    }
+};
+
 exports.default = self;
 
 /***/ }),
@@ -1631,6 +1643,10 @@ var _htmr = __webpack_require__(39);
 
 var _htmr2 = _interopRequireDefault(_htmr);
 
+var _util = __webpack_require__(6);
+
+var _util2 = _interopRequireDefault(_util);
+
 var _Nav = __webpack_require__(2);
 
 var _Nav2 = _interopRequireDefault(_Nav);
@@ -1669,7 +1685,7 @@ var Post = function (_React$Component) {
                 post = props.post,
                 contents = post.contents;
 
-            if (!props.excerpt) {
+            if (!props.excerpt && typeof window !== 'undefined') {
                 window.__addDemo = function (demo) {
                     _this2.loadDemos([demo]);
                 };
@@ -1679,8 +1695,11 @@ var Post = function (_React$Component) {
 
                 // Google+
                 (function () {
-                    var po = document.createElement('script');po.type = 'text/javascript';po.async = true;
+                    var po = document.createElement('script');
+                    po.type = 'text/javascript';
+                    po.async = true;
                     po.src = 'https://apis.google.com/js/platform.js';
+                    _util2.default.removeExistingScript(po);
                     var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(po, s);
                 })();
 
@@ -1689,8 +1708,10 @@ var Post = function (_React$Component) {
                     var js,
                         fjs = d.getElementsByTagName(s)[0];
                     if (d.getElementById(id)) return;
-                    js = d.createElement(s);js.id = id;
+                    js = d.createElement(s);
+                    js.id = id;
                     js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=312316478922816&version=v2.0";
+                    _util2.default.removeExistingScript(js);
                     fjs.parentNode.insertBefore(js, fjs);
                 })(document, 'script', 'facebook-jssdk');
 
@@ -1699,7 +1720,7 @@ var Post = function (_React$Component) {
                     var js,
                         fjs = d.getElementsByTagName(s)[0],
                         p = /^http:/.test(d.location) ? 'http' : 'https';if (!d.getElementById(id)) {
-                        js = d.createElement(s);js.id = id;js.src = p + '://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js, fjs);
+                        js = d.createElement(s);js.id = id;js.src = p + '://platform.twitter.com/widgets.js';_util2.default.removeExistingScript(js);fjs.parentNode.insertBefore(js, fjs);
                     }
                 }(document, 'script', 'twitter-wjs');
 
@@ -1708,15 +1729,33 @@ var Post = function (_React$Component) {
                 window.disqus_shortname = 'moodo';
                 window.disqus_url = 'https://www.moo.do/blog/' + post.slug;
 
-                var dsq = document.createElement('script');dsq.type = 'text/javascript';dsq.async = true;
-                dsq.src = '//' + window.disqus_shortname + '.disqus.com/embed.js';
-                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                if (window.DISQUS) {
+                    console.log('exists');
+                    DISQUS.reset({
+                        reload: true,
+                        config: function config() {
+                            this.page.identifier = window.disqus_identifier;
+                            this.page.url = window.disqus_url;
+                        }
+                    });
+                } else {
+                    var dsq = document.createElement('script');
+                    dsq.id = 'script_disqus';
+                    dsq.type = 'text/javascript';
+                    dsq.async = true;
+                    dsq.src = '//' + window.disqus_shortname + '.disqus.com/embed.js';
+                    _util2.default.removeExistingScript(dsq);
+                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                }
             }
+
             if (typeof window !== 'undefined') {
                 var post = props.post;
                 if (post.script) {
                     var script = document.createElement("script");
+                    script.id = 'script_' + post.slug;
                     script.innerHTML = post.script;
+                    _util2.default.removeExistingScript(script);
                     document.head.appendChild(script);
                 }
             }
@@ -1799,7 +1838,7 @@ var Post = function (_React$Component) {
                     _react2.default.createElement(
                         'div',
                         { className: 'postContent padded' },
-                        (0, _htmr2.default)(contents),
+                        _react2.default.createElement('div', { dangerouslySetInnerHTML: { __html: contents } }),
                         props.excerpt && indexOfExcerptHR >= 0 && _react2.default.createElement(
                             'div',
                             { className: 'postFooter' },
@@ -8167,4 +8206,4 @@ module.exports = require("htmr");
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=static.289d6143.js.map
+//# sourceMappingURL=static.48b39f09.js.map

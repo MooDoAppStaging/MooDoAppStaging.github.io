@@ -9,9 +9,9 @@
             <link>https://www.moo.do</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Wed, 16 May 2018 16:21:31 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 16 May 2018 16:58:42 GMT</lastBuildDate>
         <atom:link href="https://www.moo.do/blog/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Wed, 16 May 2018 16:21:31 GMT</pubDate>
+        <pubDate>Wed, 16 May 2018 16:58:42 GMT</pubDate>
         <item>
             <title><![CDATA[Desktop Beta]]></title>
             <description><![CDATA[<p>Thanks for checking out the beta! The main goals of these changes are to make Moo.do more intuitive for new users and to focus on being a killer task management app.</p>
@@ -115,7 +115,7 @@
 <h1 id="general">General</h1>
 <p>Zooming in the overview fades items out of view and displays the zoomed item with bold text. This makes it easier to jump between projects.</p>
 <p><div class="postImg postImgVideo postImgNovDesign">
-    <video loop muted playsInline autoplay poster="/img/help/basics/overview.png">
+    <video loop muted playsinline autoplay poster="/img/help/basics/overview.png">
         <source src="https://www.moo.do/img/help/basics/overview.mp4" type="video/mp4">
     </video>
 </div>
