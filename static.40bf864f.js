@@ -1664,7 +1664,6 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-var regexpScript = /(?:<script>)((.|\n)*?)(?:<\/script>)/;
 var hrExcerpt = '<p>---excerpt---</p>';
 
 var Post = function (_React$Component) {
@@ -1680,6 +1679,8 @@ var Post = function (_React$Component) {
         key: 'componentDidMount',
         value: function componentDidMount() {
             var _this2 = this;
+
+            console.log('mount');
 
             var props = this.props,
                 post = props.post,
@@ -1730,7 +1731,6 @@ var Post = function (_React$Component) {
                 window.disqus_url = 'https://www.moo.do/blog/' + post.slug;
 
                 if (window.DISQUS) {
-                    console.log('exists');
                     DISQUS.reset({
                         reload: true,
                         config: function config() {
@@ -1787,6 +1787,8 @@ var Post = function (_React$Component) {
             if (indexOfExcerptHR >= 0) {
                 contents = props.excerpt ? contents.substr(0, indexOfExcerptHR) : contents.replace(hrExcerpt, '');
             }
+
+            console.log('render');
 
             return _react2.default.createElement(
                 'div',
@@ -8206,4 +8208,4 @@ module.exports = require("htmr");
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=static.48b39f09.js.map
+//# sourceMappingURL=static.40bf864f.js.map
