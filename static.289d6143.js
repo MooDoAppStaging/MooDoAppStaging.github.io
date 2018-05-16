@@ -1667,9 +1667,7 @@ var Post = function (_React$Component) {
 
             var props = this.props,
                 post = props.post,
-                contents = post.contents,
-                scriptMatch = post.contents.match(regexpScript),
-                scriptText = scriptMatch && scriptMatch[1].trim();
+                contents = post.contents;
 
             if (!props.excerpt) {
                 window.__addDemo = function (demo) {
@@ -1714,10 +1712,14 @@ var Post = function (_React$Component) {
                 dsq.src = '//' + window.disqus_shortname + '.disqus.com/embed.js';
                 (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
             }
-
-            var script = document.createElement("script");
-            script.innerHTML = scriptText;
-            document.head.appendChild(script);
+            if (typeof window !== 'undefined') {
+                var post = props.post;
+                if (post.script) {
+                    var script = document.createElement("script");
+                    script.innerHTML = post.script;
+                    document.head.appendChild(script);
+                }
+            }
         }
     }, {
         key: 'loadDemos',
@@ -1741,8 +1743,6 @@ var Post = function (_React$Component) {
                 dateStr = monthNames[date.getMonth()] + ' ' + date.getDate() + ', ' + date.getFullYear(),
                 category = post.category,
                 contents = post.contents,
-                scriptMatch = post.contents.match(regexpScript),
-                contents = contents.replace(regexpScript, ''),
                 indexOfExcerptHR = contents.indexOf(hrExcerpt);
 
             if (indexOfExcerptHR >= 0) {
@@ -8167,4 +8167,4 @@ module.exports = require("htmr");
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=static.718e1cc7.js.map
+//# sourceMappingURL=static.289d6143.js.map
