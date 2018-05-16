@@ -1679,13 +1679,39 @@ var Post = function (_React$Component) {
                     _this2.loadDemos(arr);
                 };
 
+                // Google+
+                (function () {
+                    var po = document.createElement('script');po.type = 'text/javascript';po.async = true;
+                    po.src = 'https://apis.google.com/js/platform.js';
+                    var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(po, s);
+                })();
+
+                // Facebook
+                (function (d, s, id) {
+                    var js,
+                        fjs = d.getElementsByTagName(s)[0];
+                    if (d.getElementById(id)) return;
+                    js = d.createElement(s);js.id = id;
+                    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=312316478922816&version=v2.0";
+                    fjs.parentNode.insertBefore(js, fjs);
+                })(document, 'script', 'facebook-jssdk');
+
+                // Twitter
+                !function (d, s, id) {
+                    var js,
+                        fjs = d.getElementsByTagName(s)[0],
+                        p = /^http:/.test(d.location) ? 'http' : 'https';if (!d.getElementById(id)) {
+                        js = d.createElement(s);js.id = id;js.src = p + '://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js, fjs);
+                    }
+                }(document, 'script', 'twitter-wjs');
+
                 // Disqus
-                var disqus_shortname = 'moodo';
-                var disqus_identifier = post.title;
-                var disqus_url = 'https://www.moo.do/blog/' + post.slug;
+                window.disqus_identifier = post.title;
+                window.disqus_shortname = 'moodo';
+                window.disqus_url = 'https://www.moo.do/blog/' + post.slug;
 
                 var dsq = document.createElement('script');dsq.type = 'text/javascript';dsq.async = true;
-                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                dsq.src = '//' + window.disqus_shortname + '.disqus.com/embed.js';
                 (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
             }
 
@@ -1794,13 +1820,14 @@ var Post = function (_React$Component) {
                         _react2.default.createElement(
                             'div',
                             { id: 'social', className: 'padded' },
-                            _react2.default.createElement('span', { id: 'shareFB', className: 'fb-share-button', 'data-href': 'https://www.moo.do{{ site.baseurl }}{{ page.url }}', 'data-type': 'button' }),
+                            _react2.default.createElement('span', { id: 'shareFB', className: 'fb-share-button', 'data-href': 'https://www.moo.do/blog/' + post.slug, 'data-type': 'button' }),
                             _react2.default.createElement(
                                 'a',
-                                { id: 'shareTwitter', href: 'https://twitter.com/share', className: 'twitter-share-button', 'data-text': '#MooDo Blog Post: ', 'data-count': 'none' },
+                                { id: 'shareTwitter', href: 'https://twitter.com/share', className: 'twitter-share-button', 'data-text': '#MooDo blog post: https://www.moo.do/blog/' + post.slug, 'data-count': 'none' },
                                 'Tweet'
                             ),
-                            _react2.default.createElement('span', { id: 'shareGoogle', className: 'g-plus', 'data-action': 'share', 'data-annotation': 'none' })
+                            _react2.default.createElement('span', { id: 'shareGoogle', className: 'g-plus', 'data-action': 'share', 'data-annotation': 'none' }),
+                            _react2.default.createElement('div', { id: 'fb-root' })
                         ),
                         _react2.default.createElement('div', { id: 'disqus_thread', className: 'padded' })
                     )
@@ -8140,4 +8167,4 @@ module.exports = require("htmr");
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=static.96c16878.js.map
+//# sourceMappingURL=static.718e1cc7.js.map
