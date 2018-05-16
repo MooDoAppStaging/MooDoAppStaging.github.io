@@ -954,7 +954,6 @@ self.removeExistingScript = function (script) {
     var existing = document.getElementById(script.id);
     if (existing) {
         existing.parentNode.removeChild(existing);
-        console.log('removed', existing.id);
     }
 };
 
@@ -1680,8 +1679,6 @@ var Post = function (_React$Component) {
         value: function componentDidMount() {
             var _this2 = this;
 
-            console.log('mount');
-
             var props = this.props,
                 post = props.post,
                 contents = post.contents;
@@ -1787,8 +1784,6 @@ var Post = function (_React$Component) {
             if (indexOfExcerptHR >= 0) {
                 contents = props.excerpt ? contents.substr(0, indexOfExcerptHR) : contents.replace(hrExcerpt, '');
             }
-
-            console.log('render');
 
             return _react2.default.createElement(
                 'div',
@@ -8208,4 +8203,4 @@ module.exports = require("htmr");
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=static.40bf864f.js.map
+//# sourceMappingURL=static.a37c92a3.js.map
