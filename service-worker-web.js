@@ -1,4 +1,4 @@
-var CacheName = 'moodo-cache-1526490343379',
+var CacheName = 'moodo-cache-1526491645752',
     CacheNameCommon = 'moodo-cache-common';
 
 function notifyClient(text)
@@ -22,15 +22,15 @@ self.addEventListener('install', function (e)
         {
             return cache.addAll([
                 '/web/',
-                '/web/index-1526490343379.html',
-                '/web/js/vendor-1526490343379.js',
-                '/web/js/delayedUI-1526490343379.js',
-                '/web/js/dimport-1526490343379.js',
-                '/web/js/main-min-1526490343379.js',
-                '/web/js/preload-min-1526490343379.js',
-                '/web/css/app-min-1526490343379.css',
-                '/web/css/fonts/fonticons-1526490343379.woff',
-                '/web/css/fonts/fonticons-1526490343379.ttf'
+                '/web/index-1526491645752.html',
+                '/web/js/vendor-1526491645752.js',
+                '/web/js/delayedUI-1526491645752.js',
+                '/web/js/dimport-1526491645752.js',
+                '/web/js/main-min-1526491645752.js',
+                '/web/js/preload-min-1526491645752.js',
+                '/web/css/app-min-1526491645752.css',
+                '/web/css/fonts/fonticons-1526491645752.woff',
+                '/web/css/fonts/fonticons-1526491645752.ttf'
             ]);
         }).then(caches.open(CacheNameCommon).then(function (cacheCommon)
         {
@@ -73,21 +73,13 @@ self.addEventListener('fetch', function (event)
     {
         if (urlObj.pathname === pathname)
         {
-            url = url.replace(pathname, pathname + 'index-1526490343379.html');
+            url = url.replace(pathname, pathname + 'index-1526491645752.html');
         }
 
         event.respondWith(
             caches.match(url).then(function (response)
             {
-                return response || fetch(event.request).then(function (response2)
-                {
-                    var response3 = response2.clone();
-                    caches.open(CacheNameCommon).then(function (cache)
-                    {
-                        cache.put(event.request, response3.clone());
-                    })
-                    return response2;
-                });
+                return response || fetch(event.request);
             })
         );
     }
