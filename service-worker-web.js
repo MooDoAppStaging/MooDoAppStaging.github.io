@@ -1,4 +1,4 @@
-var CacheName = 'moodo-cache-1526566202424',
+var CacheName = 'moodo-cache-1526570682941',
     CacheNameCommon = 'moodo-cache-common';
 
 function notifyClient(text)
@@ -22,15 +22,15 @@ self.addEventListener('install', function (e)
         {
             return cache.addAll([
                 '/web/',
-                '/web/index-1526566202424.html',
-                '/web/js/vendor-1526566202424.js',
-                '/web/js/delayedUI-1526566202424.js',
-                '/web/js/dimport-1526566202424.js',
-                '/web/js/main-min-1526566202424.js',
-                '/web/js/preload-min-1526566202424.js',
-                '/web/css/app-min-1526566202424.css',
-                '/web/css/fonts/fonticons-1526566202424.woff',
-                '/web/css/fonts/fonticons-1526566202424.ttf'
+                '/web/index-1526570682941.html',
+                '/web/js/vendor-1526570682941.js',
+                '/web/js/delayedUI-1526570682941.js',
+                '/web/js/dimport-1526570682941.js',
+                '/web/js/main-min-1526570682941.js',
+                '/web/js/preload-min-1526570682941.js',
+                '/web/css/app-min-1526570682941.css',
+                '/web/css/fonts/fonticons-1526570682941.woff',
+                '/web/css/fonts/fonticons-1526570682941.ttf'
             ]);
         }).then(caches.open(CacheNameCommon).then(function (cacheCommon)
         {
@@ -73,17 +73,16 @@ self.addEventListener('fetch', function (event)
     {
         if (urlObj.pathname === pathname)
         {
-            url = url.replace(pathname, pathname + 'index-1526566202424.html');
+            url = url.replace(pathname, pathname + 'index-1526570682941.html');
+            event.respondWith(
+                caches.match(url).then(function (response)
+                {
+                    return response || fetch(event.request);
+                })
+            );
         }
-
-        event.respondWith(
-            caches.match(url).then(function (response)
-            {
-                return response || fetch(event.request);
-            })
-        );
     }
-
+    event.respondWith(fetch(event.request));
 });
 
 self.addEventListener('activate', function (event)

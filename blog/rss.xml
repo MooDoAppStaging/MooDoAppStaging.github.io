@@ -9,9 +9,9 @@
             <link>https://www.moo.do</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Thu, 17 May 2018 14:50:02 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 17 May 2018 15:26:19 GMT</lastBuildDate>
         <atom:link href="https://www.moo.do/blog/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Thu, 17 May 2018 14:50:02 GMT</pubDate>
+        <pubDate>Thu, 17 May 2018 15:26:19 GMT</pubDate>
         <item>
             <title><![CDATA[Desktop Beta]]></title>
             <description><![CDATA[<p>Thanks for checking out the beta! The main goals of these changes are to make Moo.do more intuitive for new users and to focus on being a killer task management app.</p>
