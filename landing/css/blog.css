@@ -21,6 +21,9 @@ body {
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
   border-radius: 3px;
 }
+.blog #topBar {
+  margin-bottom: 0;
+}
 p + p,
 ul + p {
   margin-top: 1em;
@@ -103,8 +106,8 @@ ul + p {
     padding-bottom: 0.3em;
   }
 }
-a {
-  text-decoration: none;
+a:not(.linkButton) {
+  color: #09d;
 }
 /*****************************************************************************/
 /*
@@ -249,10 +252,10 @@ a {
   margin-bottom: 8px;
 }
 .postMetadata * {
-  color: #aaa;
+  color: #aaa !important;
 }
 .postMetadata a:hover {
-  color: #222;
+  color: #222 !important;
 }
 .pagination {
   margin-top: 3em;
@@ -380,22 +383,4 @@ a {
 }
 .b {
   font-weight: bold;
-}
-.post.mac .hotkeyPri:before {
-  content: '⌘';
-}
-.post.mac .hotkeySec:before {
-  content: 'Ctrl';
-}
-.post.mac .onlyWin {
-  display: none;
-}
-.post.notmac .hotkeyPri:before {
-  content: 'Ctrl';
-}
-.post.notmac .hotkeySec:before {
-  content: 'Alt';
-}
-.post.notmac .onlyMac {
-  display: none;
 }
