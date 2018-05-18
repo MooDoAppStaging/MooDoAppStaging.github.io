@@ -5848,7 +5848,7 @@ exports.default = (0, _reactHotLoader.hot)(module)(function () {
                 'p',
                 null,
                 'Beta version of the ',
-                _react2.default.createElement('span', { 'class': 'platformName' }),
+                _react2.default.createElement('span', { className: 'platformName' }),
                 ' app at ',
                 _react2.default.createElement(
                     'a',
@@ -8272,4 +8272,4 @@ module.exports = require("htmr");
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=static.7e3557ad.js.map
+//# sourceMappingURL=static.b8294127.js.map
