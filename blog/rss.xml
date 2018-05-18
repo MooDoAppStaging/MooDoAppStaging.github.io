@@ -9,9 +9,9 @@
             <link>https://www.moo.do</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Thu, 17 May 2018 15:26:19 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 18 May 2018 05:45:47 GMT</lastBuildDate>
         <atom:link href="https://www.moo.do/blog/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Thu, 17 May 2018 15:26:19 GMT</pubDate>
+        <pubDate>Fri, 18 May 2018 05:45:47 GMT</pubDate>
         <item>
             <title><![CDATA[Desktop Beta]]></title>
             <description><![CDATA[<p>Thanks for checking out the beta! The main goals of these changes are to make Moo.do more intuitive for new users and to focus on being a killer task management app.</p>
@@ -46,7 +46,7 @@
 <ul>
 <li>You can now use or in search (or || if you’re a programmer) to show results from multiple searches</li>
 <li>Search is now a simple box that opens a popup with all the options, and helpful hints for how to use search
-<img class="postImg postImgBetaSmall" src="https://www.moo.do/blog/img/update-desktop-beta4.png" style="height: 300px;" /></li>
+<img class="postImg postImgBetaSmall" src="https://www.moo.do/blog/img/update-desktop-beta4.png" style="height: 240px;" /></li>
 </ul>
 <h1 id="sidebar-and-top-bar">Sidebar and top bar</h1>
 <p>The sidebar is now resizeable and can be fully hidden. When the sidebar is hidden, the boards and buttons are moved into a new bar at the top.</p>
@@ -75,8 +75,6 @@
 </ul>
 <h1 id="help-us-improve">Help us improve</h1>
 <p>Please let us know if you find any issues or have any suggestions. The best way to do that for the beta is post in the Moo.do Slack. If you’re not on the Slack and would like to join, send us an email to <a href="mailto:contact@moo.do">contact@moo.do</a>.</p>
-
-
 <style>
 .postImgBeta {
     margin: 24px auto;
@@ -92,9 +90,7 @@
         </item>
         <item>
             <title><![CDATA[November Update]]></title>
-            <description><![CDATA[
-
-<style>
+            <description><![CDATA[<style>
 .postImgVideo video {
     display: block;
     width: 100%;
@@ -154,7 +150,7 @@ The keyboard toolbar is larger and more attractive. It saves your scroll positio
 <h1 id="image-lightbox">Image lightbox</h1>
 <ul>
 <li>Images now open in a lightbox for quick previewing.</li>
-<li><span class="updateEvHotkey">Ctrl</span> + click to open in a new tab as before.</li>
+<li><span class="hotkeyPri"></span> + click to open in a new tab as before.</li>
 <li>This works for images in Google Drive, image email attachments, and links to images.</li>
 </ul>
 <h1 id="misc">Misc</h1>
@@ -166,7 +162,6 @@ The keyboard toolbar is larger and more attractive. It saves your scroll positio
 <li>Fixed: Some repeat dates not showing notifications</li>
 <li>Fixed: Some parsing issues with repeat dates</li>
 </ul>
-
 ]]></description>
             <guid isPermaLink="false">https://www.moo.do/blog/update-09-16</guid>
         </item>
@@ -181,33 +176,31 @@ The keyboard toolbar is larger and more attractive. It saves your scroll positio
 <p><br>
 <img class="postImg postImgMarkdown" src="https://www.moo.do/blog/img/update-markdown.png" /></p>
 <h1 id="how-it-works">How it works</h1>
-<h3 id="prefixes">Prefixes</h3>
+<h2 id="prefixes">Prefixes</h2>
 <ul>
-<li><span class="mdFormat">#</span> to create a header, or <span class="updateMDHotkey">Ctrl</span> + Shift + 3</li>
-<li><span class="mdFormat">[ or [] or [ ]</span> to create a task, or <span class="updateMDHotkey">Ctrl</span> + Shift + [</li>
+<li><span class="mdFormat">#</span> to create a header, or <span class="hotkeyPri"></span> + Shift + 3</li>
+<li><span class="mdFormat">[ or [] or [ ]</span> to create a task, or <span class="hotkeyPri"></span> + Shift + [</li>
 <li><span class="mdFormat">* or - or +</span> to create a bullet</li>
 <li><span class="mdFormat">1.</span> to create a numbered list</li>
 <li>Buttons at the top of the pane to add project, task, item</li>
 </ul>
-<h3 id="formatting">Formatting</h3>
+<h2 id="formatting">Formatting</h2>
 <ul>
 <li><i>*italic*</i> or <b>**bold**</b> or <b><i>***both***</i></b></li>
-<li><span class="updateMDHotkey">Ctrl</span> + B to bold and <span class="updateMDHotkey">Ctrl</span> + I to italic (as usual).</li>
-<li>[Title](address) or <span class="updateMDHotkey">Ctrl</span> + K to insert links with a title</li>
+<li><span class="hotkeyPri"></span> + B to bold and <span class="hotkeyPri"></span> + I to italic (as usual).</li>
+<li>[Title](address) or <span class="hotkeyPri"></span> + K to insert links with a title</li>
 <li>— to create a horizontal line</li>
 <li>Formatting only shows while items are selected</li>
 </ul>
-<h3 id="search-filters">Search filters</h3>
+<h2 id="search-filters">Search filters</h2>
 <ul>
 <li>New filters to show/hide headers and tasks. These work especially well combined with the flat search filter.</li>
 </ul>
-<h3 id="display-settings">Display Settings</h3>
+<h2 id="display-settings">Display Settings</h2>
 <ul>
 <li>New Markdown layout theme</li>
 <li>New advanced settings for header size, checkbox opacity, and background color</li>
 </ul>
-
-
 <style>
 .mdFormat {
     display: inline-block;
@@ -223,9 +216,9 @@ The keyboard toolbar is larger and more attractive. It saves your scroll positio
 <p><img class="postImg postImgAugustUpdate" src="https://www.moo.do/blog/img/update-august-update.png" /></p>
 <h1 id="general">General</h1>
 <ul>
-<li>New “<strong>Create Task</strong>“ for emails (pictured above): Add selected email(s) as child of the new task, set a note and priority, optionally add it to an existing item, and add it to the Outline.</li>
-<li>“<strong>New item</strong>“ menu has options for adding as a child of an existing item, note and priority</li>
-<li><strong><span class="updateAugustHotkey">Ctrl</span> + click</strong> on filters for the opposite filter, such as “Show only completed”</li>
+<li>New <strong>Create Task</strong> for emails (pictured above): Add selected email(s) as child of the new task, set a note and priority, optionally add it to an existing item, and add it to the Outline.</li>
+<li><strong>New item</strong> menu has options for adding as a child of an existing item, note and priority</li>
+<li><strong><span class="hotkeyPri"></span> + click</strong> on filters for the opposite filter, such as “Show only completed”</li>
 <li><strong>Fixed</strong>: Notifications firing for children of completed items</li>
 <li><strong>Fixed</strong>: Issues with @soon, @later, and @someday appearing in the incorrect Agenda block</li>
 <li><strong>Fixed</strong>: Flat search hiding children of completed items</li>
@@ -250,11 +243,9 @@ The keyboard toolbar is larger and more attractive. It saves your scroll positio
 <li><strong>Fixed</strong>: Editing issues on Android with Enter and Backspace</li>
 <li>Tapping on the sides of items on mobile no long collapses or completes items. Swipe left or right on an item to collapse or complete it.</li>
 </ul>
-
-
 <style>
 .postImgAugustUpdate {
-    width: 400px;
+    width: 300px;
 }
 </style>
 ]]></description>
@@ -268,7 +259,7 @@ The keyboard toolbar is larger and more attractive. It saves your scroll positio
 <ul>
 <li><b>Collapse All</b> now collapses every item rather than just those at the top level.</li>
 <li>Searching does not change the collapsed state of items. This means search will not expand everything to display matches.</li>
-<li>A new feature called <b>Flat Search</b> has been added. This shows only items that are a direct match, without showing the full hierarchy. Begin using <b>Flat Search</b> by clicking the <img class="postImgJulyFlat" src="https://www.moo.do/blog/img/update-july-flat.png" /> icon or using the hotkey (<span class="updateJulyHotkey">Ctrl</span> + 6). Click the pencil icon to the left of a search result to see its full details.</li>
+<li>A new feature called <b>Flat Search</b> has been added. This shows only items that are a direct match, without showing the full hierarchy. Begin using <b>Flat Search</b> by clicking the <img class="postImgJulyFlat" src="https://www.moo.do/blog/img/update-july-flat.png" /> icon or using the hotkey (<span class="hotkeySec"></span> + 6). Click the pencil icon to the left of a search result to see its full details.</li>
 </ul>
 <h1 id="sidebar">Sidebar</h1>
 <ul>
@@ -281,12 +272,13 @@ The keyboard toolbar is larger and more attractive. It saves your scroll positio
 <h1 id="boards-previously-known-as-workspaces-">Boards (previously known as Workspaces)</h1>
 <ul>
 <li><b>Boards</b> can be switched by clicking on them in the sidebar.</li>
-<li>Use the <span class="updateJulyHotkey">Ctrl</span> + B hotkey to switch between <b>Boards</b> with arrow or number keys.</li>
+<li>Use the <span class="hotkeySec"></span> + B hotkey to switch between <b>Boards</b> with arrow or number keys.</li>
 <li>The <b>Boards</b> list in the sidebar can be sorted with drag/drop.</li>
 </ul>
-
-
 <style>
+.postImgJulyDesign {
+    width: 500px;
+}
 .postImgJulyFlat {
     width: 24px;
     vertical-align: middle;
@@ -323,7 +315,7 @@ The keyboard toolbar is larger and more attractive. It saves your scroll positio
 <li>Android app properly notifies if authorization failed</li>
 <li>Improved load time for multi-line items</li>
 <li>Some load errors or what appeared to be lost data were caused by a Moo.do document being in the Trash in Google Drive, so Moo.do does a better job at detecting that and can automatically fix it</li>
-<li>Added numbered hotkeys to Boards menu (open menu with <strong><span class="updateAsianLanguage">Ctrl</span> + B</strong> first)</li>
+<li>Added numbered hotkeys to Boards menu (open menu with <strong><span class="hotkeySec"></span> + B</strong> first)</li>
 </ul>
 <h1 id="gmail">Gmail</h1>
 <ul>
@@ -339,7 +331,6 @@ The keyboard toolbar is larger and more attractive. It saves your scroll positio
 </ul>
 <h1 id="help-us-improve">Help us improve</h1>
 <p>As always, please let us know if you find any issues or how we can make our apps better for you. Thanks!</p>
-
 ]]></description>
             <guid isPermaLink="false">https://www.moo.do/blog/asian-languages</guid>
         </item>
@@ -350,14 +341,12 @@ The keyboard toolbar is larger and more attractive. It saves your scroll positio
 <ul>
 <li><strong>Top buttons moved into a sidebar.</strong> This makes it clearer what the buttons do and we think it’s prettier :). Toggle the sidebar with <strong>Cmd + Option + S</strong> on Mac and <strong>Ctrl + Shift + I</strong> on Windows or Linux, and you can still access the buttons by hotkey.</li>
 <li><strong>Rearranged pane header.</strong> The titles are on the first row and search is on the second row, with the search box and filters split to make them more distinct.</li>
-<li><strong>Improved workspace switching.</strong> Open the boards menu with <strong><span class="updateDesignHotkey">Ctrl</span> + B</strong> and use the arrow keys to switch between them.</li>
+<li><strong>Improved workspace switching.</strong> Open the boards menu with <strong><span class="hotkeySec">Ctrl</span> + B</strong> and use the arrow keys to switch between them.</li>
 <li><strong>Many icon changes.</strong> We switched many old icons for newer, prettier icons from the Material Design icon set.</li>
 </ul>
 <p><img class="postImg postImgUpdateDesign" src="https://www.moo.do/blog/img/update-design.png" /></p>
 <h1 id="help-us-improve">Help us improve</h1>
 <p>As always, please let us know if you find any issues or how we can make our apps better for you. Thanks!</p>
-
-
 <style>
 .postImgUpdateDesign {
     width: 100%;
@@ -1138,7 +1127,7 @@ The keyboard toolbar is larger and more attractive. It saves your scroll positio
 <p>Your Google Calendar events are in your Agenda, marked by a <img class="postIconCalendar" src="https://www.moo.do/blog/img/update-calendar1.png" /> icon. You can edit existing events and add new events in the Agenda or you can drag them onto your lists. Use the <img class="postIconCalendar" src="https://www.moo.do/blog/img/update-calendar1.png" /> button in the search box to show or hide Calendar events.
 <img class="postImg postImgCalendar postImgCalendar3" src="https://www.moo.do/blog/img/update-calendar3.png" /></p>
 <h1 id="sync-your-events">Sync your events</h1>
-<p>Press <span class="updateCalendarHotkey">Ctrl + C</span> on an item with a <span class="date">@date</span> and the event gets added to your calendar, with a <img class="postIconCalendar" src="https://www.moo.do/blog/img/update-calendar1.png" /> icon to show you that it’s synced. We don’t want to fill your calendar by automatically adding every <span class="date">@date</span> item, but if you want to add many events to your calendar in bulk, you can highlight multiple items and press <span class="updateCalendarHotkey">Ctrl + C</span> to add them all at once.</p>
+<p>Press <span class="hotkeySec">Ctrl + C</span> on an item with a <span class="date">@date</span> and the event gets added to your calendar, with a <img class="postIconCalendar" src="https://www.moo.do/blog/img/update-calendar1.png" /> icon to show you that it’s synced. We don’t want to fill your calendar by automatically adding every <span class="date">@date</span> item, but if you want to add many events to your calendar in bulk, you can highlight multiple items and press <span class="hotkeySec">Ctrl + C</span> to add them all at once.</p>
 <h1 id="edit-events-anywhere-anytime">Edit events anywhere, anytime</h1>
 <p>Moo.do syncs both ways, so you can edit events in Moo.do or in your calendar and they’ll stay in sync everywhere. You can also add or modify events while offline and they will sync when you go back online.</p>
 <h1 id="durations">Durations</h1>
@@ -1150,8 +1139,6 @@ The keyboard toolbar is larger and more attractive. It saves your scroll positio
 <ul>
 <li>Gmail Plugin</li>
 </ul>
-
-
 <style>
 .postIconCalendar {
     height: 20px;

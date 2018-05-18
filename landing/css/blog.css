@@ -381,3 +381,21 @@ a {
 .b {
   font-weight: bold;
 }
+.post.mac .hotkeyPri:before {
+  content: '⌘';
+}
+.post.mac .hotkeySec:before {
+  content: 'Ctrl';
+}
+.post.mac .onlyWin {
+  display: none;
+}
+.post.notmac .hotkeyPri:before {
+  content: 'Ctrl';
+}
+.post.notmac .hotkeySec:before {
+  content: 'Alt';
+}
+.post.notmac .onlyMac {
+  display: none;
+}

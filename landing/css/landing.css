@@ -843,20 +843,20 @@ a {
   color: #333;
   margin: 0;
 }
-h3 {
+#about h3 {
   font-size: 26px;
   font-weight: 600;
 }
-h3:first-child {
+#about h3:first-child {
   margin: 0;
 }
 @media screen and (max-width: 700px) {
-  h3:not(:first-child) {
+  #about h3:not(:first-child) {
     margin: 24px 0 0 0;
   }
 }
 @media screen and (min-width: 701px) {
-  h3:not(:first-child) {
+  #about h3:not(:first-child) {
     margin: 48px 0 0 0;
   }
 }
@@ -1370,6 +1370,30 @@ h3:first-child {
   margin: 0 !important;
   width: 24px;
   vertical-align: text-bottom;
+}
+#sectionHelpContent .basicsPrefix {
+  position: absolute;
+  margin-top: -1px;
+  font-weight: bold;
+  font-size: 20px;
+}
+#sectionHelpContent .basicsSearch {
+  position: absolute;
+  height: 30px;
+  margin: -3px 0 0 0 !important;
+  box-shadow: none !important;
+}
+#sectionHelpContent .basicsSearchPriority {
+  margin-left: -10px !important;
+}
+#sectionHelpContent .basicsPrefix + span {
+  display: inline-block;
+}
+#sectionHelpContent .basicsPrefix + span {
+  margin-left: 32px;
+}
+#sectionHelpContent .basicsSearch + span {
+  margin-left: 48px;
 }
 .videoWrapper.showPlayButton {
   position: relative;

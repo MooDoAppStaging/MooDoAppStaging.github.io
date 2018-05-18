@@ -3654,15 +3654,6 @@ var Help = function (_React$Component) {
                 { id: 'help' },
                 _react2.default.createElement(_Nav2.default, { top: true }),
                 _react2.default.createElement(
-                    _reactStatic.Head,
-                    null,
-                    _react2.default.createElement(
-                        'style',
-                        null,
-                        '\n                            .basicsPrefix {\n                                position: absolute;\n                                margin-top: -1px;\n                                font-weight: bold;\n                                font-size: 20px;\n                            }\n\n                            .basicsSearch {\n                                position: absolute;\n                                height: 30px;\n                                margin: -3px 0 0 0 !important;\n                                box-shadow: none !important;\n                            }\n\n                            .basicsSearchPriority {\n                                margin-left: -10px !important;\n                            }\n\n                            .basicsPrefix+span {\n                                display: inline-block;\n                            }\n\n                            .basicsPrefix+span {\n                                margin-left: 32px;\n                            }\n\n                            .basicsSearch+span {\n                                margin-left: 48px;\n                            }\n                        '
-                    )
-                ),
-                _react2.default.createElement(
                     'div',
                     { id: 'topBarHelp' },
                     _react2.default.createElement(
@@ -8052,6 +8043,9 @@ var Post = function (_React$Component) {
                     _util2.default.removeExistingScript(script);
                     document.head.appendChild(script);
                 }
+
+                var isMac = navigator.userAgent.indexOf('Mac') >= 0;
+                this.setState({ isMac: isMac });
             }
         }
     }, {
@@ -8076,7 +8070,8 @@ var Post = function (_React$Component) {
                 dateStr = monthNames[date.getMonth()] + ' ' + date.getDate() + ', ' + date.getFullYear(),
                 category = post.category,
                 contents = post.contents,
-                indexOfExcerptHR = contents.indexOf(hrExcerpt);
+                indexOfExcerptHR = contents.indexOf(hrExcerpt),
+                cls = 'post' + (this.state ? this.state.isMac ? ' mac' : ' notmac' : '');
 
             if (indexOfExcerptHR >= 0) {
                 contents = props.excerpt ? contents.substr(0, indexOfExcerptHR) : contents.replace(hrExcerpt, '');
@@ -8084,7 +8079,7 @@ var Post = function (_React$Component) {
 
             return _react2.default.createElement(
                 'div',
-                { className: 'post', id: post.uid ? 'post_' + post.uid : undefined },
+                { className: cls, id: post.uid ? 'post_' + post.uid : undefined },
                 _react2.default.createElement(
                     'div',
                     { className: 'postHeader' },
@@ -8180,4 +8175,4 @@ module.exports = require("htmr");
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=static.3399e4dd.js.map
+//# sourceMappingURL=static.27e68121.js.map
