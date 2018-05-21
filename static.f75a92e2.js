@@ -8179,7 +8179,7 @@ var Post = function (_React$Component) {
                 { className: 'post', id: post.uid ? 'post_' + post.uid : undefined },
                 _react2.default.createElement(
                     'div',
-                    { className: 'postHeader' },
+                    { className: 'postHeader' + (post.image ? ' withImage' : '') },
                     _react2.default.createElement(
                         'header',
                         { className: 'padded' },
@@ -8217,6 +8217,7 @@ var Post = function (_React$Component) {
                         )
                     )
                 ),
+                post.image && _react2.default.createElement('img', { className: 'postImg postImgFull', src: post.image }),
                 _react2.default.createElement(
                     'div',
                     { className: 'postContent padded' },
@@ -8272,4 +8273,4 @@ module.exports = require("htmr");
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=static.b8294127.js.map
+//# sourceMappingURL=static.f75a92e2.js.map

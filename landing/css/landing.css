@@ -729,21 +729,21 @@ iframe[seamless] {
   color: #09d;
 }
 .pageWidth > div {
-  max-width: 820px;
+  max-width: 740px;
   margin-left: auto;
   margin-right: auto;
 }
 .padded {
-  max-width: 820px;
+  max-width: 740px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .unpadded {
   max-width: 920px;
-  margin-left: -65px;
-  margin-right: -65px;
+  margin-left: -105px;
+  margin-right: -105px;
 }
 a {
   text-decoration: none;
