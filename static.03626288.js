@@ -8176,13 +8176,13 @@ var Post = function (_React$Component) {
 
             return _react2.default.createElement(
                 'div',
-                { className: 'post', id: post.uid ? 'post_' + post.uid : undefined },
+                { className: 'post padded', id: post.uid ? 'post_' + post.uid : undefined },
                 _react2.default.createElement(
                     'div',
                     { className: 'postHeader' + (post.image ? ' withImage' : '') },
                     _react2.default.createElement(
                         'header',
-                        { className: 'padded' },
+                        null,
                         _react2.default.createElement(
                             _reactStatic.Link,
                             { to: '/blog/' + post.slug, prefetch: false },
@@ -8191,7 +8191,7 @@ var Post = function (_React$Component) {
                     ),
                     _react2.default.createElement(
                         'div',
-                        { className: 'postMetadata padded' },
+                        { className: 'postMetadata' },
                         _react2.default.createElement(
                             'span',
                             { className: 'postDate' },
@@ -8220,7 +8220,7 @@ var Post = function (_React$Component) {
                 post.image && _react2.default.createElement('img', { className: 'postImg postImgFull', src: post.image }),
                 _react2.default.createElement(
                     'div',
-                    { className: 'postContent padded' },
+                    { className: 'postContent' },
                     _react2.default.createElement('div', { dangerouslySetInnerHTML: { __html: contents } }),
                     props.excerpt && _react2.default.createElement(
                         'div',
@@ -8241,7 +8241,7 @@ var Post = function (_React$Component) {
                     null,
                     _react2.default.createElement(
                         'div',
-                        { id: 'social', className: 'padded' },
+                        { id: 'social' },
                         _react2.default.createElement('span', { id: 'shareFB', className: 'fb-share-button', 'data-href': 'https://www.moo.do/blog/' + post.slug, 'data-type': 'button' }),
                         _react2.default.createElement(
                             'a',
@@ -8273,4 +8273,4 @@ module.exports = require("htmr");
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=static.f75a92e2.js.map
+//# sourceMappingURL=static.03626288.js.map

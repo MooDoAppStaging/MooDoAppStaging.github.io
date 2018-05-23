@@ -13,17 +13,20 @@ html,
 body {
   height: 100%;
 }
+body {
+  font-size: 18px;
+  line-height: 1.6;
+}
 .postImg {
-  margin: 0 auto;
+  margin: 24px auto;
   display: block;
   width: 600px;
   max-width: 100%;
-  box-shadow: 0 0px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 1px 16px rgba(0, 0, 0, 0.2);
   border-radius: 3px;
 }
 .postImgFull {
-  width: 700px;
-  margin-bottom: 2em;
+  width: auto;
 }
 .blog header {
   margin-bottom: 12px;

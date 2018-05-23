@@ -9,9 +9,9 @@
             <link>https://www.moo.do</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Mon, 21 May 2018 13:27:25 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 23 May 2018 05:44:24 GMT</lastBuildDate>
         <atom:link href="https://www.moo.do/blog/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Mon, 21 May 2018 13:27:25 GMT</pubDate>
+        <pubDate>Wed, 23 May 2018 05:44:24 GMT</pubDate>
         <item>
             <title><![CDATA[Desktop Beta]]></title>
             <description><![CDATA[<p>Thanks for checking out the beta! The main goals of these changes are to make Moo.do more intuitive for new users and to focus on being a killer task management app.</p>
@@ -76,10 +76,6 @@
 <h1 id="help-us-improve">Help us improve</h1>
 <p>Please let us know if you find any issues or have any suggestions. The best way to do that for the beta is post in the Moo.do Slack. If you’re not on the Slack and would like to join, send us an email to <a href="mailto:contact@moo.do">contact@moo.do</a>.</p>
 <style>
-.postImgBeta {
-    margin: 24px auto;
-    width: 100%;
-}
 .postImgBetaSmall {
     margin: 24px auto;
     width: auto;
