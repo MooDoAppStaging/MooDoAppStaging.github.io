@@ -9,9 +9,9 @@
             <link>https://www.moo.do</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Wed, 23 May 2018 06:09:25 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 23 May 2018 07:36:24 GMT</lastBuildDate>
         <atom:link href="https://www.moo.do/blog/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Wed, 23 May 2018 06:09:25 GMT</pubDate>
+        <pubDate>Wed, 23 May 2018 07:36:24 GMT</pubDate>
         <item>
             <title><![CDATA[Big update: killer task management]]></title>
             <description><![CDATA[<p>We began this year with a new goal: to make Moo.do into a <strong>killer task management app</strong>. Until now we had been focused on putting the pieces together: outlining, task management, calendar, and email. And with that complete, we took a step back to redesign Moo.do around the way people actually use it.</p>
@@ -40,7 +40,7 @@
 <p>The new view modes can be sorted alphabetically, by number of items, priority, date due, and date created. And the Agenda can be sorted by date created and date completed, which is very useful to track the tasks you’ve completed over time.
 <img class="postImg postImgFull" style="width: 460px;" src="https://www.moo.do/blog/img/update-desktop-2018-6.png" /></p>
 <h2 id="search-upgraded">Search upgraded</h2>
-<p>Search now supports OR to show results from multiple searches. New date-based searches like `before:<span class="date">@tomorrow</span>‘ and <span class="date">@overdue</span> help keep on top of what to do next. And you can type $ to quickly autocomplete an item to zoom into.
+<p>Search now supports OR to show results from multiple searches. New date-based searches like <span class="date">before:@tomorrow</span> and <span class="date">@overdue</span> help keep on top of what to do next. And you can type $ to quickly autocomplete an item to zoom into.
 <img class="postImg postImgFull" style="width: 460px;" src="https://www.moo.do/blog/img/update-desktop-2018-7.png" /></p>
 <h1 id="design-your-document">Design your document</h1>
 <p>You can now format text and include inline images. New Display Settings give more control over how your document looks. Notes and emails support rich text. And panes are resizable to fully customize what you’re focused on.

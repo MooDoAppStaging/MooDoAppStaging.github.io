@@ -8219,10 +8219,10 @@ var Post = function (_React$Component) {
                         )
                     )
                 ),
-                post.image && _react2.default.createElement('img', { className: 'postImg postImgFull', src: post.image }),
                 _react2.default.createElement(
                     'div',
                     { className: 'postContent' },
+                    post.image && _react2.default.createElement('img', { className: 'postImg postImgFull postImgHero', src: post.image }),
                     _react2.default.createElement('div', { dangerouslySetInnerHTML: { __html: contents } }),
                     props.excerpt && _react2.default.createElement(
                         'div',
@@ -8275,4 +8275,4 @@ module.exports = require("htmr");
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=static.18a6ac80.js.map
+//# sourceMappingURL=static.1ae42376.js.map

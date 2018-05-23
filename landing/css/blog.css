@@ -27,6 +27,8 @@ body {
 }
 .postImgFull {
   width: auto;
+}
+.postImgHero {
   margin-bottom: 2em;
 }
 .blog header {
