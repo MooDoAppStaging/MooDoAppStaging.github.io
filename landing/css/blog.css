@@ -18,7 +18,7 @@ body {
   line-height: 1.6;
 }
 .postImg {
-  margin: 24px auto;
+  margin: 1.5em auto;
   display: block;
   width: 600px;
   max-width: 100%;
@@ -27,6 +27,7 @@ body {
 }
 .postImgFull {
   width: auto;
+  margin-bottom: 2em;
 }
 .blog header {
   margin-bottom: 12px;
