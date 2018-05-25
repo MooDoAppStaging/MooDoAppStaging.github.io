@@ -13,13 +13,29 @@ html,
 body {
   height: 100%;
 }
+body {
+  font-size: 18px;
+  line-height: 1.6;
+}
 .postImg {
-  margin: 0 auto;
+  margin: 1.5em auto;
   display: block;
   width: 600px;
   max-width: 100%;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 1px 16px rgba(0, 0, 0, 0.2);
   border-radius: 3px;
+}
+.postImgFull {
+  width: auto;
+}
+.postImgHero {
+  margin-bottom: 2em;
+}
+.blog header {
+  margin-bottom: 12px;
+}
+.blog #topBar {
+  margin-bottom: 0;
 }
 p + p,
 ul + p {
@@ -46,6 +62,7 @@ ul + p {
   list-style-type: none;
   padding: 0;
   padding-left: 6px;
+  margin-top: 0.5em;
 }
 .postContent ul li,
 .postExcerpt ul li {
@@ -103,8 +120,8 @@ ul + p {
     padding-bottom: 0.3em;
   }
 }
-a {
-  text-decoration: none;
+a:not(.linkButton) {
+  color: #09d;
 }
 /*****************************************************************************/
 /*
@@ -131,7 +148,7 @@ a {
   min-height: 100vh;
   background: white;
 }
-.post:first-child {
+.post:first-child .postHeader {
   padding-top: 60px;
 }
  > .post {
@@ -242,17 +259,22 @@ a {
 .postHeader {
   position: relative;
   text-align: center;
+}
+.postHeader:not(.withImage) {
   margin-bottom: 4em;
+}
+.postHeader.withImage {
+  margin-bottom: 2em;
 }
 .postMetadata {
   font-size: 85%;
   margin-bottom: 8px;
 }
 .postMetadata * {
-  color: #aaa;
+  color: #aaa !important;
 }
 .postMetadata a:hover {
-  color: #222;
+  color: #222 !important;
 }
 .pagination {
   margin-top: 3em;
@@ -380,22 +402,4 @@ a {
 }
 .b {
   font-weight: bold;
-}
-.post.mac .hotkeyPri:before {
-  content: '⌘';
-}
-.post.mac .hotkeySec:before {
-  content: 'Ctrl';
-}
-.post.mac .onlyWin {
-  display: none;
-}
-.post.notmac .hotkeyPri:before {
-  content: 'Ctrl';
-}
-.post.notmac .hotkeySec:before {
-  content: 'Alt';
-}
-.post.notmac .onlyMac {
-  display: none;
 }
