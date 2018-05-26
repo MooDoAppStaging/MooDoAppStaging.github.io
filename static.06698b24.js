@@ -5856,21 +5856,46 @@ exports.default = (0, _reactHotLoader.hot)(module)(function () {
             _react2.default.createElement(
                 'p',
                 null,
-                'Beta version of the ',
-                _react2.default.createElement('span', { className: 'platformName' }),
-                ' app at ',
+                'In the ',
                 _react2.default.createElement(
                     'a',
                     { href: 'https://beta.moo.do/download/' },
-                    'https://beta.moo.do/download/'
+                    _react2.default.createElement('span', { className: 'platformName' }),
+                    ' app'
                 ),
-                '. In the app you will see a \u201CUse beta version\u201D checkbox in the Moo.do menu to toggle between the beta version and the normal version.'
+                ' you will see a "Use beta version" checkbox in the ',
+                _react2.default.createElement(
+                    'span',
+                    { 'class': 'onlyMac' },
+                    'Moo.do'
+                ),
+                _react2.default.createElement(
+                    'span',
+                    { 'class': 'onlyWin' },
+                    'File'
+                ),
+                ' menu to toggle between the beta version and the normal version.',
+                _react2.default.createElement(
+                    'span',
+                    { 'class': 'onlyWin' },
+                    ' You may need to press ',
+                    _react2.default.createElement(
+                        'span',
+                        { 'class': 'hotkey' },
+                        'Alt'
+                    ),
+                    ' to open the File menu.'
+                )
             ),
-            _react2.default.createElement('br', null),
             _react2.default.createElement(
                 'h1',
                 null,
                 'Join the community'
+            ),
+            _react2.default.createElement(
+                'p',
+                null,
+                'This is the best place to post bug reports and feature requests, where the group can discuss and iterate on ideas in real-time.'
             ),
             _react2.default.createElement(
                 'a',
@@ -8243,7 +8268,7 @@ var Post = function (_React$Component) {
                             _react2.default.createElement(
                                 _reactStatic.Link,
                                 { to: '/blog/' + post.slug, prefetch: false },
-                                'Continue Reading...'
+                                indexOfExcerptHR >= 0 ? 'Continue Reading...' : 'Continue to comments...'
                             )
                         )
                     )
@@ -8285,4 +8310,4 @@ module.exports = require("htmr");
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=static.358e7746.js.map
+//# sourceMappingURL=static.06698b24.js.map
