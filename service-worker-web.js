@@ -1,4 +1,4 @@
-var CacheName = 'moodo-cache-1530277148282',
+var CacheName = 'moodo-cache-1530304101618',
     CacheNameCommon = 'moodo-cache-data';
 
 function notifyClient(text)
@@ -22,15 +22,15 @@ self.addEventListener('install', function (e)
         {
             return cache.addAll([
                 '/web/',
-                '/web/index-1530277148282.html',
-                '/web/js/vendor-1530277148282.js',
-                '/web/js/delayedUI-1530277148282.js',
-                '/web/js/dimport-1530277148282.js',
-                '/web/js/main-min-1530277148282.js',
-                '/web/js/preload-min-1530277148282.js',
-                '/web/css/app-min-1530277148282.css',
-                '/web/css/fonts/fonticons-1530277148282.woff',
-                '/web/css/fonts/fonticons-1530277148282.ttf'
+                '/web/index-1530304101618.html',
+                '/web/js/vendor-1530304101618.js',
+                '/web/js/delayedUI-1530304101618.js',
+                '/web/js/dimport-1530304101618.js',
+                '/web/js/main-min-1530304101618.js',
+                '/web/js/preload-min-1530304101618.js',
+                '/web/css/app-min-1530304101618.css',
+                '/web/css/fonts/fonticons-1530304101618.woff',
+                '/web/css/fonts/fonticons-1530304101618.ttf'
             ]);
         }).then(caches.open(CacheNameCommon).then(function (cacheCommon)
         {
@@ -73,7 +73,7 @@ self.addEventListener('fetch', function (event)
     {
         if (urlObj.pathname === pathname)
         {
-            url = url.replace(pathname, pathname + 'index-1530277148282.html');
+            url = url.replace(pathname, pathname + 'index-1530304101618.html');
         }
 
         event.respondWith(
