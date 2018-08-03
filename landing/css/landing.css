@@ -1515,6 +1515,7 @@ html:not(.Mac) .onlyMac {
   display: flex;
 }
 .changelog .change {
+  display: block;
   font-weight: bold;
   color: white;
   width: 82px;
@@ -1527,6 +1528,8 @@ html:not(.Mac) .onlyMac {
   font-size: 12px;
   margin-right: 16px;
   margin-top: -3px;
+  float: left;
+  height: 100%;
 }
 .changelog h1 {
   margin-top: 1.5em;
@@ -1542,18 +1545,20 @@ html:not(.Mac) .onlyMac {
   font-size: 18px;
   margin: 16px 0 12px 4px;
 }
-.changelog .changeFixed {
+.changelog .changeFix {
   background: #09d;
 }
 .changelog .changeFeature {
   background: #2a6;
 }
-.changelog .changeChanged {
+.changelog .changeChange {
   background: #fa0;
 }
 .changelog .changeSpeed {
   background: #c21;
 }
-.changelog .changeBlog {
+.changelog .changeBlog,
+.changelog .changeRelease,
+.changelog .changeMisc {
   background: #444;
 }
