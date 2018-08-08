@@ -3751,6 +3751,10 @@ exports.default = (0, _reactHotLoader.hot)(module)((0, _reactStatic.withRouteDat
 
     var contents = post.contents;
 
+    contents = contents.replace(/<li>(Fix|Feature|Change|Speed|Blog|Release|Misc):(.*)<\/li>/g, function (match, m1, m2) {
+        return '<li><span class="change change' + m1 + '">' + m1 + '</span><span>' + m2 + '</span></li>';
+    });
+
     return _react2.default.createElement(
         'div',
         { className: 'changelog' },
@@ -8446,4 +8450,4 @@ module.exports = require("htmr");
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=static.4f5f1775.js.map
+//# sourceMappingURL=static.fe35d5a2.js.map
