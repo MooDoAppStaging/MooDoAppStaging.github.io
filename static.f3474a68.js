@@ -6514,7 +6514,7 @@ var universalOptions = {
 
 var t_0 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)({
   id: '../src/containers/Home',
-  file: '/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/dist/react-static-routes.js',
+  file: '/Users/jay/Documents/code/basketcaseExperiments master/Duchess/static/dist/react-static-routes.js',
   load: function load() {
     return Promise.all([new Promise(function(resolve) { resolve(); }).then(__webpack_require__.bind(null, 11)), (0, _importCss3.default)('src/containers/Home', {
       disableWarnings: true
@@ -6534,7 +6534,7 @@ var t_0 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)(
 }), universalOptions);
 var t_1 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)({
   id: '../src/containers/Premium',
-  file: '/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/dist/react-static-routes.js',
+  file: '/Users/jay/Documents/code/basketcaseExperiments master/Duchess/static/dist/react-static-routes.js',
   load: function load() {
     return Promise.all([new Promise(function(resolve) { resolve(); }).then(__webpack_require__.bind(null, 12)), (0, _importCss3.default)('src/containers/Premium', {
       disableWarnings: true
@@ -6554,7 +6554,7 @@ var t_1 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)(
 }), universalOptions);
 var t_2 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)({
   id: '../src/containers/Help',
-  file: '/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/dist/react-static-routes.js',
+  file: '/Users/jay/Documents/code/basketcaseExperiments master/Duchess/static/dist/react-static-routes.js',
   load: function load() {
     return Promise.all([new Promise(function(resolve) { resolve(); }).then(__webpack_require__.bind(null, 13)), (0, _importCss3.default)('src/containers/Help', {
       disableWarnings: true
@@ -6574,7 +6574,7 @@ var t_2 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)(
 }), universalOptions);
 var t_3 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)({
   id: '../src/containers/Changelog',
-  file: '/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/dist/react-static-routes.js',
+  file: '/Users/jay/Documents/code/basketcaseExperiments master/Duchess/static/dist/react-static-routes.js',
   load: function load() {
     return Promise.all([new Promise(function(resolve) { resolve(); }).then(__webpack_require__.bind(null, 14)), (0, _importCss3.default)('src/containers/Changelog', {
       disableWarnings: true
@@ -6594,7 +6594,7 @@ var t_3 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)(
 }), universalOptions);
 var t_4 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)({
   id: '../src/containers/Us',
-  file: '/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/dist/react-static-routes.js',
+  file: '/Users/jay/Documents/code/basketcaseExperiments master/Duchess/static/dist/react-static-routes.js',
   load: function load() {
     return Promise.all([new Promise(function(resolve) { resolve(); }).then(__webpack_require__.bind(null, 15)), (0, _importCss3.default)('src/containers/Us', {
       disableWarnings: true
@@ -6614,7 +6614,7 @@ var t_4 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)(
 }), universalOptions);
 var t_5 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)({
   id: '../src/containers/Contact',
-  file: '/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/dist/react-static-routes.js',
+  file: '/Users/jay/Documents/code/basketcaseExperiments master/Duchess/static/dist/react-static-routes.js',
   load: function load() {
     return Promise.all([new Promise(function(resolve) { resolve(); }).then(__webpack_require__.bind(null, 16)), (0, _importCss3.default)('src/containers/Contact', {
       disableWarnings: true
@@ -6634,7 +6634,7 @@ var t_5 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)(
 }), universalOptions);
 var t_6 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)({
   id: '../src/containers/Press',
-  file: '/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/dist/react-static-routes.js',
+  file: '/Users/jay/Documents/code/basketcaseExperiments master/Duchess/static/dist/react-static-routes.js',
   load: function load() {
     return Promise.all([new Promise(function(resolve) { resolve(); }).then(__webpack_require__.bind(null, 17)), (0, _importCss3.default)('src/containers/Press', {
       disableWarnings: true
@@ -6654,7 +6654,7 @@ var t_6 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)(
 }), universalOptions);
 var t_7 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)({
   id: '../src/containers/Privacy',
-  file: '/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/dist/react-static-routes.js',
+  file: '/Users/jay/Documents/code/basketcaseExperiments master/Duchess/static/dist/react-static-routes.js',
   load: function load() {
     return Promise.all([new Promise(function(resolve) { resolve(); }).then(__webpack_require__.bind(null, 18)), (0, _importCss3.default)('src/containers/Privacy', {
       disableWarnings: true
@@ -6674,7 +6674,7 @@ var t_7 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)(
 }), universalOptions);
 var t_8 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)({
   id: '../src/containers/Unsubscribe',
-  file: '/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/dist/react-static-routes.js',
+  file: '/Users/jay/Documents/code/basketcaseExperiments master/Duchess/static/dist/react-static-routes.js',
   load: function load() {
     return Promise.all([new Promise(function(resolve) { resolve(); }).then(__webpack_require__.bind(null, 19)), (0, _importCss3.default)('src/containers/Unsubscribe', {
       disableWarnings: true
@@ -6694,7 +6694,7 @@ var t_8 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)(
 }), universalOptions);
 var t_9 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)({
   id: '../src/containers/Purchase',
-  file: '/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/dist/react-static-routes.js',
+  file: '/Users/jay/Documents/code/basketcaseExperiments master/Duchess/static/dist/react-static-routes.js',
   load: function load() {
     return Promise.all([new Promise(function(resolve) { resolve(); }).then(__webpack_require__.bind(null, 20)), (0, _importCss3.default)('src/containers/Purchase', {
       disableWarnings: true
@@ -6714,7 +6714,7 @@ var t_9 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)(
 }), universalOptions);
 var t_10 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)({
   id: '../src/containers/Invoice',
-  file: '/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/dist/react-static-routes.js',
+  file: '/Users/jay/Documents/code/basketcaseExperiments master/Duchess/static/dist/react-static-routes.js',
   load: function load() {
     return Promise.all([new Promise(function(resolve) { resolve(); }).then(__webpack_require__.bind(null, 21)), (0, _importCss3.default)('src/containers/Invoice', {
       disableWarnings: true
@@ -6734,7 +6734,7 @@ var t_10 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)
 }), universalOptions);
 var t_11 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)({
   id: '../src/containers/Beta',
-  file: '/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/dist/react-static-routes.js',
+  file: '/Users/jay/Documents/code/basketcaseExperiments master/Duchess/static/dist/react-static-routes.js',
   load: function load() {
     return Promise.all([new Promise(function(resolve) { resolve(); }).then(__webpack_require__.bind(null, 22)), (0, _importCss3.default)('src/containers/Beta', {
       disableWarnings: true
@@ -6754,7 +6754,7 @@ var t_11 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)
 }), universalOptions);
 var t_12 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)({
   id: '../src/containers/Blog',
-  file: '/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/dist/react-static-routes.js',
+  file: '/Users/jay/Documents/code/basketcaseExperiments master/Duchess/static/dist/react-static-routes.js',
   load: function load() {
     return Promise.all([new Promise(function(resolve) { resolve(); }).then(__webpack_require__.bind(null, 23)), (0, _importCss3.default)('src/containers/Blog', {
       disableWarnings: true
@@ -6774,7 +6774,7 @@ var t_12 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)
 }), universalOptions);
 var t_13 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)({
   id: '../src/containers/404',
-  file: '/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/dist/react-static-routes.js',
+  file: '/Users/jay/Documents/code/basketcaseExperiments master/Duchess/static/dist/react-static-routes.js',
   load: function load() {
     return Promise.all([new Promise(function(resolve) { resolve(); }).then(__webpack_require__.bind(null, 24)), (0, _importCss3.default)('src/containers/404', {
       disableWarnings: true
@@ -8450,4 +8450,4 @@ module.exports = require("htmr");
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=static.fe35d5a2.js.map
+//# sourceMappingURL=static.f3474a68.js.map
