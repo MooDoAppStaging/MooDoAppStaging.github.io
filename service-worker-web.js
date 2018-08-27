@@ -1,4 +1,4 @@
-var CacheName = 'moodo-cache-1535391023716',
+var CacheName = 'moodo-cache-1535391401642',
     CacheNameCommon = 'moodo-cache-data';
 
 function notifyClient(text)
@@ -22,15 +22,15 @@ self.addEventListener('install', function (e)
         {
             return cache.addAll([
                 '/web/',
-                '/web/index-1535391023716.html',
-                '/web/js/vendor-1535391023716.js',
-                '/web/js/delayedUI-1535391023716.js',
-                '/web/js/dimport-1535391023716.js',
-                '/web/js/main-min-1535391023716.js',
-                '/web/js/preload-min-1535391023716.js',
-                '/web/css/app-min-1535391023716.css',
-                '/web/css/fonts/fonticons-1535391023716.woff',
-                '/web/css/fonts/fonticons-1535391023716.ttf'
+                '/web/index-1535391401642.html',
+                '/web/js/vendor-1535391401642.js',
+                '/web/js/delayedUI-1535391401642.js',
+                '/web/js/dimport-1535391401642.js',
+                '/web/js/main-min-1535391401642.js',
+                '/web/js/preload-min-1535391401642.js',
+                '/web/css/app-min-1535391401642.css',
+                '/web/css/fonts/fonticons-1535391401642.woff',
+                '/web/css/fonts/fonticons-1535391401642.ttf'
             ]);
         }).then(caches.open(CacheNameCommon).then(function (cacheCommon)
         {
@@ -71,10 +71,9 @@ self.addEventListener('fetch', function (event)
 
     if (urlObj.origin === location.origin && urlObj.href.indexOf(urlObj.origin + pathname) === 0)
     {
-        console.log(urlObj);
         if (urlObj.pathname === pathname)
         {
-            url = url.replace(pathname, pathname + 'index-1535391023716.html');
+            url = url.replace(pathname, pathname + 'index-1535391401642.html');
         }
 
         event.respondWith(
@@ -83,10 +82,6 @@ self.addEventListener('fetch', function (event)
                 return response || fetch(event.request);
             }).catch(function () { })
         );
-    }
-    else
-    {
-        console.log('nope', urlObj);
     }
 });
 
