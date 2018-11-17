@@ -1,4 +1,4 @@
-var CacheName = 'moodo-cache-1542449939907',
+var CacheName = 'moodo-cache-1542450305611',
     CacheNameCommon = 'moodo-cache-data';
 
 function notifyClient(text)
@@ -22,16 +22,16 @@ self.addEventListener('install', function (e)
         {
             return cache.addAll([
                 '/w/',
-                '/w/index-1542449939907.html',
-                '/w/js/vendor-1542449939907.js',
-                '/w/js/delayedUI-1542449939907.js',
-                '/w/js/dimport-1542449939907.js',
-                '/w/js/app-1542449939907.js',
-                '/w/js/preload-1542449939907.js',
-                '/w/js/preload.worker-1542449939907.js',
-                '/w/css/app-min-1542449939907.css',
-                '/w/css/fonts/fonticons-1542449939907.woff',
-                '/w/css/fonts/fonticons-1542449939907.ttf'
+                '/w/index-1542450305611.html',
+                '/w/js/vendor-1542450305611.js',
+                '/w/js/delayedUI-1542450305611.js',
+                '/w/js/dimport-1542450305611.js',
+                '/w/js/app-1542450305611.js',
+                '/w/js/preload-1542450305611.js',
+                '/w/js/preload.worker-1542450305611.js',
+                '/w/css/app-min-1542450305611.css',
+                '/w/css/fonts/fonticons-1542450305611.woff',
+                '/w/css/fonts/fonticons-1542450305611.ttf'
             ]);
         }).then(caches.open(CacheNameCommon).then(function (cacheCommon)
         {
@@ -74,7 +74,7 @@ self.addEventListener('fetch', function (event)
     {
         if (urlObj.pathname === pathname)
         {
-            url = url.replace(pathname, pathname + 'index-1542449939907.html');
+            url = url.replace(pathname, pathname + 'index-1542450305611.html');
         }
 
         event.respondWith(
