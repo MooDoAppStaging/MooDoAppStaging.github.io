@@ -6,6 +6,8 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
 <script type="text/javascript">
+    var token = undefined;
+
     function getQueryByName(name)
     {
         var regex = /([^&=]+)=([^&]*)/g;
@@ -24,7 +26,7 @@
 
     function handleGoogleAuth()
     {
-        var token = {
+        token = {
                 access_token: getQueryByName('access_token'),
                 expires_at: getQueryByName('expires_at'),
                 scopes: getQueryByName('scopes'),
@@ -40,6 +42,22 @@
 
         return token;
     }
+
+    if ('BroadcastChannel' in self)
+    {
+        let channel = new BroadcastChannel('Moo.do_auth_gapi_channel');
+
+        channel.onmessage = function (event)
+        {
+            if (event.data === 'checkAuth')
+            {
+                channel.postMessage(token);
+
+                window.close();
+            }
+        };
+    }
+
 </script>
 
 </head>
