@@ -56,19 +56,53 @@
 
             if (userAgent.indexOf('Mac') !== -1)
             {
-                window.location = 'https://github.com/MooDoApp/MooDoApp.github.io/releases/download/v1.2.0/Moo.do-1.2.0-mac.zip';
+                assetExt = '-mac.zip';
             }
             else if (userAgent.indexOf('Windows') !== -1)
             {
-                window.location = 'https://github.com/MooDoApp/MooDoApp.github.io/releases/download/v1.2.0/Moo.do-Setup-1.2.0.exe';
+                assetExt = '.exe';
             }
             else if (userAgent.indexOf('Linux') !== -1)
             {
-                window.location = 'https://github.com/MooDoApp/MooDoApp.github.io/releases/download/v1.2.0/Moo.do-1.2.0.x86_64.AppImage';
+                assetExt = '.AppImage';
             }
             else
             {
                 document.getElementById('spanText').textContent = 'App is not available for your platform yet. Please email support@moo.do to request it.';
+            }
+
+            if (assetExt)
+            {
+                var xhr = new XMLHttpRequest(),
+                    url = 'https://api.github.com/repos/MooDoApp/MooDoApp.github.io/releases/latest';
+
+                xhr.onreadystatechange = function ()
+                {
+                    if (xhr.readyState === 4)
+                    {
+                        if (xhr.status === 200)
+                        {
+                            var data = JSON.parse(xhr.responseText);
+
+                            if (data && data.assets)
+                            {
+                                for (var i = 0; i < data.assets.length; ++i)
+                                {
+                                    var asset = data.assets[i];
+                                    if (asset.name.indexOf(assetExt) > 0)
+                                    {
+                                        window.location = asset.browser_download_url;
+                                        return;
+                                    }
+                                }
+                            }
+                        }
+                        window.location = url;
+                    }
+                }
+
+                xhr.open('GET', url);
+                xhr.send();
             }
         })();
     </script>
