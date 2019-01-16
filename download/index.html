@@ -31,21 +31,17 @@
             <i class="icon-desktop"></i>
             <div>Mac</div>
         </a>
-        <a class="platform linkButton" id="downloadLinuxAppImage" href="https://github.com/MooDoApp/MooDoApp.github.io/releases/download/v1.2.1/Moo.do-1.2.1.x86_64.AppImage">
+        <a class="platform linkButton" id="downloadLinuxAppImage" href="https://github.com/MooDoApp/MooDoApp.github.io/releases/latest/">
             <i class="icon-linux"></i>
             <div>Linux .AppImage</div>
         </a>
-        <a class="platform linkButton" id="downloadLinuxDeb" href="https://github.com/MooDoApp/MooDoApp.github.io/releases/download/v1.2.1/Moo.do-1.2.1-amd64.deb">
+        <a class="platform linkButton" id="downloadLinuxDeb" href="https://github.com/MooDoApp/MooDoApp.github.io/releases/latest/">
             <i class="icon-linux"></i>
             <div>Linux .deb</div>
         </a>
-        <a class="platform linkButton" id="downloadLinuxSnap" href="https://github.com/MooDoApp/MooDoApp.github.io/releases/download/v1.2.1/Moo.do-1.2.1-amd64.snap">
+        <a class="platform linkButton" id="downloadLinuxSnap" href="https://github.com/MooDoApp/MooDoApp.github.io/releases/latest/">
             <i class="icon-linux"></i>
             <div>Linux .snap</div>
-        </a>
-        <a class="platform linkButton" href="https://chrome.google.com/webstore/detail/moodo/iffimmolghilclfndeiebgppddmagofk">
-            <i class="icon-chrome"></i>
-            <div>Chrome</div>
         </a>
         <a class="platform linkButton" href="https://itunes.apple.com/us/app/moo.do-organize-your-way/id889830074?ls=1&mt=8">
             <i class="icon-apple"></i>
@@ -60,25 +56,107 @@
         (function run()
         {
             var userAgent = navigator.userAgent,
-                assetExt;
+                el = document.getElementById;
 
-            if (userAgent.indexOf('Mac') !== -1)
+            if (location.hostname === 'www.moo.do')
             {
-                window.location = 'https://github.com/MooDoApp/MooDoApp.github.io/releases/download/v1.2.1/Moo.do-1.2.1-mac.zip';
-            }
-            else if (userAgent.indexOf('Windows') !== -1)
-            {
-                window.location = 'https://github.com/MooDoApp/MooDoApp.github.io/releases/download/v1.2.1/Moo.do-Setup-1.2.1.exe';
-            }
-            else if (userAgent.indexOf('Linux') !== -1)
-            {
-                document.getElementById('spanButtons').style.display = 'block';
-                document.getElementById('spanText').style.display = 'none';
+                var extensions = {
+                        'zip': 'downloadOSX',
+                        'exe': 'downloadWindows',
+                        'AppImage': 'downloadLinuxAppImage',
+                        'deb': 'downloadLinuxDeb',
+                        'snap': 'downloadLinuxSnap'
+                    },
+                    assetExt;
+
+                if (userAgent.indexOf('Mac') !== -1)
+                {
+                    assetExt = '-mac.zip';
+                }
+                else if (userAgent.indexOf('Windows') !== -1)
+                {
+                    assetExt = '.exe';
+                }
+                else if (userAgent.indexOf('Linux') !== -1)
+                {
+                    el('spanButtons').style.display = 'block';
+                    el('spanText').style.display = 'none';
+                }
+                else
+                {
+                    el('spanButtons').style.display = 'block';
+                    el('spanText').textContent = 'The Moo.do app is not available for your platform yet. Please email support@moo.do to request it.';
+                }
+
+                var xhr = new XMLHttpRequest(),
+                    url = 'https://api.github.com/repos/MooDoApp/MooDoApp.github.io/releases/latest';
+
+                xhr.onreadystatechange = function ()
+                {
+                    if (xhr.readyState === 4)
+                    {
+                        if (xhr.status === 200)
+                        {
+                            var data = JSON.parse(xhr.responseText);
+                            var buttons = document.getElementById('spanButtons');
+
+                            if (data && data.assets)
+                            {
+                                for (var i = 0; i < data.assets.length; ++i)
+                                {
+                                    var asset = data.assets[i];
+                                    if (assetExt && asset.name.indexOf(assetExt) > 0)
+                                    {
+                                        // window.location = asset.browser_download_url;
+                                        return;
+                                    }
+                                    else if (!assetExt)
+                                    {
+                                        let split = asset.name.split('.'),
+                                            ext = split[split.length - 1],
+                                            target = extensions[ext];
+
+                                        if (target)
+                                        {
+                                            debugger;
+                                            console.log(asset.name, target, target.href);
+
+                                            document.getElementById(target).href = asset.browser_download_url;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        // window.location = url;
+                    }
+                }
+
+                xhr.open('GET', url);
+                xhr.send();
             }
             else
             {
-                document.getElementById('spanButtons').style.display = 'block';
-                document.getElementById('spanText').textContent = 'App is not available for your platform yet. Please email support@moo.do to request it.';
+                if (userAgent.indexOf('Mac') !== -1)
+                {
+                    // window.location = 'https://github.com/MooDoApp/MooDoApp.github.io/releases/download/v1.2.1/Moo.do-1.2.1-mac.zip';
+                }
+                else if (userAgent.indexOf('Windows') !== -1)
+                {
+                    // window.location = 'https://github.com/MooDoApp/MooDoApp.github.io/releases/download/v1.2.1/Moo.do-Setup-1.2.1.exe';
+                }
+                else if (userAgent.indexOf('Linux') !== -1)
+                {
+                    el('spanButtons').style.display = 'block';
+                    el('spanText').style.display = 'none';
+                    el('downloadLinuxAppImage').setAttribute('href', 'https://github.com/MooDoApp/MooDoApp.github.io/releases/download/v1.2.1/Moo.do-1.2.1.x86_64.AppImage');
+                    el('downloadLinuxDeb').setAttribute('href', 'https://github.com/MooDoApp/MooDoApp.github.io/releases/download/v1.2.1/Moo.do-1.2.1-amd64.deb');
+                    el('downloadLinuxSnap').setAttribute('href', 'https://github.com/MooDoApp/MooDoApp.github.io/releases/download/v1.2.1/Moo.do-1.2.1-amd64.snap');
+                }
+                else
+                {
+                    el('spanButtons').style.display = 'block';
+                    el('spanText').textContent = 'App is not available for your platform yet. Please email support@moo.do to request it.';
+                }
             }
         })();
     </script>
