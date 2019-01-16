@@ -56,7 +56,7 @@
         (function run()
         {
             var userAgent = navigator.userAgent,
-                el = document.getElementById;
+                el = document.getElementById.bind(document);
 
             if (location.hostname === 'www.moo.do')
             {
@@ -98,7 +98,7 @@
                         if (xhr.status === 200)
                         {
                             var data = JSON.parse(xhr.responseText);
-                            var buttons = document.getElementById('spanButtons');
+                            var buttons = el('spanButtons');
 
                             if (data && data.assets)
                             {
@@ -107,7 +107,7 @@
                                     var asset = data.assets[i];
                                     if (assetExt && asset.name.indexOf(assetExt) > 0)
                                     {
-                                        // window.location = asset.browser_download_url;
+                                        window.location = asset.browser_download_url;
                                         return;
                                     }
                                     else if (!assetExt)
@@ -118,16 +118,12 @@
 
                                         if (target)
                                         {
-                                            debugger;
-                                            console.log(asset.name, target, target.href);
-
-                                            document.getElementById(target).href = asset.browser_download_url;
+                                            el(target).href = asset.browser_download_url;
                                         }
                                     }
                                 }
                             }
                         }
-                        // window.location = url;
                     }
                 }
 
@@ -138,13 +134,13 @@
             {
                 if (userAgent.indexOf('Mac') !== -1)
                 {
-                    // window.location = 'https://github.com/MooDoApp/MooDoApp.github.io/releases/download/v1.2.1/Moo.do-1.2.1-mac.zip';
+                    window.location = 'https://github.com/MooDoApp/MooDoApp.github.io/releases/download/v1.2.1/Moo.do-1.2.1-mac.zip';
                 }
                 else if (userAgent.indexOf('Windows') !== -1)
                 {
-                    // window.location = 'https://github.com/MooDoApp/MooDoApp.github.io/releases/download/v1.2.1/Moo.do-Setup-1.2.1.exe';
+                    window.location = 'https://github.com/MooDoApp/MooDoApp.github.io/releases/download/v1.2.1/Moo.do-Setup-1.2.1.exe';
                 }
-                else if (userAgent.indexOf('Linux') !== -1)
+                else if (userAgent.indexOf('Mac') !== -1)
                 {
                     el('spanButtons').style.display = 'block';
                     el('spanText').style.display = 'none';
