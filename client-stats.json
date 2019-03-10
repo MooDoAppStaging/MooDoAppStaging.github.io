@@ -3,7 +3,7 @@
   "warnings": [],
   "version": "3.12.0",
   "hash": "94d2dd2263349eef8b48",
-  "time": 14387,
+  "time": 10664,
   "publicPath": "##BR_SITE_ROOT##/",
   "assetsByChunkName": {
     "src/containers/Help": [
@@ -5911,9 +5911,9 @@
             15
           ],
           "assets": [],
-          "issuer": "/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/node_modules/react-static/lib/client/components/SiteData.js",
-          "issuerId": 128,
-          "issuerName": "./node_modules/react-static/lib/client/components/SiteData.js",
+          "issuer": "/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/node_modules/react-static/lib/client/methods.js",
+          "issuerId": 11,
+          "issuerName": "./node_modules/react-static/lib/client/methods.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -13789,9 +13789,9 @@
         15
       ],
       "assets": [],
-      "issuer": "/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/node_modules/react-static/lib/client/components/SiteData.js",
-      "issuerId": 128,
-      "issuerName": "./node_modules/react-static/lib/client/components/SiteData.js",
+      "issuer": "/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/node_modules/react-static/lib/client/methods.js",
+      "issuerId": 11,
+      "issuerName": "./node_modules/react-static/lib/client/methods.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
