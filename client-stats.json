@@ -2,8 +2,8 @@
   "errors": [],
   "warnings": [],
   "version": "3.12.0",
-  "hash": "94d2dd2263349eef8b48",
-  "time": 5604,
+  "hash": "3c55587631f24e66b255",
+  "time": 7294,
   "publicPath": "##BR_SITE_ROOT##/",
   "assetsByChunkName": {
     "src/containers/Help": [
@@ -63,8 +63,8 @@
       "templates/src/containers/404.6fcdf968.js.map"
     ],
     "main": [
-      "main.c4d29d4d.js",
-      "main.c4d29d4d.js.map"
+      "main.bccc3b68.js",
+      "main.bccc3b68.js.map"
     ],
     "bootstrap": [
       "bootstrap.775dc5f7.js",
@@ -72,17 +72,6 @@
     ]
   },
   "assets": [
-    {
-      "name": "templates/src/containers/Help.bdb15e7f.js.map",
-      "size": 79650,
-      "chunks": [
-        0
-      ],
-      "chunkNames": [
-        "src/containers/Help"
-      ],
-      "emitted": true
-    },
     {
       "name": "templates/src/containers/Help.bdb15e7f.js",
       "size": 22591,
@@ -92,6 +81,15 @@
       "chunkNames": [
         "src/containers/Help"
       ],
+      "emitted": true
+    },
+    {
+      "name": "templates/1.9aaf5be2.js",
+      "size": 8227,
+      "chunks": [
+        1
+      ],
+      "chunkNames": [],
       "emitted": true
     },
     {
@@ -238,7 +236,7 @@
       "emitted": true
     },
     {
-      "name": "main.c4d29d4d.js",
+      "name": "main.bccc3b68.js",
       "size": 318540,
       "chunks": [
         15
@@ -261,12 +259,14 @@
       "emitted": true
     },
     {
-      "name": "templates/1.9aaf5be2.js",
-      "size": 8227,
+      "name": "templates/src/containers/Help.bdb15e7f.js.map",
+      "size": 79650,
       "chunks": [
-        1
+        0
       ],
-      "chunkNames": [],
+      "chunkNames": [
+        "src/containers/Help"
+      ],
       "emitted": true
     },
     {
@@ -422,7 +422,7 @@
       "emitted": true
     },
     {
-      "name": "main.c4d29d4d.js.map",
+      "name": "main.bccc3b68.js.map",
       "size": 1702708,
       "chunks": [
         15
@@ -454,8 +454,8 @@
       "assets": [
         "bootstrap.775dc5f7.js",
         "bootstrap.775dc5f7.js.map",
-        "main.c4d29d4d.js",
-        "main.c4d29d4d.js.map"
+        "main.bccc3b68.js",
+        "main.bccc3b68.js.map"
       ],
       "isOverSizeLimit": true
     }
@@ -2197,10 +2197,10 @@
         "main"
       ],
       "files": [
-        "main.c4d29d4d.js",
-        "main.c4d29d4d.js.map"
+        "main.bccc3b68.js",
+        "main.bccc3b68.js.map"
       ],
-      "hash": "c4d29d4dd0a673fdff38",
+      "hash": "bccc3b68a18b962e3132",
       "parents": [
         16
       ],
@@ -2744,9 +2744,9 @@
             15
           ],
           "assets": [],
-          "issuer": "/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/node_modules/react-static/lib/client/components/RouteData.js",
-          "issuerId": 106,
-          "issuerName": "./node_modules/react-static/lib/client/components/RouteData.js",
+          "issuer": "/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/node_modules/react-static/lib/client/components/SiteData.js",
+          "issuerId": 128,
+          "issuerName": "./node_modules/react-static/lib/client/components/SiteData.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -3731,9 +3731,9 @@
             15
           ],
           "assets": [],
-          "issuer": "/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/node_modules/react-static/lib/client/components/RouteData.js",
-          "issuerId": 106,
-          "issuerName": "./node_modules/react-static/lib/client/components/RouteData.js",
+          "issuer": "/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/node_modules/react-static/lib/client/components/SiteData.js",
+          "issuerId": 128,
+          "issuerName": "./node_modules/react-static/lib/client/components/SiteData.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -4789,9 +4789,9 @@
             15
           ],
           "assets": [],
-          "issuer": "/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/node_modules/history/es/createBrowserHistory.js",
-          "issuerId": 79,
-          "issuerName": "./node_modules/history/es/createBrowserHistory.js",
+          "issuer": "/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/node_modules/history/es/createMemoryHistory.js",
+          "issuerId": 81,
+          "issuerName": "./node_modules/history/es/createMemoryHistory.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -5085,9 +5085,9 @@
             15
           ],
           "assets": [],
-          "issuer": "/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/node_modules/react-static/lib/client/components/RouteData.js",
-          "issuerId": 106,
-          "issuerName": "./node_modules/react-static/lib/client/components/RouteData.js",
+          "issuer": "/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/node_modules/react-static/lib/client/components/SiteData.js",
+          "issuerId": 128,
+          "issuerName": "./node_modules/react-static/lib/client/components/SiteData.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -5911,9 +5911,9 @@
             15
           ],
           "assets": [],
-          "issuer": "/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/node_modules/react-static/lib/client/methods.js",
-          "issuerId": 11,
-          "issuerName": "./node_modules/react-static/lib/client/methods.js",
+          "issuer": "/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/node_modules/react-static/lib/client/components/SiteData.js",
+          "issuerId": 128,
+          "issuerName": "./node_modules/react-static/lib/client/components/SiteData.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -10622,9 +10622,9 @@
         15
       ],
       "assets": [],
-      "issuer": "/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/node_modules/react-static/lib/client/components/RouteData.js",
-      "issuerId": 106,
-      "issuerName": "./node_modules/react-static/lib/client/components/RouteData.js",
+      "issuer": "/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/node_modules/react-static/lib/client/components/SiteData.js",
+      "issuerId": 128,
+      "issuerName": "./node_modules/react-static/lib/client/components/SiteData.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -11609,9 +11609,9 @@
         15
       ],
       "assets": [],
-      "issuer": "/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/node_modules/react-static/lib/client/components/RouteData.js",
-      "issuerId": 106,
-      "issuerName": "./node_modules/react-static/lib/client/components/RouteData.js",
+      "issuer": "/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/node_modules/react-static/lib/client/components/SiteData.js",
+      "issuerId": 128,
+      "issuerName": "./node_modules/react-static/lib/client/components/SiteData.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -12667,9 +12667,9 @@
         15
       ],
       "assets": [],
-      "issuer": "/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/node_modules/history/es/createBrowserHistory.js",
-      "issuerId": 79,
-      "issuerName": "./node_modules/history/es/createBrowserHistory.js",
+      "issuer": "/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/node_modules/history/es/createMemoryHistory.js",
+      "issuerId": 81,
+      "issuerName": "./node_modules/history/es/createMemoryHistory.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -12963,9 +12963,9 @@
         15
       ],
       "assets": [],
-      "issuer": "/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/node_modules/react-static/lib/client/components/RouteData.js",
-      "issuerId": 106,
-      "issuerName": "./node_modules/react-static/lib/client/components/RouteData.js",
+      "issuer": "/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/node_modules/react-static/lib/client/components/SiteData.js",
+      "issuerId": 128,
+      "issuerName": "./node_modules/react-static/lib/client/components/SiteData.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -13789,9 +13789,9 @@
         15
       ],
       "assets": [],
-      "issuer": "/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/node_modules/react-static/lib/client/methods.js",
-      "issuerId": 11,
-      "issuerName": "./node_modules/react-static/lib/client/methods.js",
+      "issuer": "/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/node_modules/react-static/lib/client/components/SiteData.js",
+      "issuerId": 128,
+      "issuerName": "./node_modules/react-static/lib/client/components/SiteData.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
