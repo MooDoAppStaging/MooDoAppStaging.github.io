@@ -2,8 +2,8 @@
   "errors": [],
   "warnings": [],
   "version": "3.12.0",
-  "hash": "3c55587631f24e66b255",
-  "time": 7294,
+  "hash": "94d2dd2263349eef8b48",
+  "time": 8933,
   "publicPath": "##BR_SITE_ROOT##/",
   "assetsByChunkName": {
     "src/containers/Help": [
@@ -63,8 +63,8 @@
       "templates/src/containers/404.6fcdf968.js.map"
     ],
     "main": [
-      "main.bccc3b68.js",
-      "main.bccc3b68.js.map"
+      "main.c4d29d4d.js",
+      "main.c4d29d4d.js.map"
     ],
     "bootstrap": [
       "bootstrap.775dc5f7.js",
@@ -73,8 +73,8 @@
   },
   "assets": [
     {
-      "name": "templates/src/containers/Help.bdb15e7f.js",
-      "size": 22591,
+      "name": "templates/src/containers/Help.bdb15e7f.js.map",
+      "size": 79650,
       "chunks": [
         0
       ],
@@ -84,12 +84,14 @@
       "emitted": true
     },
     {
-      "name": "templates/1.9aaf5be2.js",
-      "size": 8227,
+      "name": "templates/src/containers/Help.bdb15e7f.js",
+      "size": 22591,
       "chunks": [
-        1
+        0
       ],
-      "chunkNames": [],
+      "chunkNames": [
+        "src/containers/Help"
+      ],
       "emitted": true
     },
     {
@@ -236,7 +238,7 @@
       "emitted": true
     },
     {
-      "name": "main.bccc3b68.js",
+      "name": "main.c4d29d4d.js",
       "size": 318540,
       "chunks": [
         15
@@ -259,14 +261,12 @@
       "emitted": true
     },
     {
-      "name": "templates/src/containers/Help.bdb15e7f.js.map",
-      "size": 79650,
+      "name": "templates/1.9aaf5be2.js",
+      "size": 8227,
       "chunks": [
-        0
+        1
       ],
-      "chunkNames": [
-        "src/containers/Help"
-      ],
+      "chunkNames": [],
       "emitted": true
     },
     {
@@ -422,7 +422,7 @@
       "emitted": true
     },
     {
-      "name": "main.bccc3b68.js.map",
+      "name": "main.c4d29d4d.js.map",
       "size": 1702708,
       "chunks": [
         15
@@ -454,8 +454,8 @@
       "assets": [
         "bootstrap.775dc5f7.js",
         "bootstrap.775dc5f7.js.map",
-        "main.bccc3b68.js",
-        "main.bccc3b68.js.map"
+        "main.c4d29d4d.js",
+        "main.c4d29d4d.js.map"
       ],
       "isOverSizeLimit": true
     }
@@ -2197,10 +2197,10 @@
         "main"
       ],
       "files": [
-        "main.bccc3b68.js",
-        "main.bccc3b68.js.map"
+        "main.c4d29d4d.js",
+        "main.c4d29d4d.js.map"
       ],
-      "hash": "bccc3b68a18b962e3132",
+      "hash": "c4d29d4dd0a673fdff38",
       "parents": [
         16
       ],
@@ -3227,9 +3227,9 @@
             15
           ],
           "assets": [],
-          "issuer": "/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/node_modules/react-static/node_modules/react-router-dom/es/HashRouter.js",
-          "issuerId": 82,
-          "issuerName": "./node_modules/react-static/node_modules/react-router-dom/es/HashRouter.js",
+          "issuer": "/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/node_modules/react-static/node_modules/react-router-dom/es/BrowserRouter.js",
+          "issuerId": 76,
+          "issuerName": "./node_modules/react-static/node_modules/react-router-dom/es/BrowserRouter.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -3330,9 +3330,9 @@
             15
           ],
           "assets": [],
-          "issuer": "/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/node_modules/history/createBrowserHistory.js",
-          "issuerId": 133,
-          "issuerName": "./node_modules/history/createBrowserHistory.js",
+          "issuer": "/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/node_modules/history/createMemoryHistory.js",
+          "issuerId": 134,
+          "issuerName": "./node_modules/history/createMemoryHistory.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -3823,9 +3823,9 @@
             15
           ],
           "assets": [],
-          "issuer": "/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/node_modules/react-static/node_modules/react-router-dom/es/HashRouter.js",
-          "issuerId": 82,
-          "issuerName": "./node_modules/react-static/node_modules/react-router-dom/es/HashRouter.js",
+          "issuer": "/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/node_modules/react-static/node_modules/react-router-dom/es/BrowserRouter.js",
+          "issuerId": 76,
+          "issuerName": "./node_modules/react-static/node_modules/react-router-dom/es/BrowserRouter.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -4513,9 +4513,9 @@
             15
           ],
           "assets": [],
-          "issuer": "/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/node_modules/history/createBrowserHistory.js",
-          "issuerId": 133,
-          "issuerName": "./node_modules/history/createBrowserHistory.js",
+          "issuer": "/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/node_modules/history/createMemoryHistory.js",
+          "issuerId": 134,
+          "issuerName": "./node_modules/history/createMemoryHistory.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -5141,9 +5141,9 @@
             15
           ],
           "assets": [],
-          "issuer": "/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/node_modules/history/createBrowserHistory.js",
-          "issuerId": 133,
-          "issuerName": "./node_modules/history/createBrowserHistory.js",
+          "issuer": "/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/node_modules/history/createMemoryHistory.js",
+          "issuerId": 134,
+          "issuerName": "./node_modules/history/createMemoryHistory.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -5197,9 +5197,9 @@
             15
           ],
           "assets": [],
-          "issuer": "/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/node_modules/history/createBrowserHistory.js",
-          "issuerId": 133,
-          "issuerName": "./node_modules/history/createBrowserHistory.js",
+          "issuer": "/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/node_modules/history/createMemoryHistory.js",
+          "issuerId": 134,
+          "issuerName": "./node_modules/history/createMemoryHistory.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -11105,9 +11105,9 @@
         15
       ],
       "assets": [],
-      "issuer": "/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/node_modules/react-static/node_modules/react-router-dom/es/HashRouter.js",
-      "issuerId": 82,
-      "issuerName": "./node_modules/react-static/node_modules/react-router-dom/es/HashRouter.js",
+      "issuer": "/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/node_modules/react-static/node_modules/react-router-dom/es/BrowserRouter.js",
+      "issuerId": 76,
+      "issuerName": "./node_modules/react-static/node_modules/react-router-dom/es/BrowserRouter.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -11208,9 +11208,9 @@
         15
       ],
       "assets": [],
-      "issuer": "/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/node_modules/history/createBrowserHistory.js",
-      "issuerId": 133,
-      "issuerName": "./node_modules/history/createBrowserHistory.js",
+      "issuer": "/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/node_modules/history/createMemoryHistory.js",
+      "issuerId": 134,
+      "issuerName": "./node_modules/history/createMemoryHistory.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -11701,9 +11701,9 @@
         15
       ],
       "assets": [],
-      "issuer": "/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/node_modules/react-static/node_modules/react-router-dom/es/HashRouter.js",
-      "issuerId": 82,
-      "issuerName": "./node_modules/react-static/node_modules/react-router-dom/es/HashRouter.js",
+      "issuer": "/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/node_modules/react-static/node_modules/react-router-dom/es/BrowserRouter.js",
+      "issuerId": 76,
+      "issuerName": "./node_modules/react-static/node_modules/react-router-dom/es/BrowserRouter.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -12391,9 +12391,9 @@
         15
       ],
       "assets": [],
-      "issuer": "/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/node_modules/history/createBrowserHistory.js",
-      "issuerId": 133,
-      "issuerName": "./node_modules/history/createBrowserHistory.js",
+      "issuer": "/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/node_modules/history/createMemoryHistory.js",
+      "issuerId": 134,
+      "issuerName": "./node_modules/history/createMemoryHistory.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -13019,9 +13019,9 @@
         15
       ],
       "assets": [],
-      "issuer": "/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/node_modules/history/createBrowserHistory.js",
-      "issuerId": 133,
-      "issuerName": "./node_modules/history/createBrowserHistory.js",
+      "issuer": "/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/node_modules/history/createMemoryHistory.js",
+      "issuerId": 134,
+      "issuerName": "./node_modules/history/createMemoryHistory.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -13075,9 +13075,9 @@
         15
       ],
       "assets": [],
-      "issuer": "/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/node_modules/history/createBrowserHistory.js",
-      "issuerId": 133,
-      "issuerName": "./node_modules/history/createBrowserHistory.js",
+      "issuer": "/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/node_modules/history/createMemoryHistory.js",
+      "issuerId": 134,
+      "issuerName": "./node_modules/history/createMemoryHistory.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
