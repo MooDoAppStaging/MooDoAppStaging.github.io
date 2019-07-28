@@ -3,7 +3,7 @@
   "warnings": [],
   "version": "3.12.0",
   "hash": "ca705a6f2bd1c1454698",
-  "time": 7665,
+  "time": 5806,
   "publicPath": "##BR_SITE_ROOT##/",
   "assetsByChunkName": {
     "src/containers/Help": [
@@ -3688,9 +3688,9 @@
             15
           ],
           "assets": [],
-          "issuer": "/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/node_modules/react-static/node_modules/react-router-dom/es/Link.js",
-          "issuerId": 28,
-          "issuerName": "./node_modules/react-static/node_modules/react-router-dom/es/Link.js",
+          "issuer": "/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/node_modules/react-static/node_modules/react-router-dom/es/BrowserRouter.js",
+          "issuerId": 71,
+          "issuerName": "./node_modules/react-static/node_modules/react-router-dom/es/BrowserRouter.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -11009,9 +11009,9 @@
         15
       ],
       "assets": [],
-      "issuer": "/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/node_modules/react-static/node_modules/react-router-dom/es/Link.js",
-      "issuerId": 28,
-      "issuerName": "./node_modules/react-static/node_modules/react-router-dom/es/Link.js",
+      "issuer": "/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/node_modules/react-static/node_modules/react-router-dom/es/BrowserRouter.js",
+      "issuerId": 71,
+      "issuerName": "./node_modules/react-static/node_modules/react-router-dom/es/BrowserRouter.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
