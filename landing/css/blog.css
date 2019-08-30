@@ -243,6 +243,11 @@ a:not(.linkButton) {
   background-color: #eef;
   padding: 0 .4em;
 }
+.post code {
+  border: 1px solid #ddd;
+  background-color: #eef;
+  padding: 0 .2em;
+}
 .post pre code {
   border: none;
 }
@@ -404,9 +409,8 @@ a:not(.linkButton) {
 }
 code {
   background: #F6F8FA;
-  padding: 4px 8px;
-  margin: 0 2px;
+  padding: 8px;
   font-family: 'Helvetica Neue', Helvetica, Arial, Sans-serif;
-  border: 1px solid #e2e7eb;
+  border: 1px solid #eef1f3;
   border-radius: 2px;
 }
