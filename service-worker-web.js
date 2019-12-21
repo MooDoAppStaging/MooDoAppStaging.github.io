@@ -1,4 +1,4 @@
-var CacheName = 'moodo-cache-1576909373536',
+var CacheName = 'moodo-cache-1576916087761',
     CacheNameCommon = 'moodo-cache-data';
 
 function notifyClient(text)
@@ -22,17 +22,17 @@ self.addEventListener('install', function (e)
         {
             return cache.addAll([
                 '/web/',
-                '/web/index-1576909373536.html',
-                '/web/js/vendor-1576909373536.js',
-                '/web/js/delayedUI-1576909373536.js',
-                '/web/js/dimport-1576909373536.js',
-                '/web/js/app-1576909373536.js',
-                '/web/js/preload-1576909373536.js',
-                '/web/js/preload.worker-1576909373536.js',
-                '/web/css/app-min-1576909373536.css',
-                '/web/css/fonticons-1576909373536.css',
-                '/web/css/fonts/fonticons-1576909373536.woff',
-                '/web/css/fonts/fonticons-1576909373536.ttf'
+                '/web/index-1576916087761.html',
+                '/web/js/vendor-1576916087761.js',
+                '/web/js/delayedUI-1576916087761.js',
+                '/web/js/dimport-1576916087761.js',
+                '/web/js/app-1576916087761.js',
+                '/web/js/preload-1576916087761.js',
+                '/web/js/preload.worker-1576916087761.js',
+                '/web/css/app-min-1576916087761.css',
+                '/web/css/fonticons-1576916087761.css',
+                '/web/css/fonts/fonticons-1576916087761.woff',
+                '/web/css/fonts/fonticons-1576916087761.ttf'
             ]);
         }).then(caches.open(CacheNameCommon).then(function (cacheCommon)
         {
@@ -75,7 +75,7 @@ self.addEventListener('fetch', function (event)
     {
         if (urlObj.pathname === pathname)
         {
-            url = url.replace(pathname, pathname + 'index-1576909373536.html');
+            url = url.replace(pathname, pathname + 'index-1576916087761.html');
         }
 
         event.respondWith(
