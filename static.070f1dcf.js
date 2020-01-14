@@ -6492,7 +6492,7 @@ exports.default = (0, _reactHotLoader.hot)(module)(function () {
         'div',
         { id: 'demo', className: 'flexbox flexvert' },
         _react2.default.createElement(_Nav2.default, { top: true, title: 'Demo' }),
-        _react2.default.createElement('iframe', { seamless: true, className: 'demoIframe f1', src: 'https://localhost:8001/web/#demo=true&live=true&data=blog-kanban-1' })
+        _react2.default.createElement('iframe', { seamless: true, className: 'demoIframe f1', src: '/web/#demo=true&live=true&data=demo-help' })
     );
 });
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
@@ -9977,4 +9977,4 @@ module.exports = require("htmr");
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=static.237a5188.js.map
+//# sourceMappingURL=static.070f1dcf.js.map
