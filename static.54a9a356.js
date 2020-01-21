@@ -6521,7 +6521,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = (0, _reactHotLoader.hot)(module)(function () {
     var id = window.location.search.slice(1);
 
-    window.location.href = '/web/#template=' + id;
+    window.location.replace('/web/#template=' + id);
 
     return _react2.default.createElement('div', null);
 });
@@ -10027,4 +10027,4 @@ module.exports = require("htmr");
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=static.c4d9855d.js.map
+//# sourceMappingURL=static.54a9a356.js.map
