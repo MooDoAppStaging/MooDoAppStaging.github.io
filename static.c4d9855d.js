@@ -109,6 +109,12 @@ module.exports = function(module) {
 
 /***/ }),
 /* 2 */
+/***/ (function(module, exports) {
+
+module.exports = require("react-hot-loader");
+
+/***/ }),
+/* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -229,12 +235,6 @@ exports.default = function (props) {
         );
     }
 };
-
-/***/ }),
-/* 3 */
-/***/ (function(module, exports) {
-
-module.exports = require("react-hot-loader");
 
 /***/ }),
 /* 4 */
@@ -2298,7 +2298,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactHotLoader = __webpack_require__(3);
+var _reactHotLoader = __webpack_require__(2);
 
 var _reactStatic = __webpack_require__(4);
 
@@ -2314,7 +2314,7 @@ var _auth = __webpack_require__(6);
 
 var _auth2 = _interopRequireDefault(_auth);
 
-var _Nav = __webpack_require__(2);
+var _Nav = __webpack_require__(3);
 
 var _Nav2 = _interopRequireDefault(_Nav);
 
@@ -3175,13 +3175,13 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactHotLoader = __webpack_require__(3);
+var _reactHotLoader = __webpack_require__(2);
 
 var _auth = __webpack_require__(6);
 
 var _auth2 = _interopRequireDefault(_auth);
 
-var _Nav = __webpack_require__(2);
+var _Nav = __webpack_require__(3);
 
 var _Nav2 = _interopRequireDefault(_Nav);
 
@@ -3985,13 +3985,13 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactStatic = __webpack_require__(4);
 
-var _reactHotLoader = __webpack_require__(3);
+var _reactHotLoader = __webpack_require__(2);
 
 var _reactAutobind = __webpack_require__(15);
 
 var _reactAutobind2 = _interopRequireDefault(_reactAutobind);
 
-var _Nav = __webpack_require__(2);
+var _Nav = __webpack_require__(3);
 
 var _Nav2 = _interopRequireDefault(_Nav);
 
@@ -4232,9 +4232,9 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactStatic = __webpack_require__(4);
 
-var _reactHotLoader = __webpack_require__(3);
+var _reactHotLoader = __webpack_require__(2);
 
-var _Nav = __webpack_require__(2);
+var _Nav = __webpack_require__(3);
 
 var _Nav2 = _interopRequireDefault(_Nav);
 
@@ -4282,7 +4282,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactHotLoader = __webpack_require__(3);
+var _reactHotLoader = __webpack_require__(2);
 
 var _reactStatic = __webpack_require__(4);
 
@@ -4290,7 +4290,7 @@ var _auth = __webpack_require__(6);
 
 var _auth2 = _interopRequireDefault(_auth);
 
-var _Nav = __webpack_require__(2);
+var _Nav = __webpack_require__(3);
 
 var _Nav2 = _interopRequireDefault(_Nav);
 
@@ -4478,13 +4478,13 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactHotLoader = __webpack_require__(3);
+var _reactHotLoader = __webpack_require__(2);
 
 var _auth = __webpack_require__(6);
 
 var _auth2 = _interopRequireDefault(_auth);
 
-var _Nav = __webpack_require__(2);
+var _Nav = __webpack_require__(3);
 
 var _Nav2 = _interopRequireDefault(_Nav);
 
@@ -4566,7 +4566,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactHotLoader = __webpack_require__(3);
+var _reactHotLoader = __webpack_require__(2);
 
 var _reactStatic = __webpack_require__(4);
 
@@ -4578,7 +4578,7 @@ var _util = __webpack_require__(8);
 
 var _util2 = _interopRequireDefault(_util);
 
-var _Nav = __webpack_require__(2);
+var _Nav = __webpack_require__(3);
 
 var _Nav2 = _interopRequireDefault(_Nav);
 
@@ -5322,9 +5322,9 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactHotLoader = __webpack_require__(3);
+var _reactHotLoader = __webpack_require__(2);
 
-var _Nav = __webpack_require__(2);
+var _Nav = __webpack_require__(3);
 
 var _Nav2 = _interopRequireDefault(_Nav);
 
@@ -5525,7 +5525,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactHotLoader = __webpack_require__(3);
+var _reactHotLoader = __webpack_require__(2);
 
 var _reactStatic = __webpack_require__(4);
 
@@ -5533,7 +5533,7 @@ var _util = __webpack_require__(8);
 
 var _util2 = _interopRequireDefault(_util);
 
-var _Nav = __webpack_require__(2);
+var _Nav = __webpack_require__(3);
 
 var _Nav2 = _interopRequireDefault(_Nav);
 
@@ -5624,7 +5624,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactHotLoader = __webpack_require__(3);
+var _reactHotLoader = __webpack_require__(2);
 
 var _reactStatic = __webpack_require__(4);
 
@@ -5640,7 +5640,7 @@ var _auth = __webpack_require__(6);
 
 var _auth2 = _interopRequireDefault(_auth);
 
-var _Nav = __webpack_require__(2);
+var _Nav = __webpack_require__(3);
 
 var _Nav2 = _interopRequireDefault(_Nav);
 
@@ -6160,7 +6160,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactHotLoader = __webpack_require__(3);
+var _reactHotLoader = __webpack_require__(2);
 
 var _reactStatic = __webpack_require__(4);
 
@@ -6168,7 +6168,7 @@ var _util = __webpack_require__(8);
 
 var _util2 = _interopRequireDefault(_util);
 
-var _Nav = __webpack_require__(2);
+var _Nav = __webpack_require__(3);
 
 var _Nav2 = _interopRequireDefault(_Nav);
 
@@ -6377,9 +6377,9 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactHotLoader = __webpack_require__(3);
+var _reactHotLoader = __webpack_require__(2);
 
-var _Nav = __webpack_require__(2);
+var _Nav = __webpack_require__(3);
 
 var _Nav2 = _interopRequireDefault(_Nav);
 
@@ -6479,9 +6479,9 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactHotLoader = __webpack_require__(3);
+var _reactHotLoader = __webpack_require__(2);
 
-var _Nav = __webpack_require__(2);
+var _Nav = __webpack_require__(3);
 
 var _Nav2 = _interopRequireDefault(_Nav);
 
@@ -6512,23 +6512,18 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactHotLoader = __webpack_require__(3);
+var _reactHotLoader = __webpack_require__(2);
 
 var _reactStatic = __webpack_require__(4);
-
-var _Nav = __webpack_require__(2);
-
-var _Nav2 = _interopRequireDefault(_Nav);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = (0, _reactHotLoader.hot)(module)(function () {
     var id = window.location.search.slice(1);
 
-    return (
-        // <Redirect to={`https://localhost:8001/web/#testlocal=true&template=${id}`} />
-        _react2.default.createElement(_reactStatic.Redirect, { to: '/web/#template=' + id })
-    );
+    window.location.href = '/web/#template=' + id;
+
+    return _react2.default.createElement('div', null);
 });
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
 
@@ -6549,13 +6544,13 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactStatic = __webpack_require__(4);
 
-var _reactHotLoader = __webpack_require__(3);
+var _reactHotLoader = __webpack_require__(2);
 
 var _Post = __webpack_require__(69);
 
 var _Post2 = _interopRequireDefault(_Post);
 
-var _Nav = __webpack_require__(2);
+var _Nav = __webpack_require__(3);
 
 var _Nav2 = _interopRequireDefault(_Nav);
 
@@ -6627,7 +6622,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _Nav = __webpack_require__(2);
+var _Nav = __webpack_require__(3);
 
 var _Nav2 = _interopRequireDefault(_Nav);
 
@@ -6722,7 +6717,7 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactStatic = __webpack_require__(4);
 
-var _reactHotLoader = __webpack_require__(3);
+var _reactHotLoader = __webpack_require__(2);
 
 var _reactStaticRoutes = __webpack_require__(42);
 
@@ -6732,7 +6727,7 @@ var _DemoManager = __webpack_require__(11);
 
 var _DemoManager2 = _interopRequireDefault(_DemoManager);
 
-var _Nav = __webpack_require__(2);
+var _Nav = __webpack_require__(3);
 
 var _Nav2 = _interopRequireDefault(_Nav);
 
@@ -9076,13 +9071,13 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactStatic = __webpack_require__(4);
 
-var _reactHotLoader = __webpack_require__(3);
+var _reactHotLoader = __webpack_require__(2);
 
 var _auth = __webpack_require__(6);
 
 var _auth2 = _interopRequireDefault(_auth);
 
-var _Nav = __webpack_require__(2);
+var _Nav = __webpack_require__(3);
 
 var _Nav2 = _interopRequireDefault(_Nav);
 
@@ -9524,13 +9519,13 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactStatic = __webpack_require__(4);
 
-var _reactHotLoader = __webpack_require__(3);
+var _reactHotLoader = __webpack_require__(2);
 
 var _auth = __webpack_require__(6);
 
 var _auth2 = _interopRequireDefault(_auth);
 
-var _Nav = __webpack_require__(2);
+var _Nav = __webpack_require__(3);
 
 var _Nav2 = _interopRequireDefault(_Nav);
 
@@ -10032,4 +10027,4 @@ module.exports = require("htmr");
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=static.32be7c17.js.map
+//# sourceMappingURL=static.c4d9855d.js.map
