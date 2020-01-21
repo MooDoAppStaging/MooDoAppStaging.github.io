@@ -6523,8 +6523,7 @@ var _Nav2 = _interopRequireDefault(_Nav);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = (0, _reactHotLoader.hot)(module)(function () {
-    var paths = window.location.pathname.split('/');
-    var id = paths[paths.length - 1];
+    var id = window.location.search.slice(1);
 
     return (
         // <Redirect to={`https://localhost:8001/web/#testlocal=true&template=${id}`} />
@@ -10033,4 +10032,4 @@ module.exports = require("htmr");
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=static.992b9895.js.map
+//# sourceMappingURL=static.32be7c17.js.map
