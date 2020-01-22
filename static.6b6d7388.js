@@ -6514,8 +6514,6 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactHotLoader = __webpack_require__(2);
 
-var _reactStatic = __webpack_require__(4);
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = (0, _reactHotLoader.hot)(module)(function () {
@@ -10027,4 +10025,4 @@ module.exports = require("htmr");
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=static.54a9a356.js.map
+//# sourceMappingURL=static.6b6d7388.js.map
