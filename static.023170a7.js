@@ -2503,6 +2503,15 @@ var Home = function (_React$Component) {
                             'div',
                             { id: 'buttonGetStarted-top', className: 'button center red', onClick: _auth2.default.openApp.bind(_auth2.default, 'top') },
                             'Get Started Free'
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            null,
+                            _react2.default.createElement(
+                                'a',
+                                { 'class': 'link', style: { marginTop: 16, fontSize: 15 }, href: '/demo/', target: '_blank' },
+                                'Try a live demo'
+                            )
                         )
                     ),
                     _react2.default.createElement('div', { className: 'spacer spacerBottom' })
@@ -10025,4 +10034,4 @@ module.exports = require("htmr");
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=static.bfe199a2.js.map
+//# sourceMappingURL=static.023170a7.js.map
