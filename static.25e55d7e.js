@@ -2509,7 +2509,7 @@ var Home = function (_React$Component) {
                             null,
                             _react2.default.createElement(
                                 'a',
-                                { 'class': 'link', style: { marginTop: 16, fontSize: 15 }, href: '/demo/', target: '_blank' },
+                                { 'class': 'link', style: { marginTop: 16, fontSize: 16, fontWeight: 500 }, href: '/demo/', target: '_blank' },
                                 'Try a live demo'
                             )
                         )
@@ -10034,4 +10034,4 @@ module.exports = require("htmr");
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=static.023170a7.js.map
+//# sourceMappingURL=static.25e55d7e.js.map
