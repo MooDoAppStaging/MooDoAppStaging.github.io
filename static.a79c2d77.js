@@ -208,6 +208,7 @@ exports.default = function (props) {
             linkToPage('contact', 'Contact'),
             linkToPage('press', 'Press'),
             linkToPage('privacy', 'Privacy'),
+            linkToPage('terms', 'Terms'),
             _react2.default.createElement(
                 'span',
                 { className: 'socialIcons' },
@@ -220,11 +221,6 @@ exports.default = function (props) {
                     'a',
                     { className: clsLink, target: '_blank', onClick: _util2.default.sendToSocialMedia.bind(_util2.default, 'Twitter', 'bot'), href: 'https://www.twitter.com/MooDoApp' },
                     _react2.default.createElement('i', { className: 'icon-twitter' })
-                ),
-                _react2.default.createElement(
-                    'a',
-                    { className: clsLink, target: '_blank', onClick: _util2.default.sendToSocialMedia.bind(_util2.default, 'Google', 'bot'), href: 'https://www.google.com/+MooDoApp' },
-                    _react2.default.createElement('i', { className: 'icon-google-plus' })
                 ),
                 _react2.default.createElement(
                     'a',
@@ -10300,4 +10296,4 @@ module.exports = require("htmr");
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=static.2bcb5d63.js.map
+//# sourceMappingURL=static.a79c2d77.js.map
