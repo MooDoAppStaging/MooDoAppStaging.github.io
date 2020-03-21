@@ -5565,8 +5565,8 @@ exports.default = (0, _reactHotLoader.hot)(module)(function () {
             'div',
             { className: 'section section-full' },
             _react2.default.createElement(
-                'div',
-                { className: 'title' },
+                'header',
+                null,
                 'Terms of Service'
             ),
             _react2.default.createElement(
@@ -10300,4 +10300,4 @@ module.exports = require("htmr");
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=static.261c8a2f.js.map
+//# sourceMappingURL=static.2bcb5d63.js.map
