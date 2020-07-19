@@ -1,4 +1,4 @@
-var CacheName = 'moodo-cache-1595090861157',
+var CacheName = 'moodo-cache-1595130214859',
     CacheNameCommon = 'moodo-cache-data';
 
 function notifyClient(text)
@@ -22,18 +22,18 @@ self.addEventListener('install', function (e)
         {
             return cache.addAll([
                 '/web/',
-                '/web/index-1595090861157.html',
-                '/web/js/vendor-1595090861157.js',
-                '/web/js/delayedUI-1595090861157.js',
-                '/web/js/codeBlock-1595090861157.js',
-                '/web/js/dimport-1595090861157.js',
-                '/web/js/app-1595090861157.js',
-                '/web/js/preload-1595090861157.js',
-                '/web/js/preload.worker-1595090861157.js',
-                '/web/css/app-min-1595090861157.css',
-                '/web/css/fonticons-1595090861157.css',
-                '/web/css/fonts/fonticons-1595090861157.woff',
-                '/web/css/fonts/fonticons-1595090861157.ttf'
+                '/web/index-1595130214859.html',
+                '/web/js/vendor-1595130214859.js',
+                '/web/js/delayedUI-1595130214859.js',
+                '/web/js/codeBlock-1595130214859.js',
+                '/web/js/dimport-1595130214859.js',
+                '/web/js/app-1595130214859.js',
+                '/web/js/preload-1595130214859.js',
+                '/web/js/preload.worker-1595130214859.js',
+                '/web/css/app-min-1595130214859.css',
+                '/web/css/fonticons-1595130214859.css',
+                '/web/css/fonts/fonticons-1595130214859.woff',
+                '/web/css/fonts/fonticons-1595130214859.ttf'
             ]);
         }).then(caches.open(CacheNameCommon).then(function (cacheCommon)
         {
@@ -76,7 +76,7 @@ self.addEventListener('fetch', function (event)
     {
         if (urlObj.pathname === pathname)
         {
-            url = url.replace(pathname, pathname + 'index-1595090861157.html');
+            url = url.replace(pathname, pathname + 'index-1595130214859.html');
         }
 
         event.respondWith(
