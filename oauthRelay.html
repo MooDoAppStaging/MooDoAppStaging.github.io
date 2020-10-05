@@ -46,7 +46,7 @@
 
     if ('BroadcastChannel' in self)
     {
-        let channel = new BroadcastChannel('##BR_NAME##_auth_gapi_channel');
+        let channel = new BroadcastChannel('Moo.do_auth_gapi_channel');
 
         channel.onmessage = function (event)
         {

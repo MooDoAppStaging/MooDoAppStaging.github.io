@@ -1,7 +1,7 @@
 <html style="opacity: 1;">
 
 <head>
-    <title>##BR_NAME## Download</title>
+    <title>Moo.do Download</title>
     <link rel="stylesheet" href="/landing/css/fonticons.css" type="text/css">
     <link rel="stylesheet" href="/landing/css/landing.css" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Yantramanav:300,400,500,600,700' rel='stylesheet' type='text/css'>
@@ -21,25 +21,25 @@
 </head>
 
 <body style="padding: 32px">
-    <div id="spanText" style="margin-bottom: 24px;">Downloading ##BR_NAME## app...</div>
+    <div id="spanText" style="margin-bottom: 24px;">Downloading Moo.do app...</div>
     <div id="spanButtons" class="platforms" style="display: none;">
-        <a class="platform linkButton" id="downloadWindows" href="https://github.com/##BR_GITHUB##/##BR_GITHUB##.github.io/releases/latest/">
+        <a class="platform linkButton" id="downloadWindows" href="https://github.com/MooDoApp/MooDoApp.github.io/releases/latest/">
             <i class="icon-windows"></i>
             <div>Windows</div>
         </a>
-        <a class="platform linkButton" id="downloadOSX" href="https://github.com/##BR_GITHUB##/##BR_GITHUB##.github.io/releases/latest/">
+        <a class="platform linkButton" id="downloadOSX" href="https://github.com/MooDoApp/MooDoApp.github.io/releases/latest/">
             <i class="icon-desktop"></i>
             <div>Mac</div>
         </a>
-        <a class="platform linkButton" id="downloadLinuxAppImage" href="https://github.com/##BR_GITHUB##/##BR_GITHUB##.github.io/releases/latest/">
+        <a class="platform linkButton" id="downloadLinuxAppImage" href="https://github.com/MooDoApp/MooDoApp.github.io/releases/latest/">
             <i class="icon-linux"></i>
             <div>Linux .AppImage</div>
         </a>
-        <a class="platform linkButton" id="downloadLinuxDeb" href="https://github.com/##BR_GITHUB##/##BR_GITHUB##.github.io/releases/latest/">
+        <a class="platform linkButton" id="downloadLinuxDeb" href="https://github.com/MooDoApp/MooDoApp.github.io/releases/latest/">
             <i class="icon-linux"></i>
             <div>Linux .deb</div>
         </a>
-        <a class="platform linkButton" id="downloadLinuxSnap" href="https://github.com/##BR_GITHUB##/##BR_GITHUB##.github.io/releases/latest/">
+        <a class="platform linkButton" id="downloadLinuxSnap" href="https://github.com/MooDoApp/MooDoApp.github.io/releases/latest/">
             <i class="icon-linux"></i>
             <div>Linux .snap</div>
         </a>
@@ -83,11 +83,11 @@
             else
             {
                 el('spanButtons').style.display = 'block';
-                el('spanText').textContent = 'The ##BR_NAME## app is not available for your platform yet. Please email support@moo.do to request it.';
+                el('spanText').textContent = 'The Moo.do app is not available for your platform yet. Please email support@moo.do to request it.';
             }
 
             var xhr = new XMLHttpRequest(),
-                url = 'https://api.github.com/repos/##BR_GITHUB##/##BR_GITHUB##.github.io/releases/latest';
+                url = 'https://api.github.com/repos/MooDoApp/MooDoApp.github.io/releases/latest';
 
             xhr.onreadystatechange = function ()
             {
