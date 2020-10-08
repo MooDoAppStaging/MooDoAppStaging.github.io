@@ -10,7 +10,7 @@
             "purpose": "maskable"
         }
     ],
-    "name": "Moo.do Demo2",
-    "short_name": "Moo.do Demo2",
+    "name": "Moo.do Demo",
+    "short_name": "Moo.do Demo",
     "start_url": "/mobile/#demo=true&data=demo-mobile"
 }
