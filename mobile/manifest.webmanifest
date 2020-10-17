@@ -12,5 +12,5 @@
     ],
     "name": "Moo.do Test",
     "short_name": "Moo.do Test",
-    "start_url": "/mobile/#demo=true&data=demo-mobile"
+    "start_url": "/mobile/"
 }
