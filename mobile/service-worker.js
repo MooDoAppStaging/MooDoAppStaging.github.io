@@ -1,4 +1,4 @@
-var CacheName = 'moodo-cache-1602856860689',
+var CacheName = 'moodo-cache-1602899965285',
     CacheNameCommon = 'moodo-cache-data';
 
 function notifyClient(text)
@@ -22,20 +22,20 @@ self.addEventListener('install', function (e)
         {
             return cache.addAll([
                 '/mobile/',
-                '/mobile/index-1602856860689.html',
-                '/mobile/js/vendor-1602856860689.js',
-                // '/mobile/js/delayedUI-1602856860689.js',
-                '/mobile/js/codeBlock-1602856860689.js',
-                // '/mobile/js/dimport-1602856860689.js',
-                '/mobile/js/textEncoding-1602856860689.js',
-                // '/mobile/js/braintree-1602856860689.js',
-                '/mobile/js/app-1602856860689.js',
-                '/mobile/js/preload-1602856860689.js',
-                '/mobile/js/preload.worker-1602856860689.js',
-                '/mobile/css/app-min-1602856860689.css',
-                '/mobile/css/fonticons-1602856860689.css',
-                '/mobile/css/fonts/fonticons-1602856860689.woff',
-                '/mobile/css/fonts/fonticons-1602856860689.ttf'
+                '/mobile/index-1602899965285.html',
+                '/mobile/js/vendor-1602899965285.js',
+                // '/mobile/js/delayedUI-1602899965285.js',
+                '/mobile/js/codeBlock-1602899965285.js',
+                // '/mobile/js/dimport-1602899965285.js',
+                '/mobile/js/textEncoding-1602899965285.js',
+                // '/mobile/js/braintree-1602899965285.js',
+                '/mobile/js/app-1602899965285.js',
+                '/mobile/js/preload-1602899965285.js',
+                '/mobile/js/preload.worker-1602899965285.js',
+                '/mobile/css/app-min-1602899965285.css',
+                '/mobile/css/fonticons-1602899965285.css',
+                '/mobile/css/fonts/fonticons-1602899965285.woff',
+                '/mobile/css/fonts/fonticons-1602899965285.ttf'
             ]);
         }).then(caches.open(CacheNameCommon).then(function (cacheCommon)
         {
@@ -78,7 +78,7 @@ self.addEventListener('fetch', function (event)
     {
         if (urlObj.pathname === pathname)
         {
-            url = url.replace(pathname, pathname + 'index-1602856860689.html');
+            url = url.replace(pathname, pathname + 'index-1602899965285.html');
         }
 
         event.respondWith(
