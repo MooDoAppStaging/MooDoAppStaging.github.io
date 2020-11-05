@@ -1,4 +1,4 @@
-var CacheName = 'moodo-cache-1604463350762',
+var CacheName = 'moodo-cache-1604570519353',
     CacheNameCommon = 'moodo-cache-data';
 
 function notifyClient(text)
@@ -22,17 +22,17 @@ self.addEventListener('install', function (e)
         {
             return cache.addAll([
                 '/mobile/',
-                '/mobile/index-1604463350762.html',
-                '/mobile/js/vendor-1604463350762.js',
-                '/mobile/js/codeBlock-1604463350762.js',
-                '/mobile/js/textEncoding-1604463350762.js',
-                '/mobile/js/app-1604463350762.js',
-                '/mobile/js/preload-1604463350762.js',
-                '/mobile/js/preload.worker-1604463350762.js',
-                '/mobile/css/app-min-1604463350762.css',
-                '/mobile/css/fonticons-1604463350762.css',
-                '/mobile/css/fonts/fonticons-1604463350762.woff',
-                '/mobile/css/fonts/fonticons-1604463350762.ttf'
+                '/mobile/index-1604570519353.html',
+                '/mobile/js/vendor-1604570519353.js',
+                '/mobile/js/codeBlock-1604570519353.js',
+                '/mobile/js/textEncoding-1604570519353.js',
+                '/mobile/js/app-1604570519353.js',
+                '/mobile/js/preload-1604570519353.js',
+                '/mobile/js/preload.worker-1604570519353.js',
+                '/mobile/css/app-min-1604570519353.css',
+                '/mobile/css/fonticons-1604570519353.css',
+                '/mobile/css/fonts/fonticons-1604570519353.woff',
+                '/mobile/css/fonts/fonticons-1604570519353.ttf'
             ]);
         }).then(caches.open(CacheNameCommon).then(function (cacheCommon)
         {
@@ -41,10 +41,8 @@ self.addEventListener('install', function (e)
                 '/js/rollbar-min.js',
                 '/img/stripe.png',
                 '/img/apple-touch-icon.png',
+                '/img/logoForBlack600.png',
                 '/img/logoForWhite600.png',
-                '/img/btn_google_signin_dark_normal_web@2x.png',
-                '/img/btn_google_signin_dark_focus_web@2x.png',
-                '/img/btn_google_signin_dark_pressed_web@2x.png',
                 '/img/plugin-gdocs.png',
                 '/img/plugin-gsheets.png',
                 '/img/plugin-gslides.png',
@@ -75,7 +73,7 @@ self.addEventListener('fetch', function (event)
     {
         if (urlObj.pathname === pathname)
         {
-            url = url.replace(pathname, pathname + 'index-1604463350762.html');
+            url = url.replace(pathname, pathname + 'index-1604570519353.html');
         }
 
         event.respondWith(
