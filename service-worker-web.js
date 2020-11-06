@@ -1,4 +1,4 @@
-var CacheName = 'moodo-cache-1604479744744',
+var CacheName = 'moodo-cache-1604638687562',
     CacheNameCommon = 'moodo-cache-data';
 
 function notifyClient(text)
@@ -22,20 +22,20 @@ self.addEventListener('install', function (e)
         {
             return cache.addAll([
                 '/web/',
-                '/web/index-1604479744744.html',
-                '/web/js/vendor-1604479744744.js',
-                '/web/js/delayedUI-1604479744744.js',
-                '/web/js/codeBlock-1604479744744.js',
-                '/web/js/dimport-1604479744744.js',
-                '/web/js/textEncoding-1604479744744.js',
-                '/web/js/braintree-1604479744744.js',
-                '/web/js/app-1604479744744.js',
-                '/web/js/preload-1604479744744.js',
-                '/web/js/preload.worker-1604479744744.js',
-                '/web/css/app-min-1604479744744.css',
-                '/web/css/fonticons-1604479744744.css',
-                '/web/css/fonts/fonticons-1604479744744.woff',
-                '/web/css/fonts/fonticons-1604479744744.ttf'
+                '/web/index-1604638687562.html',
+                '/web/js/vendor-1604638687562.js',
+                '/web/js/delayedUI-1604638687562.js',
+                '/web/js/codeBlock-1604638687562.js',
+                '/web/js/dimport-1604638687562.js',
+                '/web/js/textEncoding-1604638687562.js',
+                '/web/js/braintree-1604638687562.js',
+                '/web/js/app-1604638687562.js',
+                '/web/js/preload-1604638687562.js',
+                '/web/js/preload.worker-1604638687562.js',
+                '/web/css/app-min-1604638687562.css',
+                '/web/css/fonticons-1604638687562.css',
+                '/web/css/fonts/fonticons-1604638687562.woff',
+                '/web/css/fonts/fonticons-1604638687562.ttf'
             ]);
         }).then(caches.open(CacheNameCommon).then(function (cacheCommon)
         {
@@ -44,10 +44,8 @@ self.addEventListener('install', function (e)
                 '/js/rollbar-min.js',
                 '/img/stripe.png',
                 '/img/apple-touch-icon.png',
+                '/img/logoForBlack600.png',
                 '/img/logoForWhite600.png',
-                '/img/btn_google_signin_dark_normal_web@2x.png',
-                '/img/btn_google_signin_dark_focus_web@2x.png',
-                '/img/btn_google_signin_dark_pressed_web@2x.png',
                 '/img/plugin-gdocs.png',
                 '/img/plugin-gsheets.png',
                 '/img/plugin-gslides.png',
@@ -78,7 +76,7 @@ self.addEventListener('fetch', function (event)
     {
         if (urlObj.pathname === pathname)
         {
-            url = url.replace(pathname, pathname + 'index-1604479744744.html');
+            url = url.replace(pathname, pathname + 'index-1604638687562.html');
         }
 
         event.respondWith(
