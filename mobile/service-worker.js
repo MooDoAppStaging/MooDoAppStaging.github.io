@@ -1,4 +1,4 @@
-var CacheName = 'moodo-cache-1605000572475',
+var CacheName = 'moodo-cache-1605093158243',
     CacheNameCommon = 'moodo-cache-data';
 
 function notifyClient(text)
@@ -22,17 +22,17 @@ self.addEventListener('install', function (e)
         {
             return cache.addAll([
                 '/mobile/',
-                '/mobile/index-1605000572475.html',
-                '/mobile/js/vendor-1605000572475.js',
-                '/mobile/js/codeBlock-1605000572475.js',
-                '/mobile/js/textEncoding-1605000572475.js',
-                '/mobile/js/app-1605000572475.js',
-                '/mobile/js/preload-1605000572475.js',
-                '/mobile/js/preload.worker-1605000572475.js',
-                '/mobile/css/app-min-1605000572475.css',
-                '/mobile/css/fonticons-1605000572475.css',
-                '/mobile/css/fonts/fonticons-1605000572475.woff',
-                '/mobile/css/fonts/fonticons-1605000572475.ttf'
+                '/mobile/index-1605093158243.html',
+                '/mobile/js/vendor-1605093158243.js',
+                '/mobile/js/codeBlock-1605093158243.js',
+                '/mobile/js/textEncoding-1605093158243.js',
+                '/mobile/js/app-1605093158243.js',
+                '/mobile/js/preload-1605093158243.js',
+                '/mobile/js/preload.worker-1605093158243.js',
+                '/mobile/css/app-min-1605093158243.css',
+                '/mobile/css/fonticons-1605093158243.css',
+                '/mobile/css/fonts/fonticons-1605093158243.woff',
+                '/mobile/css/fonts/fonticons-1605093158243.ttf'
             ]);
         }).then(caches.open(CacheNameCommon).then(function (cacheCommon)
         {
@@ -73,7 +73,7 @@ self.addEventListener('fetch', function (event)
     {
         if (urlObj.pathname === pathname)
         {
-            url = url.replace(pathname, pathname + 'index-1605000572475.html');
+            url = url.replace(pathname, pathname + 'index-1605093158243.html');
         }
 
         event.respondWith(
