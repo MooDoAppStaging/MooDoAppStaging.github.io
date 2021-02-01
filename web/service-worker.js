@@ -1,41 +1,40 @@
-var CacheName = 'moodo-cache-1612170007614',
-    CacheNameCommon = 'moodo-cache-data';
+var CacheName = 'moodo-cache-1612182297429';
+var CacheNameCommon = 'moodo-cache-data';
 
 function notifyClient(text)
 {
-    self.clients.matchAll({ includeUncontrolled: true }).then(function (all)
+    return self.clients.matchAll({ includeUncontrolled: true }).then(function (all)
     {
-        all.map(function (client)
+        return Promise.all(all.map(function (client)
         {
-            client.postMessage('ServiceWorker_' + text);
-        });
+            return client.postMessage('ServiceWorker_' + text);
+        }));
     });
 }
 
 self.addEventListener('install', function (e)
 {
-    console.log('Installing new Service Worker');
+    console.log('Service Worker: Installing');
 
-    self.skipWaiting();
     e.waitUntil(
         caches.open(CacheName).then(function (cache)
         {
             return cache.addAll([
                 '/web/',
-                '/web/index-1612170007614.html',
-                '/web/js/vendor-1612170007614.js',
-                '/web/js/delayedUI-1612170007614.js',
-                '/web/js/codeBlock-1612170007614.js',
-                '/web/js/dimport-1612170007614.js',
-                '/web/js/textEncoding-1612170007614.js',
-                '/web/js/braintree-1612170007614.js',
-                '/web/js/app-1612170007614.js',
-                '/web/js/preload-1612170007614.js',
-                '/web/js/preload.worker-1612170007614.js',
-                '/web/css/app-min-1612170007614.css',
-                '/web/css/fonticons-1612170007614.css',
-                '/web/css/fonts/fonticons-1612170007614.woff',
-                '/web/css/fonts/fonticons-1612170007614.ttf'
+                '/web/index-1612182297429.html',
+                '/web/js/vendor-1612182297429.js',
+                '/web/js/delayedUI-1612182297429.js',
+                '/web/js/codeBlock-1612182297429.js',
+                '/web/js/dimport-1612182297429.js',
+                '/web/js/textEncoding-1612182297429.js',
+                '/web/js/braintree-1612182297429.js',
+                '/web/js/app-1612182297429.js',
+                '/web/js/preload-1612182297429.js',
+                '/web/js/preload.worker-1612182297429.js',
+                '/web/css/app-min-1612182297429.css',
+                '/web/css/fonticons-1612182297429.css',
+                '/web/css/fonts/fonticons-1612182297429.woff',
+                '/web/css/fonts/fonticons-1612182297429.ttf'
             ]);
         }).then(caches.open(CacheNameCommon).then(function (cacheCommon)
         {
@@ -57,12 +56,32 @@ self.addEventListener('install', function (e)
                 '/img/plugin-bear.png',
                 '/img/plugin-outlook.svg'
             ]);
-        })).then(function ()
+        })).then(caches.keys().then(function (cacheNames)
         {
+            // TODO: This is to support old versions of the code that didn't support not skipping waiting.
+            // Can remove this when migrating to Legend.
+            var supportsWaiting = true;
+            for (var i = 0; supportsWaiting && i < cacheNames.length; i ++)
+            {
+                var c = cacheNames[i];
+                if (c.indexOf('data') < 0)
+                {
+                    var ver = c.replace('moodo-cache-', '');
+                    console.log('ver', ver);
+                    if (ver && +ver < 1612170007615)
+                    {
+                        supportsWaiting = false;
+                    }
+                }
+            }
+
             notifyClient('Installed');
 
-            return self.skipWaiting();
-        })
+            if (!supportsWaiting)
+            {
+                return self.skipWaiting();
+            }
+        }))
     );
 });
 
@@ -70,14 +89,14 @@ var pathname = '/web/';
 
 self.addEventListener('fetch', function (event)
 {
-    const urlObj = new URL(event.request.url);
+    var urlObj = new URL(event.request.url);
     var url = event.request.url;
 
     if (urlObj.origin === location.origin && urlObj.href.indexOf(urlObj.origin + pathname) === 0)
     {
         if (urlObj.pathname === pathname)
         {
-            url = url.replace(pathname, pathname + 'index-1612170007614.html');
+            url = url.replace(pathname, pathname + 'index-1612182297429.html');
         }
 
         event.respondWith(
@@ -91,7 +110,7 @@ self.addEventListener('fetch', function (event)
 
 self.addEventListener('activate', function (event)
 {
-    console.log('Activating new Service Worker');
+    console.log('Service Worker: Activating');
 
     event.waitUntil(
         caches.keys().then(function (cacheNames)
@@ -109,4 +128,13 @@ self.addEventListener('activate', function (event)
     );
 
     notifyClient('Activated');
+});
+
+self.addEventListener('message', function (event)
+{
+    if (event.data === 'skipWaiting')
+    {
+        console.log('ServiceWorker: Skipping waiting');
+        return self.skipWaiting();
+    }
 });
