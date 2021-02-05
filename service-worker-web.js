@@ -1,4 +1,4 @@
-var CacheName = 'moodo-cache-1612497813454';
+var CacheName = 'moodo-cache-1612507451329';
 var CacheNameCommon = 'moodo-cache-data';
 
 function notifyClient(text)
@@ -21,20 +21,20 @@ self.addEventListener('install', function (e)
         {
             return cache.addAll([
                 '/web/',
-                '/web/index-1612497813454.html',
-                '/web/js/vendor-1612497813454.js',
-                '/web/js/delayedUI-1612497813454.js',
-                '/web/js/codeBlock-1612497813454.js',
-                '/web/js/dimport-1612497813454.js',
-                '/web/js/textEncoding-1612497813454.js',
-                '/web/js/braintree-1612497813454.js',
-                '/web/js/app-1612497813454.js',
-                '/web/js/preload-1612497813454.js',
-                '/web/js/preload.worker-1612497813454.js',
-                '/web/css/app-min-1612497813454.css',
-                '/web/css/fonticons-1612497813454.css',
-                '/web/css/fonts/fonticons-1612497813454.woff',
-                '/web/css/fonts/fonticons-1612497813454.ttf'
+                '/web/index-1612507451329.html',
+                '/web/js/vendor-1612507451329.js',
+                '/web/js/delayedUI-1612507451329.js',
+                '/web/js/codeBlock-1612507451329.js',
+                '/web/js/dimport-1612507451329.js',
+                '/web/js/textEncoding-1612507451329.js',
+                '/web/js/braintree-1612507451329.js',
+                '/web/js/app-1612507451329.js',
+                '/web/js/preload-1612507451329.js',
+                '/web/js/preload.worker-1612507451329.js',
+                '/web/css/app-min-1612507451329.css',
+                '/web/css/fonticons-1612507451329.css',
+                '/web/css/fonts/fonticons-1612507451329.woff',
+                '/web/css/fonts/fonticons-1612507451329.ttf'
             ]);
         }).then(caches.open(CacheNameCommon).then(function (cacheCommon)
         {
@@ -96,7 +96,7 @@ self.addEventListener('fetch', function (event)
     {
         if (urlObj.pathname === pathname)
         {
-            url = url.replace(pathname, pathname + 'index-1612497813454.html');
+            url = url.replace(pathname, pathname + 'index-1612507451329.html');
         }
 
         event.respondWith(
