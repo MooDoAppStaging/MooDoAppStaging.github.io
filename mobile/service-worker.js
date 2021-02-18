@@ -1,4 +1,4 @@
-var CacheName = 'moodo-cache-1613645874209';
+var CacheName = 'moodo-cache-1613647902077';
 var CacheNameCommon = 'moodo-cache-data';
 
 function notifyClient (text)
@@ -21,17 +21,17 @@ self.addEventListener('install', function (e)
         {
             return cache.addAll([
                 '/mobile/',
-                '/mobile/index-1613645874209.html',
-                '/mobile/js/vendor-1613645874209.js',
-                '/mobile/js/codeBlock-1613645874209.js',
-                '/mobile/js/textEncoding-1613645874209.js',
-                '/mobile/js/app-1613645874209.js',
-                '/mobile/js/preload-1613645874209.js',
-                '/mobile/js/preload.worker-1613645874209.js',
-                '/mobile/css/app-min-1613645874209.css',
-                '/mobile/css/fonticons-1613645874209.css',
-                '/mobile/css/fonts/fonticons-1613645874209.woff',
-                '/mobile/css/fonts/fonticons-1613645874209.ttf'
+                '/mobile/index-1613647902077.html',
+                '/mobile/js/vendor-1613647902077.js',
+                '/mobile/js/codeBlock-1613647902077.js',
+                '/mobile/js/textEncoding-1613647902077.js',
+                '/mobile/js/app-1613647902077.js',
+                '/mobile/js/preload-1613647902077.js',
+                '/mobile/js/preload.worker-1613647902077.js',
+                '/mobile/css/app-min-1613647902077.css',
+                '/mobile/css/fonticons-1613647902077.css',
+                '/mobile/css/fonts/fonticons-1613647902077.woff',
+                '/mobile/css/fonts/fonticons-1613647902077.ttf'
             ]);
         }).then(caches.open(CacheNameCommon).then(function (cacheCommon)
         {
@@ -93,7 +93,7 @@ self.addEventListener('fetch', function (event)
     {
         if (urlObj.pathname === pathname)
         {
-            url = url.replace(pathname, pathname + 'index-1613645874209.html');
+            url = url.replace(pathname, pathname + 'index-1613647902077.html');
         }
 
         event.respondWith(
